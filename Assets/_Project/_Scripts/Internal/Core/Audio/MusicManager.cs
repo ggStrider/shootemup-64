@@ -1,3 +1,4 @@
+using Internal.Core.Singleton;
 using UnityEngine;
 
 namespace Audio
@@ -10,29 +11,16 @@ namespace Audio
 
         private void Awake()
         {
-            if (IsSessionsExist())
-            {
-                DestroyImmediate(gameObject);
-            }
-            else
-            {
-                DontDestroyOnLoad(this);
-                SetupManager();
-            }
+            SetupManager();
         }
 
-        private bool IsSessionsExist()
-        {
-            return FindObjectsByType<MusicManager>(FindObjectsSortMode.None).Length > 1;
-        }
-        
         private void SetupManager()
         {
             if (!_audioPlayerAdvanced.audioSource.isPlaying)
             {
                 _audioPlayerAdvanced.PlayRandomSound(useRandomPitch: false);
             }
-            
+
             _audioPlayerAdvanced.audioSource.volume = _volumeOnSetup;
             Invoke(nameof(SetupManager), _audioPlayerAdvanced.audioSource.clip.length - _audioPlayerAdvanced.audioSource.time);
         }
