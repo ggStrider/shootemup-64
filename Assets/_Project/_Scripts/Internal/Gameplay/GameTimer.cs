@@ -43,8 +43,6 @@ namespace Internal.Gameplay
             {
                 await UniTask.Delay(TimeSpan.FromSeconds(UPDATE_TIME_INTERVAL), DelayType.Realtime);
                 CurrentTimeReactive.Value += UPDATE_TIME_INTERVAL;
-
-                Debug.Log(CurrentTimeReactive.Value);
             }
 
             Debug.Log("You've done it!");
