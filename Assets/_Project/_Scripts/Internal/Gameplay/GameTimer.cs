@@ -14,7 +14,7 @@ namespace Internal.Gameplay
 
         public static GameTimer Instance { get; private set; }
 
-        public ReactiveVariable<float> CurrentTimeReactive;
+        public ReactiveVariable<float> CurrentTimeReactive { get; private set; }
 
         private const float UPDATE_TIME_INTERVAL = 0.1f;
 
