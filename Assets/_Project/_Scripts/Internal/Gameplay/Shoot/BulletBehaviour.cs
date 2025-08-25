@@ -38,8 +38,8 @@ namespace Shoot
             }
 
             Camera.main.DOShakePosition(0.1f, 0.25f);
-            BasicTools.Destroy(other.gameObject);
-            BasicTools.Destroy(gameObject);
+            ToolsForEasyDebug.Destroy(other.gameObject);
+            ToolsForEasyDebug.Destroy(gameObject);
         }
 
         #if UNITY_EDITOR

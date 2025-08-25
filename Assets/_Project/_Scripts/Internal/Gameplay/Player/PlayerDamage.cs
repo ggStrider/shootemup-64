@@ -64,7 +64,7 @@ namespace Player
             if (other.CompareTag(StaticKeys.ENEMY_TAG) || other.CompareTag(StaticKeys.FAKE_ENEMY_TAG))
             {
                 _audioPlayer?.PlayShotOfRandomSound();
-                Tools.BasicTools.Destroy(other.gameObject);
+                Tools.ToolsForEasyDebug.Destroy(other.gameObject);
             }
 
             if (other.CompareTag(StaticKeys.ENEMY_TAG))

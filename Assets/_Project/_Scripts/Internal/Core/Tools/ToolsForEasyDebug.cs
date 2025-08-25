@@ -2,7 +2,7 @@
 
 namespace Tools
 {
-    public static class BasicTools
+    public static class ToolsForEasyDebug
     {
         public static void Destroy(Object obj)
         {
