@@ -1,4 +1,5 @@
-﻿using Player;
+﻿using Internal.Gameplay;
+using Player;
 using UnityEngine;
 using Zenject;
 

@@ -1,4 +1,5 @@
 ﻿using Audio;
+using Internal.Gameplay;
 using UI.Images;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -13,7 +14,6 @@ namespace Player
         private InputReader _inputReader;
         
         private HealthSystem _playerHealth;
-        private GameTimer _gameTimer;
         
         private const int DAMAGE_FROM_ENEMY = 1;
 

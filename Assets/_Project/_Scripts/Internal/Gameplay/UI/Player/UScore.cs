@@ -1,8 +1,9 @@
-﻿using TMPro;
+﻿using System;
+using TMPro;
 using UnityEngine;
 using Zenject;
 
-namespace UI.Player
+namespace Internal.Gameplay.UI.Player
 {
     public class UScore : MonoBehaviour
     {
@@ -17,12 +18,12 @@ namespace UI.Player
 
         private void Start()
         {
-            _gameTimer.OnCurrentTimeChanged += UpdateScoreText;
+            _gameTimer.CurrentTimeReactive.OnValueChanged += UpdateScoreText;
         }
 
-        private void UpdateScoreText(float currentTime)
+        private void UpdateScoreText(float lastValue, float newValue)
         {
-            _scoreText.text = currentTime.ToString("F1");
+            _scoreText.text = newValue.ToString("F1");
         }
     }
 }

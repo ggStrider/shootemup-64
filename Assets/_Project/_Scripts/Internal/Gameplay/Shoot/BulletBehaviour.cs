@@ -1,5 +1,6 @@
 ﻿using DG.Tweening;
 using Enemy;
+using Internal.Gameplay;
 using Tools;
 using UnityEngine;
 

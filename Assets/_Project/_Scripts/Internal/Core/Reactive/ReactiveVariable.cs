@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Internal.Core.Reactive
 {
-    public class ReactiveVariable<T>
+    public class ReactiveVariable<T> : IDisposable
     {
         public ReactiveVariable(T value = default)
         {
@@ -38,6 +38,11 @@ namespace Internal.Core.Reactive
         }
 
         public void SetValueSilent(T newValue) => SetValue(newValue, silentSet: true);
+
+        public void Dispose()
+        {
+            OnValueChanged = null;
+        }
 
         public static implicit operator T(ReactiveVariable<T> reactiveVariable)
         {
