@@ -88,7 +88,7 @@ namespace Player
             var bullet = _bulletsPool.Spawn();
             bullet.transform.position = _bulletOutPosition.position;
 
-            bullet.Initialize(roundedFireDirection);
+            bullet.InitializeBeforeShoot(roundedFireDirection);
 
             _audioPlayer?.PlayShotOfRandomSound();
         }

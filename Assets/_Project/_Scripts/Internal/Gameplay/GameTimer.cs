@@ -18,7 +18,7 @@ namespace Internal.Gameplay
 
         private const float UPDATE_TIME_INTERVAL = 0.1f;
 
-        private void Start()
+        private void Awake()
         {
             if (_startTimerOnStart)
             {

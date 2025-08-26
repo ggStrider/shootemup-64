@@ -20,7 +20,8 @@ namespace Shoot
 
         [SerializeField] private float _lifeTime = 3f;
 
-        [Space] [SerializeField] private float _subtractPointsOnFakeEnemyKilled = 1.5f;
+        [Space]
+        [SerializeField] private float _subtractPointsOnFakeEnemyKilled = 1.5f;
 
         private BulletPool _bulletPool;
         private CancellationTokenSource _lifeTimeCts;
@@ -31,7 +32,7 @@ namespace Shoot
             _bulletPool = bulletPool;
         }
 
-        public void Initialize(Vector2 flyDirection)
+        public void InitializeBeforeShoot(Vector2 flyDirection)
         {
             if (_rigidbody == null)
             {
@@ -44,15 +45,27 @@ namespace Shoot
             Tools.UniTaskExtensions.SafeCancelAndCleanToken(ref _lifeTimeCts,
                 createNewTokenAfter: true);
 
-            CountLifeTime(_lifeTimeCts.Token).Forget();
+            CountLifeTime().Forget();
         }
 
-        private async UniTask CountLifeTime(CancellationToken token)
+        private async UniTask CountLifeTime()
         {
-            await UniTask.Delay(TimeSpan.FromSeconds(_lifeTime),
-                cancellationToken: _lifeTimeCts.Token);
+            try
+            {
+                await UniTask.Delay(TimeSpan.FromSeconds(_lifeTime), cancellationToken: _lifeTimeCts.Token);
+                DespawnSelf();
+            }
+            catch (OperationCanceledException)
+            {
+                return;
+            }
+        }
 
-            if (token.IsCancellationRequested || !gameObject.activeInHierarchy) return;
+        private void DespawnSelf()
+        {
+            // already despawned
+            if (!gameObject.activeSelf) return;
+
             _bulletPool.Despawn(this);
         }
 
@@ -66,25 +79,26 @@ namespace Shoot
             if (other.gameObject.CompareTag(StaticKeys.FAKE_ENEMY_TAG))
             {
                 GameTimer.Instance.SubtractCurrentTime(_subtractPointsOnFakeEnemyKilled);
+                ToolsForEasyDebug.Destroy(other.gameObject);
             }
 
             if (other.gameObject.TryGetComponent<EnemyAI>(out var enemy))
             {
                 enemy.OnDie();
+                ToolsForEasyDebug.Destroy(other.gameObject);
             }
 
             Camera.main.DOShakePosition(0.1f, 0.25f);
 
-            ToolsForEasyDebug.Destroy(other.gameObject);
-            _bulletPool.Despawn(this);
+            DespawnSelf();
         }
 
-        #if UNITY_EDITOR
+#if UNITY_EDITOR
         private void Reset()
         {
             _rigidbody ??= GetComponent<Rigidbody2D>();
             _rigidbody.gravityScale = 0;
         }
-        #endif
+#endif
     }
 }
