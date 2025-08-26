@@ -1,4 +1,6 @@
 ﻿using Audio;
+using Enemy;
+using Internal.Core.Scenes;
 using Internal.Gameplay;
 using UI.Images;
 using UnityEngine;
@@ -7,6 +9,7 @@ using Zenject;
 
 namespace Player
 {
+    // TODO: This class is ass tbh
     [RequireComponent(typeof(Rigidbody2D))]
     public class PlayerDamage : MonoBehaviour
     {
@@ -17,11 +20,14 @@ namespace Player
         
         private const int DAMAGE_FROM_ENEMY = 1;
 
+        private SceneLoader _sceneLoader;
+
         [Inject]
-        private void Construct(HealthSystem playerHealth, InputReader inputReader)
+        private void Construct(HealthSystem playerHealth, InputReader inputReader, SceneLoader sceneLoader)
         {
             _playerHealth = playerHealth;
             _inputReader = inputReader;
+            _sceneLoader = sceneLoader;
         }
 
         private void OnEnable()
@@ -39,38 +45,23 @@ namespace Player
         
         private void Die()
         {
+            _sceneLoader.ReloadSceneWithTransition();
             _inputReader.UnsubscribeInGameButtons();
-            
-            TransitionImageMover.Instance.OnOverlayed += ReloadScene;
-            TransitionImageMover.Instance.MoveTo(TransitionImageMover.MoveToTypes.OverlayScreen);
-        }
-
-        private void ReloadScene()
-        {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        }
-
-        private void OnDestroy()
-        {
-            if (TransitionImageMover.Instance != null)
-            {
-                TransitionImageMover.Instance.OnOverlayed -= ReloadScene;
-            }
         }
         
         private void OnTriggerEnter2D(Collider2D other)
         {
-            // Destroy object which entered the player
-            if (other.CompareTag(StaticKeys.ENEMY_TAG) || other.CompareTag(StaticKeys.FAKE_ENEMY_TAG))
+            if (other.TryGetComponent<EnemyAI>(out var enemy))
             {
                 _audioPlayer?.PlayShotOfRandomSound();
-                Tools.ToolsForEasyDebug.Destroy(other.gameObject);
-            }
 
-            if (other.CompareTag(StaticKeys.ENEMY_TAG))
-            {
-                _playerHealth?.Damage(DAMAGE_FROM_ENEMY);
-                // Debug.Log($"[{GetType().Name}] Player damaged with {other.gameObject.name}; ");
+                if (other.CompareTag(StaticKeys.ENEMY_TAG))
+                {
+                    _playerHealth?.Damage(DAMAGE_FROM_ENEMY);
+                    // Debug.Log($"[{GetType().Name}] Player damaged with {other.gameObject.name}; ");
+                }
+                
+                enemy.DespawnSelf();
             }
         }
     }

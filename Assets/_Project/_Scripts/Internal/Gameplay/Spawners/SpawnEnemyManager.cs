@@ -57,6 +57,7 @@ namespace Spawners
                 }
                 else
                 {
+                    unit.tag = StaticKeys.ENEMY_TAG;
                     unitSpriteRenderer.color = _backgroundRenderer.color;
                 }   
             }

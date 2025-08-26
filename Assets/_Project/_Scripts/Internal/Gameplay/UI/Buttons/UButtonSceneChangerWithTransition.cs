@@ -27,28 +27,22 @@ namespace UI.Buttons
         {
             _buttonToBind.onClick.AddListener(() =>
             {
-                _transitionImageMover.OnOverlayed += ChangeScene;
-                _transitionImageMover.MoveTo(_moveTo);
+                _transitionImageMover.MoveTo(_moveTo, OnButtonClick);
             });
         }
 
-        private void ChangeScene()
+        private void OnButtonClick()
         {
             _sceneLoader.LoadScene(_sceneCard);
-        }
-
-        private void OnDestroy()
-        {
-            if (_transitionImageMover != null)
-            {
-                _transitionImageMover.OnOverlayed -= ChangeScene;
-            }
         }
         
 #if UNITY_EDITOR
         private void Reset()
         {
-            _buttonToBind ??= GetComponent<Button>();
+            if (!_buttonToBind)
+            {
+                _buttonToBind = GetComponent<Button>();
+            }
         }
 #endif
     }

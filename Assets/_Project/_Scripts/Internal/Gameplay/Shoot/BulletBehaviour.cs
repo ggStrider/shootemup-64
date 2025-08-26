@@ -76,16 +76,15 @@ namespace Shoot
 
         private void OnCollisionEnter2D(Collision2D other)
         {
-            if (other.gameObject.CompareTag(StaticKeys.FAKE_ENEMY_TAG))
-            {
-                GameTimer.Instance.SubtractCurrentTime(_subtractPointsOnFakeEnemyKilled);
-                ToolsForEasyDebug.Destroy(other.gameObject);
-            }
-
             if (other.gameObject.TryGetComponent<EnemyAI>(out var enemy))
             {
+                if (other.gameObject.CompareTag(StaticKeys.FAKE_ENEMY_TAG))
+                {
+                    GameTimer.Instance.SubtractCurrentTime(_subtractPointsOnFakeEnemyKilled);
+                }
+                
                 enemy.OnDie();
-                ToolsForEasyDebug.Destroy(other.gameObject);
+                enemy.DespawnSelf();
             }
 
             Camera.main.DOShakePosition(0.1f, 0.25f);

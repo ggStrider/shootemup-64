@@ -13,27 +13,27 @@ namespace Internal.Core.Installers
 
         private Transform _poolParent;
 
-        private const int BULLET_POOL_START_SIZE = 100;
-        private const int ENEMY_POOL_START_SIZE = 25;
+        private const int BULLET_POOL_START_SIZE = 40;
+        private const int ENEMY_POOL_START_SIZE = 10;
 
         public override void InstallBindings()
         {
-            // if (!_poolParent) _poolParent = CreateParentForPool("ParentForPoolObjects", false);
+            if (!_poolParent) _poolParent = CreateParentForPool("ParentForPoolObjects", false);
 
             Container.BindMemoryPool<BulletBehaviour, BulletPool>()
                 .WithInitialSize(BULLET_POOL_START_SIZE)
                 .FromComponentInNewPrefab(_bulletPrefab)
                 .UnderTransform(CreateParentForPool("(pool)Bullets"))
-                .AsSingle();
+                .AsCached();
 
             Container.BindMemoryPool<EnemyAI, EnemyPool>()
                 .WithInitialSize(ENEMY_POOL_START_SIZE)
                 .FromComponentInNewPrefab(_enemyPrefab)
                 .UnderTransform(CreateParentForPool("(pool)Enemies"))
-                .AsSingle();
+                .AsCached();
         }
 
-        private Transform CreateParentForPool(string poolName, bool underParent = false)
+        private Transform CreateParentForPool(string poolName, bool underParent = true)
         {
             var go = new GameObject
             {

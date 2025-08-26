@@ -1,5 +1,6 @@
-using Unity.VisualScripting;
+using Internal.Core.Pools;
 using UnityEngine;
+using Zenject;
 
 namespace Enemy
 {
@@ -7,6 +8,14 @@ namespace Enemy
     {
         [SerializeField] private Vector2 _directionToPlayer;
         [SerializeField] private float _speed = 10;
+
+        private EnemyPool _enemyPool;
+
+        [Inject]
+        private void Construct(EnemyPool enemyPool)
+        {
+            _enemyPool = enemyPool;
+        }
         
         public void Initialize(Transform player)
         {
@@ -28,6 +37,12 @@ namespace Enemy
             {
                 onEnemyDestroy?.OnEnemyDestroy();
             }
+        }
+
+        public void DespawnSelf()
+        {
+            if (!gameObject.activeSelf) return;
+            _enemyPool.Despawn(this);
         }
 
         private void FixedUpdate()

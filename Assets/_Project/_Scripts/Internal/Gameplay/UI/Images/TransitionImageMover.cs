@@ -19,8 +19,6 @@ namespace UI.Images
         
         public static TransitionImageMover Instance { get; private set; }
 
-        public event Action OnOverlayed;
-        
         private Tween _currentTween;
 
         public enum MoveToTypes
@@ -44,46 +42,47 @@ namespace UI.Images
             }
         }
 
-        public void MoveTo(MoveToTypes side)
+        public void MoveTo(MoveToTypes side, Action onMoved = null)
         {
             _currentTween?.Kill();
             switch (side)
             {
                 case MoveToTypes.ToLeft:
-                    MoveToLeft();
+                    MoveToLeft(onMoved);
                     break;
                 case MoveToTypes.ToRight:
-                    MoveToRight();
+                    MoveToRight(onMoved);
                     break;
                 case MoveToTypes.OverlayScreen:
-                    MoveToOverlay();
+                    MoveToOverlay(onMoved);
                     break;
                 default:
                     throw new ArgumentOutOfRangeException(nameof(side), side, null);
             }
         }
 
-        private void MoveToLeft()
+        private void MoveToLeft(Action onMoved = null)
         {
-            _currentTween = _toMove.DOLocalMove(_hiddenOnLeftPosition, _duration);
+            _currentTween = _toMove.DOLocalMove(_hiddenOnLeftPosition, _duration)
+                .OnComplete(() => {
+                    onMoved?.Invoke();
+                });;
         }
 
-        private void MoveToRight()
+        private void MoveToRight(Action onMoved = null)
         {
-            _currentTween = _toMove.DOLocalMove(_hiddenOnRightPosition, _duration);
+            _currentTween = _toMove.DOLocalMove(_hiddenOnRightPosition, _duration)
+                .OnComplete(() => {
+                    onMoved?.Invoke();
+                });;
         }
 
-        private void MoveToOverlay()
+        private void MoveToOverlay(Action onMoved = null)
         {
             _currentTween = _toMove.DOLocalMove(_overlayScreenPosition, _duration)
                 .OnComplete(() => {
-                    OnOverlayed?.Invoke();
+                    onMoved?.Invoke();
                 });
-        }
-
-        private void OnDestroy()
-        {
-            OnOverlayed = null;
         }
 
         #region FOR EDITOR BUTTONS
