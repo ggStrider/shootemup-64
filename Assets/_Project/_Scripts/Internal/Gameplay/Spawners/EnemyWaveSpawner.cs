@@ -12,7 +12,7 @@ using Random = UnityEngine.Random;
 
 namespace Spawners
 {
-    public class SpawnEnemyManager : MonoBehaviour
+    public class EnemyWaveSpawner : MonoBehaviour
     {
         [SerializeField] private Transform _up;
         [SerializeField] private Transform _down;

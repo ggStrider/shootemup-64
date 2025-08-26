@@ -1,4 +1,5 @@
 ﻿using System;
+using Internal.Core.Extensions;
 using UnityEngine;
 
 namespace Audio
@@ -59,7 +60,7 @@ namespace Audio
 
         public AudioClip GetRandomClip()
         {
-            return audioClips[UnityEngine.Random.Range(0, audioClips.Length)];
+            return audioClips.GetRandomElement();
         }
     }
 }

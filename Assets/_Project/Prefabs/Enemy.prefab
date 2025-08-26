@@ -152,6 +152,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _directionToPlayer: {x: 0, y: 0}
   _speed: 8
+  _damage: 1
 --- !u!114 &2523379884784578454
 MonoBehaviour:
   m_ObjectHideFlags: 0
