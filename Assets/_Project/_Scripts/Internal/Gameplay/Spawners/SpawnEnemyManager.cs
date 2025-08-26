@@ -1,4 +1,5 @@
-using Enemy;
+using Cysharp.Threading.Tasks;
+using Definitions.Waves;
 using Internal.Core.Pools;
 using Player;
 using UnityEngine;
@@ -8,11 +9,13 @@ namespace Spawners
 {
     public class SpawnEnemyManager : MonoBehaviour
     {
-        [SerializeField] private Transform[] _spawnPoints;
+        [SerializeField] private Transform _up;
+        [SerializeField] private Transform _down;
+        [SerializeField] private Transform _right;
+        [SerializeField] private Transform _left;
 
-        [Space] [SerializeField] private uint _enemiesPerWave = 5;
-        
-        [SerializeField] private float _spawnInterval = 0.7f;
+        [Space(10)]
+        [SerializeField] private LevelWaves _levelWaves;
         [SerializeField] private float _changeBackgroundColorInterval = 5f;
 
         [Space] [SerializeField] private Transform _player;
@@ -28,7 +31,7 @@ namespace Spawners
 
         private void Start()
         {
-            InvokeRepeating(nameof(Spawn), _spawnInterval, _spawnInterval);
+            SpawnWave().Forget();
             InvokeRepeating(nameof(ChangeBackgroundColor), _changeBackgroundColorInterval, _changeBackgroundColorInterval);
         }
 
@@ -37,30 +40,51 @@ namespace Spawners
             _backgroundRenderer.color = GetRandomColor();
         }
 
-        private void Spawn()
+        private async UniTask SpawnWave()
         {
-            for (var i = 1; i <= _enemiesPerWave; i++)
+            foreach (var wave in _levelWaves)
             {
-                var shouldSpawnEnemy = Random.Range(0, 3) == 1;
-                var randomPoint = _spawnPoints[Random.Range(0, _spawnPoints.Length)].position;
-
-                var unit = _enemyPool.Spawn();
-                unit.transform.SetPositionAndRotation(randomPoint, Quaternion.identity);
-            
-                unit.Initialize(_player);
-
-                var unitSpriteRenderer = unit.GetComponent<SpriteRenderer>();
-                if (!shouldSpawnEnemy)
+                foreach (var enemy in wave.EnemiesInWave)
                 {
-                    unit.tag = StaticKeys.FAKE_ENEMY_TAG;
-                    unitSpriteRenderer.color = GetRandomColor();
+                    CreateAndInitializeEnemy(enemy);
+                    await UniTask.WaitForSeconds(enemy.DelayToNextEnemy);
                 }
-                else
-                {
-                    unit.tag = StaticKeys.ENEMY_TAG;
-                    unitSpriteRenderer.color = _backgroundRenderer.color;
-                }   
             }
+        }
+
+        private void CreateAndInitializeEnemy(EnemyInWave enemy)
+        {
+            var shouldSpawnEnemy = Random.Range(0, 3) == 1;
+            var randomPoint = GetTransformPointByEnum(enemy.SideToSpawn);
+
+            var unit = _enemyPool.Spawn();
+            unit.transform.SetPositionAndRotation(randomPoint.position, Quaternion.identity);
+            
+            unit.Initialize(_player);
+
+            var unitSpriteRenderer = unit.GetComponent<SpriteRenderer>();
+            if (!shouldSpawnEnemy)
+            {
+                unit.tag = StaticKeys.FAKE_ENEMY_TAG;
+                unitSpriteRenderer.color = GetRandomColor();
+            }
+            else
+            {
+                unit.tag = StaticKeys.ENEMY_TAG;
+                unitSpriteRenderer.color = _backgroundRenderer.color;
+            }
+        }
+
+        private Transform GetTransformPointByEnum(SidesToSpawn sideToSpawn)
+        {
+            return sideToSpawn switch
+            {
+                SidesToSpawn.Up => _up,
+                SidesToSpawn.Down => _down,
+                SidesToSpawn.Left => _left,
+                SidesToSpawn.Right => _right,
+                _ => _down
+            };
         }
 
         private Color GetRandomColor()
@@ -75,7 +99,10 @@ namespace Spawners
 #if UNITY_EDITOR
         private void Reset()
         {
-            _player ??= FindAnyObjectByType<PlayerShoot>().transform;
+            if (!_player)
+            {
+                _player = FindAnyObjectByType<PlayerShoot>().transform;
+            }
         }
 #endif
     }

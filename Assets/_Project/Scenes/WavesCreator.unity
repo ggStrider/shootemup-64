@@ -119,6 +119,54 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &69854494
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 69854496}
+  - component: {fileID: 69854495}
+  m_Layer: 0
+  m_Name: ---SO_Writer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &69854495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 69854494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f91e2ae0857f48098adc6a92c4fcff35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _startCountingDelay: 1
+  _useMusicManager: 1
+  _canPlayerShoot: 1
+  _waveToWrite: {fileID: 11400000, guid: 45a962055d8c4ab45972fa6d583e97d3, type: 2}
+--- !u!4 &69854496
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 69854494}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.91398, y: -0.42083, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &80795990
 GameObject:
   m_ObjectHideFlags: 0
@@ -679,7 +727,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &440502783
 Transform:
   m_ObjectHideFlags: 0
@@ -694,7 +742,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1982559470}
-  - {fileID: 530467752}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &453779486
@@ -799,7 +846,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &530467752
 Transform:
   m_ObjectHideFlags: 0
@@ -808,16 +855,16 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 530467751}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 753390801}
-  - {fileID: 913615424}
   - {fileID: 223170443}
   - {fileID: 544004983}
-  m_Father: {fileID: 440502783}
+  - {fileID: 913615424}
+  - {fileID: 753390801}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &544004982
 GameObject:
@@ -1820,11 +1867,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f211e0931c202e43ad27b8be3c269f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _up: {fileID: 753390801}
-  _down: {fileID: 913615424}
-  _right: {fileID: 223170443}
-  _left: {fileID: 544004983}
-  _levelWaves: {fileID: 11400000, guid: c8ac2d440666c174082cbbec3e490d21, type: 2}
+  _spawnPoints:
+  - {fileID: 223170443}
+  - {fileID: 544004983}
+  - {fileID: 913615424}
+  - {fileID: 753390801}
+  _enemiesPerWave: 1
+  _spawnInterval: 0.5
   _changeBackgroundColorInterval: 5
   _player: {fileID: 1525415413}
   _backgroundRenderer: {fileID: 1115784705}
@@ -2152,7 +2201,9 @@ SceneRoots:
   m_Roots:
   - {fileID: 512962907611382747}
   - {fileID: 203964218}
+  - {fileID: 530467752}
   - {fileID: 440502783}
   - {fileID: 1115784706}
   - {fileID: 1022916937}
   - {fileID: 619394802}
+  - {fileID: 69854496}
