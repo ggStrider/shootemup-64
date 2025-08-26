@@ -12,5 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62f0914ba3e804941b342dea9ce97c37, type: 3}
   m_Name: EmptyLevelWaves
   m_EditorClassIdentifier: 
-  _waves:
-  - {fileID: 11400000, guid: 45a962055d8c4ab45972fa6d583e97d3, type: 2}
+  _waves: []

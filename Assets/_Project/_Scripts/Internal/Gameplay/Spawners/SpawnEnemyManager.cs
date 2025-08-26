@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Threading;
 using Cysharp.Threading.Tasks;
 using Definitions.Waves;
@@ -19,7 +20,6 @@ namespace Spawners
         [SerializeField] private Transform _left;
 
         [Space(10)] [SerializeField] private LevelWaves _levelWaves;
-        [SerializeField] private float _changeBackgroundColorInterval = 5f;
 
         [Space] [SerializeField] private Transform _player;
         [Space] [SerializeField] private SpriteRenderer _backgroundRenderer;
@@ -35,8 +35,11 @@ namespace Spawners
             _enemyPool = enemyPool;
         }
 
-        private void Start()
+        // TODO: Refactor into some smth else, not coroutine, idk rn
+        private IEnumerator Start()
         {
+            yield return new WaitForSeconds(3f);
+            
             MyUniTaskExtensions.SafeCancelAndCleanToken(ref _changingBackgroundCts,
                 createNewTokenAfter: true);
 

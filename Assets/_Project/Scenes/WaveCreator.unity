@@ -151,7 +151,7 @@ MonoBehaviour:
   _startCountingDelay: 1
   _useMusicManager: 1
   _canPlayerShoot: 1
-  _waveToWrite: {fileID: 11400000, guid: 45a962055d8c4ab45972fa6d583e97d3, type: 2}
+  _waveToWrite: {fileID: 11400000, guid: a5c500895d3fd5e4e8da984974f86ff3, type: 2}
 --- !u!4 &69854496
 Transform:
   m_ObjectHideFlags: 0
@@ -1867,14 +1867,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f211e0931c202e43ad27b8be3c269f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _spawnPoints:
-  - {fileID: 223170443}
-  - {fileID: 544004983}
-  - {fileID: 913615424}
-  - {fileID: 753390801}
-  _enemiesPerWave: 1
-  _spawnInterval: 0.5
-  _changeBackgroundColorInterval: 5
+  _up: {fileID: 0}
+  _down: {fileID: 0}
+  _right: {fileID: 0}
+  _left: {fileID: 0}
+  _levelWaves: {fileID: 0}
   _player: {fileID: 1525415413}
   _backgroundRenderer: {fileID: 1115784705}
 --- !u!1 &2009463865
