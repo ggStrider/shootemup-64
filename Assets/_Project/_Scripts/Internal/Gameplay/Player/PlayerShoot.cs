@@ -1,4 +1,5 @@
-﻿using Audio;
+﻿using System.Collections.Generic;
+using Audio;
 using Shoot;
 using UnityEngine;
 using Zenject;
@@ -10,10 +11,20 @@ namespace Player
         [SerializeField] private BulletBehaviour _bulletPrefab;
         [SerializeField] private Transform _bulletOutPosition;
 
-        [Space] [SerializeField] private AudioPlayerAdvanced _audioPlayer;
-        
+        [Space]
+        // TODO: Refactor into event and Manager
+        [SerializeField] private AudioPlayerAdvanced _audioPlayer;
+
+        private readonly Dictionary<Vector2Int, Quaternion> _directionRotations = new()
+        {
+            { Vector2Int.right, Quaternion.Euler(0f, 0f, -90f) },   // right
+            { Vector2Int.left, Quaternion.Euler(0f, 0f, 90f) },     // left
+            { Vector2Int.up, Quaternion.Euler(0f, 0f, 0f) },        // up
+            { Vector2Int.down, Quaternion.Euler(0f, 0f, 180f) }     // down
+        };
+
         private InputReader _inputReader;
-        
+
         [Inject]
         private void Construct(InputReader inputReader)
         {
@@ -32,19 +43,17 @@ namespace Player
                 Debug.LogError($"[{GetType().Name}] Input reader is null!");
                 return;
             }
-            
+
             _inputReader.OnShootPressed += Shoot;
-            
+
             if (_bulletPrefab == null)
             {
                 Debug.LogError($"[{GetType().Name}] Bullet prefab is null!");
-                return;
             }
 
             if (_bulletOutPosition == null)
             {
                 Debug.LogError($"[{GetType().Name}] Bullet out position is null!");
-                return;
             }
         }
 
@@ -59,12 +68,12 @@ namespace Player
         private void Shoot(Vector2 fireDirection)
         {
             // Debug.Log($"[{GetType().Name}] Fire direction: {fireDirection}");
-            
+
             // between -1 to 1
             var roundedFireDirection = CalculateRoundedFireVector(fireDirection);
             RotatePlayerTowardsFireDirection(roundedFireDirection);
             ShootBullet(roundedFireDirection);
-            
+
             // Debug.Log($"[{GetType().Name}] Rounded fire direction: {roundedFireDirection}");
         }
 
@@ -79,21 +88,18 @@ namespace Player
         private void RotatePlayerTowardsFireDirection(Vector2 roundedFireDirection)
         {
             // transform is a player
-            if (roundedFireDirection.x > 0)
+            var direction = new Vector2Int(
+                Mathf.RoundToInt(roundedFireDirection.x),
+                Mathf.RoundToInt(roundedFireDirection.y)
+            );
+
+            if (_directionRotations.TryGetValue(direction, out var rotation))
             {
-                transform.rotation = Quaternion.Euler(0f, 0, -90);
-            }
-            else if (roundedFireDirection.x < 0)
-            {
-                transform.rotation = Quaternion.Euler(0f, 0, 90);
-            }
-            else if (roundedFireDirection.y > 0)
-            {
-                transform.rotation = Quaternion.Euler(0f, 0, 0);
+                transform.rotation = rotation;
             }
             else
             {
-                transform.rotation = Quaternion.Euler(0f, 0, 180);
+                Debug.LogWarning($"[{GetType().Name}] Unknown fire direction: {direction}");
             }
         }
 
