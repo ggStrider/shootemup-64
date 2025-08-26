@@ -1,7 +1,9 @@
 ﻿using System.Collections.Generic;
 using Audio;
+using Internal.Core.Pools;
 using Shoot;
 using UnityEngine;
+using UnityEngine.Pool;
 using Zenject;
 
 namespace Player
@@ -25,15 +27,19 @@ namespace Player
 
         private InputReader _inputReader;
 
+        private BulletPool _bulletsPool;
+
         [Inject]
-        private void Construct(InputReader inputReader)
+        private void Construct(InputReader inputReader, BulletPool bulletsPool)
         {
             if (inputReader == null)
             {
                 Debug.LogError($"[{GetType().Name}] Input reader in constructor is null");
                 return;
             }
+
             _inputReader = inputReader;
+            _bulletsPool = bulletsPool;
         }
 
         private void OnEnable()
@@ -79,7 +85,9 @@ namespace Player
 
         private void ShootBullet(Vector2 roundedFireDirection)
         {
-            var bullet = Instantiate(_bulletPrefab, _bulletOutPosition.position, Quaternion.identity);
+            var bullet = _bulletsPool.Spawn();
+            bullet.transform.position = _bulletOutPosition.position;
+
             bullet.Initialize(roundedFireDirection);
 
             _audioPlayer?.PlayShotOfRandomSound();
