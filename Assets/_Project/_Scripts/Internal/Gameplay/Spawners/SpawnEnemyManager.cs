@@ -1,12 +1,13 @@
 using Enemy;
+using Internal.Core.Pools;
 using Player;
 using UnityEngine;
+using Zenject;
 
 namespace Spawners
 {
     public class SpawnEnemyManager : MonoBehaviour
     {
-        [SerializeField] private EnemyAI _enemyPrefab;
         [SerializeField] private Transform[] _spawnPoints;
 
         [Space] [SerializeField] private uint _enemiesPerWave = 5;
@@ -16,6 +17,14 @@ namespace Spawners
 
         [Space] [SerializeField] private Transform _player;
         [Space] [SerializeField] private SpriteRenderer _backgroundRenderer;
+
+        private EnemyPool _enemyPool;
+
+        [Inject]
+        private void Construct(EnemyPool enemyPool)
+        {
+            _enemyPool = enemyPool;
+        }
 
         private void Start()
         {
@@ -32,14 +41,16 @@ namespace Spawners
         {
             for (var i = 1; i <= _enemiesPerWave; i++)
             {
-                var spawnEnemy = Random.Range(0, 3) == 1;
+                var shouldSpawnEnemy = Random.Range(0, 3) == 1;
                 var randomPoint = _spawnPoints[Random.Range(0, _spawnPoints.Length)].position;
-                var unit = Instantiate(_enemyPrefab, randomPoint, Quaternion.identity);
+
+                var unit = _enemyPool.Spawn();
+                unit.transform.SetPositionAndRotation(randomPoint, Quaternion.identity);
             
                 unit.Initialize(_player);
 
                 var unitSpriteRenderer = unit.GetComponent<SpriteRenderer>();
-                if (!spawnEnemy)
+                if (!shouldSpawnEnemy)
                 {
                     unit.tag = StaticKeys.FAKE_ENEMY_TAG;
                     unitSpriteRenderer.color = GetRandomColor();

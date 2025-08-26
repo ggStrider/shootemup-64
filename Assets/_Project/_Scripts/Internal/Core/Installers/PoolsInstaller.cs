@@ -2,35 +2,45 @@ using Zenject;
 using UnityEngine;
 using Shoot;
 using Internal.Core.Pools;
+using Enemy;
 
 namespace Internal.Core.Installers
 {
     public class PoolsInstaller : MonoInstaller
     {
         [SerializeField] private BulletBehaviour _bulletPrefab;
+        [SerializeField] private EnemyAI _enemyPrefab;
 
-        [Space(10)]
-        [SerializeField] private Transform _poolParent;
+        private Transform _poolParent;
 
         private const int BULLET_POOL_START_SIZE = 100;
+        private const int ENEMY_POOL_START_SIZE = 25;
 
         public override void InstallBindings()
         {
+            // if (!_poolParent) _poolParent = CreateParentForPool("ParentForPoolObjects", false);
+
             Container.BindMemoryPool<BulletBehaviour, BulletPool>()
                 .WithInitialSize(BULLET_POOL_START_SIZE)
                 .FromComponentInNewPrefab(_bulletPrefab)
                 .UnderTransform(CreateParentForPool("(pool)Bullets"))
                 .AsSingle();
+
+            Container.BindMemoryPool<EnemyAI, EnemyPool>()
+                .WithInitialSize(ENEMY_POOL_START_SIZE)
+                .FromComponentInNewPrefab(_enemyPrefab)
+                .UnderTransform(CreateParentForPool("(pool)Enemies"))
+                .AsSingle();
         }
 
-        private Transform CreateParentForPool(string poolName)
+        private Transform CreateParentForPool(string poolName, bool underParent = false)
         {
             var go = new GameObject
             {
                 name = poolName
             };
 
-            go.transform.SetParent(_poolParent);
+            if(underParent) go.transform.SetParent(_poolParent);
             go.transform.position = Vector3.zero;
 
             return go.transform;
