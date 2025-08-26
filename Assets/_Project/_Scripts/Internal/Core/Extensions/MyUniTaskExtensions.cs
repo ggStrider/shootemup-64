@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Tools
 {
-    public static class UniTaskExtensions
+    public static class MyUniTaskExtensions
     {
         public static void SafeCancelAndCleanToken(ref CancellationTokenSource cts,
             bool createNewTokenAfter = false)

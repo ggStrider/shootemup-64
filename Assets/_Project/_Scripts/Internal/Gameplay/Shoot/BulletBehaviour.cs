@@ -42,7 +42,7 @@ namespace Shoot
 
             _rigidbody.linearVelocity = flyDirection * _bulletSpeed;
 
-            Tools.UniTaskExtensions.SafeCancelAndCleanToken(ref _lifeTimeCts,
+            Tools.MyUniTaskExtensions.SafeCancelAndCleanToken(ref _lifeTimeCts,
                 createNewTokenAfter: true);
 
             CountLifeTime().Forget();
@@ -71,7 +71,7 @@ namespace Shoot
 
         private void OnDisable()
         {
-            Tools.UniTaskExtensions.SafeCancelAndCleanToken(ref _lifeTimeCts);
+            Tools.MyUniTaskExtensions.SafeCancelAndCleanToken(ref _lifeTimeCts);
         }
 
         private void OnCollisionEnter2D(Collision2D other)

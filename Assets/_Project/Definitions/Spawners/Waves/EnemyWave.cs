@@ -10,6 +10,7 @@ namespace Definitions.Waves
     {
         [field: SerializeField] public List<EnemyInWave> EnemiesInWave { get; private set; }
         [field: SerializeField] public float DelayToNextWave { get; private set; } = 3f;
+        [field: SerializeField] public float DelayToChangeBackground { get; private set; } = 5f;
     }
 
     [Serializable]
