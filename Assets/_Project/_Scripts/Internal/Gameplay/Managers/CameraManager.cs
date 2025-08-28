@@ -35,11 +35,13 @@ namespace Internal.Gameplay.Managers
         private void OnEnable()
         {
             _signalBus.Subscribe<EnemyDieSignal>(ShakeCamera);
+            _signalBus.Subscribe<FakeEnemyDieSignal>(ShakeCamera);
         }
 
         private void OnDisable()
         {
             _signalBus.TryUnsubscribe<EnemyDieSignal>(ShakeCamera);
+            _signalBus.TryUnsubscribe<FakeEnemyDieSignal>(ShakeCamera);
         }
 
         private void ShakeCamera()
