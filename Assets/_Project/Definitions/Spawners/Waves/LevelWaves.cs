@@ -9,6 +9,7 @@ namespace Definitions.Waves
     public class LevelWaves : ScriptableObject, IEnumerable<EnemyWave>
     {
         [SerializeField] private EnemyWave[] _waves;
+        [field: SerializeField] public bool UseRandomEnemyType = true;
 
         public static implicit operator EnemyWave[](LevelWaves level)
         {

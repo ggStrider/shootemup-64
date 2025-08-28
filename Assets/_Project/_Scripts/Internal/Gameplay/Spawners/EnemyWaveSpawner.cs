@@ -77,9 +77,11 @@ namespace Spawners
 
         private async UniTask SpawnWave(int waveIndex)
         {
-            foreach (var enemy in _levelWaves[waveIndex].EnemiesInWave)
+            for (var enemyIndex = 0; enemyIndex < _levelWaves[waveIndex].EnemiesInWave.Count; enemyIndex++)
             {
-                CreateAndInitializeEnemy(enemy);
+                var enemy = _levelWaves[waveIndex].EnemiesInWave[enemyIndex];
+                
+                CreateAndInitializeEnemy(enemy, waveIndex, enemyIndex);
                 await UniTask.WaitForSeconds(enemy.DelayToNextEnemy);
             }
 
@@ -105,12 +107,15 @@ namespace Spawners
             }
         }
 
-        private void CreateAndInitializeEnemy(EnemyInWave enemy)
+        private void CreateAndInitializeEnemy(EnemyInWave enemy, int waveIndex, int enemyIndex)
         {
-            var shouldSpawnRealEnemy = Random.Range(0, 3) == 1;
-            var randomPoint = GetTransformPointByEnum(enemy.SideToSpawn);
+            bool shouldSpawnRealEnemy;
+            if (_levelWaves.UseRandomEnemyType) shouldSpawnRealEnemy = Random.Range(0, 3) == 1;
+            else shouldSpawnRealEnemy = !_levelWaves[waveIndex].EnemiesInWave[enemyIndex].IsFakeEnemy;
 
+            var randomPoint = GetTransformPointByEnum(enemy.SideToSpawn);
             EnemyBase unit;
+            
             if (shouldSpawnRealEnemy)
             {
                 unit = _simpleEnemyPool.Spawn();
