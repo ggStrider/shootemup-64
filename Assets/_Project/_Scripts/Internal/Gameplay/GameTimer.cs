@@ -16,9 +16,7 @@ namespace Internal.Gameplay
 
         [Space] [SerializeField] private float _subtractTimeWhenHitFakeEnemy = 1.5f;
 
-        public static GameTimer Instance { get; private set; }
         public ReactiveVariable<float> CurrentTimeReactive { get; private set; }
-
         private SignalBus _signalBus;
 
         private const float UPDATE_TIME_INTERVAL = 0.1f;
@@ -31,12 +29,12 @@ namespace Internal.Gameplay
 
         private void OnEnable()
         {
-            _signalBus.Subscribe<EnemyDieSignal>(() => SubtractCurrentTime(_subtractTimeWhenHitFakeEnemy));
+            _signalBus.Subscribe<FakeEnemyDieSignal>(() => SubtractCurrentTime(_subtractTimeWhenHitFakeEnemy));
         }
 
         private void OnDisable()
         {
-            _signalBus.TryUnsubscribe<EnemyDieSignal>(() => SubtractCurrentTime(_subtractTimeWhenHitFakeEnemy));
+            _signalBus.TryUnsubscribe<FakeEnemyDieSignal>(() => SubtractCurrentTime(_subtractTimeWhenHitFakeEnemy));
         }
 
         private void Awake()
@@ -45,11 +43,6 @@ namespace Internal.Gameplay
             {
                 InitializeTimer();
                 CountTime().Forget();
-            }
-
-            if (Instance == null)
-            {
-                Instance = this;
             }
         }
 

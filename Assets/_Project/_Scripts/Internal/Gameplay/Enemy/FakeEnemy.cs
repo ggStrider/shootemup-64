@@ -1,4 +1,5 @@
 ﻿using Internal.Core.Pools;
+using Internal.Core.Signals;
 using Shoot;
 using Zenject;
 
@@ -13,7 +14,14 @@ namespace Enemy
         {
             _fakeEnemyPool = fakeEnemyPool;
         }
-        
+
+        protected override void OnDie()
+        {
+            SignalBus.Fire(new FakeEnemyDieSignal(this));
+            InvokeAllIOnDestroy();
+            DespawnSelf();
+        }
+
         protected override void DespawnSelf()
         {
             if (!gameObject.activeInHierarchy) return;
