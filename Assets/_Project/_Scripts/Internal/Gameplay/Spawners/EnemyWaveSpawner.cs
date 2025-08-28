@@ -3,7 +3,9 @@ using System.Collections;
 using System.Threading;
 using Cysharp.Threading.Tasks;
 using Definitions.Waves;
+using Enemy;
 using Internal.Core.Pools;
+using Internal.Core.Signals;
 using Player;
 using Tools;
 using UnityEngine;
@@ -24,15 +26,21 @@ namespace Spawners
         [Space] [SerializeField] private Transform _player;
         [Space] [SerializeField] private SpriteRenderer _backgroundRenderer;
 
-        private EnemyPool _enemyPool;
+        // Pools
+        private SimpleEnemyPool _simpleEnemyPool;
+        private FakeEnemyPool _fakeEnemyPool;
+        
         private CancellationTokenSource _changingBackgroundCts;
+        private SignalBus _signalBus;
 
         private const int FIRST_WAVE_INDEX = 0;
 
         [Inject]
-        private void Construct(EnemyPool enemyPool)
+        private void Construct(SimpleEnemyPool simpleEnemyPool, FakeEnemyPool fakeEnemyPool, SignalBus signalBus)
         {
-            _enemyPool = enemyPool;
+            _simpleEnemyPool = simpleEnemyPool;
+            _fakeEnemyPool = fakeEnemyPool;
+            _signalBus = signalBus;
         }
 
         // TODO: Refactor into some smth else, not coroutine, idk rn
@@ -55,6 +63,9 @@ namespace Spawners
                 while (!token.IsCancellationRequested)
                 {
                     _backgroundRenderer.color = GetRandomColor();
+                    _signalBus.Fire(new BackgroundChangedSignal(
+                        _backgroundRenderer, _backgroundRenderer.color));
+                    
                     await UniTask.WaitForSeconds(
                         _levelWaves[waveIndex].DelayToChangeBackground, cancellationToken: token);
                 }
@@ -97,24 +108,23 @@ namespace Spawners
         private void CreateAndInitializeEnemy(EnemyInWave enemy)
         {
             var shouldSpawnRealEnemy = Random.Range(0, 3) == 1;
+            shouldSpawnRealEnemy = true;
             var randomPoint = GetTransformPointByEnum(enemy.SideToSpawn);
 
-            var unit = _enemyPool.Spawn();
-            unit.transform.SetPositionAndRotation(randomPoint.position, Quaternion.identity);
-
-            unit.Initialize(_player);
-
-            var unitSpriteRenderer = unit.GetComponent<SpriteRenderer>();
-            if (!shouldSpawnRealEnemy)
+            EnemyBase unit;
+            if (shouldSpawnRealEnemy)
             {
-                unit.tag = StaticKeys.FAKE_ENEMY_TAG;
-                unitSpriteRenderer.color = GetRandomColor();
+                unit = _simpleEnemyPool.Spawn();
+                (unit as SimpleMovingEnemy)?.ChangeSkinColor(_backgroundRenderer.color);
             }
             else
             {
-                unit.tag = StaticKeys.ENEMY_TAG;
-                unitSpriteRenderer.color = _backgroundRenderer.color;
+                unit = _fakeEnemyPool.Spawn();
+                unit.ChangeSkinColor(GetRandomColor());
             }
+            
+            unit.transform.SetPositionAndRotation(randomPoint.position, Quaternion.identity);
+            unit.Initialize(_player);
         }
 
         private Transform GetTransformPointByEnum(SidesToSpawn sideToSpawn)

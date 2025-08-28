@@ -1,11 +1,38 @@
-﻿using Internal.Gameplay.EntitiesShared;
+﻿using Internal.Core.Pools;
+using Internal.Core.Signals;
+using Internal.Gameplay.EntitiesShared;
 using UnityEngine;
+using Zenject;
 
 namespace Enemy
 {
     public class SimpleMovingEnemy : EnemyBase
     {
         [SerializeField, Min(1)] private int _damage;
+        private SimpleEnemyPool _simpleEnemyPool;
+
+        [Inject]
+        private void Construct(SimpleEnemyPool simpleEnemyPool)
+        {
+            _simpleEnemyPool = simpleEnemyPool;
+        }
+
+        protected override void OnEnable()
+        {
+            base.OnEnable();
+            SignalBus.Subscribe<BackgroundChangedSignal>(ChangeSkinColor);
+        }
+
+        protected override void OnDisable()
+        {
+            base.OnDisable();
+            SignalBus.TryUnsubscribe<BackgroundChangedSignal>(ChangeSkinColor);
+        }
+        
+        private void ChangeSkinColor(BackgroundChangedSignal newData)
+        {
+            ChangeSkinColor(newData.NewColor);
+        }
         
         protected override void OnHitInPlayer(GameObject player)
         {
@@ -14,6 +41,12 @@ namespace Enemy
                 playerHealth.TakeDamage(_damage);
             }
             base.OnHitInPlayer(player);
+        }
+        
+        protected override void DespawnSelf()
+        {
+            if (!gameObject.activeInHierarchy) return;
+            _simpleEnemyPool.Despawn(this);
         }
     }
 }

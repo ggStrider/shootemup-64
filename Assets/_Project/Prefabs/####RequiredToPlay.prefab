@@ -986,6 +986,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad3bdfb7b36b4f108e78292744f72fd0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _shakeDuration: 0.1
+  _shakeStrength: 0.25
   _mainCamera: {fileID: 0}
 --- !u!1 &3906938575283352167
 GameObject:
@@ -1704,7 +1706,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _bulletPrefab: {fileID: 1009256292885892331, guid: f09f6a2746801e0478531bfd59f673f7, type: 3}
-  _enemyPrefab: {fileID: 8217017690634202590, guid: 8e6d1b93434a7c649bd285e12a799dc5, type: 3}
+  _simpleMoveEnemy: {fileID: 9010275891769671920, guid: 8e6d1b93434a7c649bd285e12a799dc5, type: 3}
+  _fakeEnemy: {fileID: 3280607009796306493, guid: bd0ae4ec108b9224cbc3a75d29660324, type: 3}
 --- !u!1 &9079021625900432064
 GameObject:
   m_ObjectHideFlags: 0

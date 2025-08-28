@@ -1,12 +1,23 @@
-﻿using Shoot;
+﻿using Internal.Core.Pools;
+using Shoot;
+using Zenject;
 
 namespace Enemy
 {
     public class FakeEnemy : EnemyBase
     {
-        public override void OnHitByBullet(BulletBehaviour bulletWhichHit)
+        private FakeEnemyPool _fakeEnemyPool;
+        
+        [Inject]
+        private void Construct(FakeEnemyPool fakeEnemyPool)
         {
-            base.OnHitByBullet(bulletWhichHit);
+            _fakeEnemyPool = fakeEnemyPool;
+        }
+        
+        protected override void DespawnSelf()
+        {
+            if (!gameObject.activeInHierarchy) return;
+            _fakeEnemyPool.Despawn(this);
         }
     }
 }

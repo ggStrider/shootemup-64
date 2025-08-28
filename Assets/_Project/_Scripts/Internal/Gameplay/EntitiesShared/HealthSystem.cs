@@ -42,12 +42,8 @@ namespace Internal.Gameplay.EntitiesShared
 
         public void TakeDamage(int amount)
         {
-            Debug.Log($"[{GetType().Name}] Damage {amount}");
-            if (CurrentHealth <= 0)
-            {
-                CurrentHealth = 0;
-                return;
-            }
+            // Debug.Log($"[{GetType().Name}] Damage {amount}");
+            if (CurrentHealth == 0) return;
 
             if (amount <= 0)
             {
@@ -55,7 +51,7 @@ namespace Internal.Gameplay.EntitiesShared
                 return;
             }
 
-            CurrentHealth -= amount;
+            CurrentHealth = Mathf.Max(0, CurrentHealth - amount);
 
             OnDamageTaken?.Invoke(CurrentHealth);
             if (CurrentHealth <= 0)

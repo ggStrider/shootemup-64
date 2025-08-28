@@ -3,14 +3,14 @@ using Zenject;
 
 namespace Internal.Core.Pools
 {
-    public class EnemyPool : MonoMemoryPool<EnemyBase>
+    public class SimpleEnemyPool : MonoMemoryPool<SimpleMovingEnemy>
     {
-        protected override void OnSpawned(EnemyBase enemy)
+        protected override void OnSpawned(SimpleMovingEnemy enemy)
         {
             enemy.gameObject.SetActive(true);
         }
 
-        protected override void OnDespawned(EnemyBase enemy)
+        protected override void OnDespawned(SimpleMovingEnemy enemy)
         {
             enemy.gameObject.SetActive(false);
         }

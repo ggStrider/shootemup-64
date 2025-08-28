@@ -11,6 +11,7 @@ namespace Internal.Core.Installers
             
             Container.DeclareSignal<EnemyHitInPlayerSignal>();
             Container.DeclareSignal<EnemyDieSignal>();
+            Container.DeclareSignal<BackgroundChangedSignal>();
         }
     }
 }

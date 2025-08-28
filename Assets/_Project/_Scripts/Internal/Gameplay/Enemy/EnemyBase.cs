@@ -1,43 +1,41 @@
-using Internal.Core.Pools;
 using Internal.Core.Signals;
 using Internal.Gameplay.EntitiesShared;
+using NaughtyAttributes;
 using Shoot;
 using UnityEngine;
 using Zenject;
 
 namespace Enemy
 {
-    public class EnemyBase : MonoBehaviour, IHittableByBullet
+    public abstract class EnemyBase : MonoBehaviour, IHittableByBullet
     {
-        [SerializeField] private Vector2 _directionToPlayer;
+        [SerializeField, ReadOnly] private Vector2 _directionToPlayer;
         [SerializeField] protected float Speed = 10;
 
         [Space] [SerializeField] protected EnemyHealth Health;
+        [SerializeField] protected SpriteRenderer SpriteRenderer;
 
-        private EnemyPool _enemyPool;
-        private SignalBus _signalBus;
+        protected SignalBus SignalBus;
 
         [Inject]
-        private void Construct(EnemyPool enemyPool, SignalBus signalBus)
+        private void Construct(SignalBus signalBus)
         {
-            _enemyPool = enemyPool;
-            _signalBus = signalBus;
+            SignalBus = signalBus;
         }
 
-        private void OnEnable()
+        protected virtual void OnEnable()
         {
-            if (Health != null)
-            {
-                Health.OnDeath += OnDie;
-            }
+            if (Health) Health.OnDeath += OnDie;
         }
 
-        private void OnDisable()
+        protected virtual void OnDisable()
         {
-            if (Health != null)
-            {
-                Health.OnDeath -= OnDie;
-            }
+            if (Health) Health.OnDeath -= OnDie;
+        }
+
+        public void ChangeSkinColor(Color newColor)
+        {
+            SpriteRenderer.color = newColor;
         }
 
         public void Initialize(Transform player)
@@ -57,7 +55,7 @@ namespace Enemy
 
         protected virtual void OnDie()
         {
-            _signalBus.Fire(new EnemyDieSignal(this));
+            SignalBus.Fire(new EnemyDieSignal(this));
             InvokeAllIOnDestroy();
             DespawnSelf();
         }
@@ -71,11 +69,7 @@ namespace Enemy
             }
         }
 
-        private void DespawnSelf()
-        {
-            if (!gameObject.activeSelf) return;
-            _enemyPool.Despawn(this);
-        }
+        protected abstract void DespawnSelf();
 
         private void FixedUpdate()
         {
@@ -92,21 +86,14 @@ namespace Enemy
         {
             if (other.CompareTag(StaticKeys.PLAYER_TAG))
             {
+                SignalBus.Fire(new EnemyHitInPlayerSignal(this));
                 OnHitInPlayer(other.gameObject);
-                _signalBus.Fire(new EnemyHitInPlayerSignal(this));
             }
         }
 
         protected virtual void OnHitInPlayer(GameObject player)
         {
             DespawnSelf();
-            
-            // TODO: Refactor to use new Enemies in pool
-            if (gameObject.CompareTag(StaticKeys.FAKE_ENEMY_TAG)) return;
-            if (player.TryGetComponent<PlayerHealth>(out var playerHealth))
-            {
-                playerHealth.TakeDamage(1);
-            }
         }
 
         public virtual void OnHitByBullet(BulletBehaviour bulletWhichHit)
