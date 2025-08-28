@@ -108,7 +108,6 @@ namespace Spawners
         private void CreateAndInitializeEnemy(EnemyInWave enemy)
         {
             var shouldSpawnRealEnemy = Random.Range(0, 3) == 1;
-            shouldSpawnRealEnemy = true;
             var randomPoint = GetTransformPointByEnum(enemy.SideToSpawn);
 
             EnemyBase unit;
