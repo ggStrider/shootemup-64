@@ -16,5 +16,5 @@ AssetOrigin:
   productId: 157735
   packageName: Extenject Dependency Injection IOC
   packageVersion: 9.2.0
-  assetPath: Assets/Plugins/Zenject/Source/Binding/Binders/ConcreteIdArgConditionCopyNonLazyBinder.cs
+  assetPath: Assets/_Project/_Scripts/External/Plugins/Zenject/Source/Binding/Binders/ConcreteIdArgConditionCopyNonLazyBinder.cs
   uploadId: 370902

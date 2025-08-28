@@ -15,5 +15,5 @@ AssetOrigin:
   productId: 157735
   packageName: Extenject Dependency Injection IOC
   packageVersion: 9.2.0
-  assetPath: Assets/Plugins/Zenject/Source/Factories/Pooling/MemoryPoolBase.cs
+  assetPath: Assets/_Project/_Scripts/External/Plugins/Zenject/Source/Factories/Pooling/MemoryPoolBase.cs
   uploadId: 370902

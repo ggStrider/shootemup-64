@@ -11,5 +11,5 @@ AssetOrigin:
   productId: 157735
   packageName: Extenject Dependency Injection IOC
   packageVersion: 9.2.0
-  assetPath: Assets/Plugins/Zenject/Version.txt
+  assetPath: Assets/_Project/_Scripts/External/Plugins/Zenject/Version.txt
   uploadId: 370902
