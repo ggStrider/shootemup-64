@@ -1,4 +1,3 @@
-using Internal.Core.Singleton;
 using UnityEngine;
 
 namespace Audio
