@@ -104,7 +104,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _bulletSpeed: 15
   _rigidbody: {fileID: 7444724433434496036}
-  _subtractPointsOnFakeEnemyKilled: 1.5
+  _lifeTime: 3
+  <Damage>k__BackingField: 1
 --- !u!50 &7444724433434496036
 Rigidbody2D:
   serializedVersion: 5
