@@ -1,7 +1,7 @@
 ﻿namespace Shoot
 {
-    public interface IHittable
+    public interface IHittableByBullet
     {
-        public void OnHit(BulletBehaviour bulletWhichHit);
+        public void OnHitByBullet(BulletBehaviour bulletWhichHit);
     }
 }

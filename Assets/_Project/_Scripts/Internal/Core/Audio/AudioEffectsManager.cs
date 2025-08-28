@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using Internal.Core.Signals;
+using UnityEngine;
+using Zenject;
 
 namespace Audio
 {
@@ -8,7 +10,35 @@ namespace Audio
 
         [Space] [SerializeField] private AudioPlayerAdvanced _onEnemyHitEffect;
 
-        public void PlayEnemyHitSound()
+        private SignalBus _signalBus;
+
+        [Inject]
+        private void Construct(SignalBus signalBus)
+        {
+            _signalBus = signalBus;
+        }
+
+        private void OnEnable()
+        {
+            SubscribeOnSignalBusEvents();
+        }
+
+        private void OnDisable()
+        {
+            UnsubscribeOnSignalBusEvents();
+        }
+
+        private void SubscribeOnSignalBusEvents()
+        {
+            _signalBus.Subscribe<EnemyHitInPlayerSignal>(PlayEnemyHitInPlayerSound);
+        }
+        
+        private void UnsubscribeOnSignalBusEvents()
+        {
+            _signalBus.TryUnsubscribe<EnemyHitInPlayerSignal>(PlayEnemyHitInPlayerSound);
+        }
+
+        private void PlayEnemyHitInPlayerSound()
         {
             _onEnemyHitEffect.PlayShotOfRandomSound();
         }

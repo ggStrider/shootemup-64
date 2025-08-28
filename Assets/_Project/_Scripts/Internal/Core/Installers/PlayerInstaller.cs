@@ -1,5 +1,6 @@
 ﻿using Audio;
 using Internal.Gameplay;
+using Internal.Gameplay.EntitiesShared;
 using Player;
 using UnityEngine;
 using Zenject;
@@ -8,8 +9,9 @@ namespace Installers
 {
     public class PlayerInstaller : MonoInstaller
     {
-        [SerializeField] private HealthSystem _playerHealth;
+        [SerializeField] private PlayerHealth _playerHealth;
         [SerializeField] private AudioEffectsManager _audioEffectsManager;
+        [SerializeField] private Camera _playerCamera;
         
         public override void InstallBindings()
         {
@@ -25,7 +27,7 @@ namespace Installers
             }
             
             Container
-                .Bind<HealthSystem>()
+                .Bind<PlayerHealth>()
                 .FromInstance(_playerHealth);
 
             Container.Bind<GameTimer>()
@@ -35,6 +37,11 @@ namespace Installers
 
             Container.Bind<AudioEffectsManager>()
                 .FromInstance(_audioEffectsManager)
+                .AsSingle()
+                .NonLazy();
+
+            Container.Bind<Camera>()
+                .FromInstance(_playerCamera)
                 .AsSingle()
                 .NonLazy();
         }

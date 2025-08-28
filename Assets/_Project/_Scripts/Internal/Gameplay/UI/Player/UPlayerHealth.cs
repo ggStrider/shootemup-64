@@ -1,4 +1,5 @@
-﻿using Player;
+﻿using Internal.Gameplay.EntitiesShared;
+using Player;
 using TMPro;
 using UnityEngine;
 using Zenject;
@@ -8,14 +9,15 @@ namespace UI.Player
     public class UPlayerHealth : MonoBehaviour
     {
         [SerializeField] private TextMeshProUGUI _healthCountLabel;
-        private HealthSystem _playerHealth;
+        private PlayerHealth _playerHealth;
         
         [Inject]
-        private void Construct(HealthSystem playerHealth)
+        private void Construct(PlayerHealth playerHealth)
         {
             _playerHealth = playerHealth;
         }
 
+        // TODO: I guess I need some bootstrap here. Need Research here 
         private void Start()
         {
             _playerHealth.OnHealed += UpdateHealthUI;

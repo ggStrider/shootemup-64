@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 8217017690634202590}
   - component: {fileID: 2523379884784578454}
   - component: {fileID: 2692305175946799494}
+  - component: {fileID: -8526061341627788387}
   - component: {fileID: 3385978588761998792}
   m_Layer: 0
   m_Name: Enemy
@@ -151,8 +152,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _directionToPlayer: {x: 0, y: 0}
-  _speed: 8
-  _damage: 1
+  Speed: 10
+  Health: {fileID: -8526061341627788387}
 --- !u!114 &2523379884784578454
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -185,6 +186,20 @@ MonoBehaviour:
     minPitch: 0.95
     maxPitch: 1.05
     defaultPitch: 1
+--- !u!114 &-8526061341627788387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2248729522755725268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36df0b270fe147bd85b629089b2a6311, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 1
+  <CurrentHealth>k__BackingField: 0
 --- !u!82 &3385978588761998792
 AudioSource:
   m_ObjectHideFlags: 0

@@ -1,5 +1,5 @@
-﻿using System;
-using Internal.Core.Scenes;
+﻿using Internal.Core.Scenes;
+using Internal.Gameplay.EntitiesShared;
 using Player;
 using UnityEngine;
 using Zenject;
@@ -14,7 +14,7 @@ namespace Internal.Gameplay.Managers
         private InputReader _inputReader;
 
         [Inject]
-        private void Construct(HealthSystem playerHealth, 
+        private void Construct(PlayerHealth playerHealth, 
             SceneLoader sceneLoader,
             InputReader inputReader)
         {

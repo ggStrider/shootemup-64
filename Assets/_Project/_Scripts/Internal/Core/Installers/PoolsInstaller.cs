@@ -9,7 +9,7 @@ namespace Internal.Core.Installers
     public class PoolsInstaller : MonoInstaller
     {
         [SerializeField] private BulletBehaviour _bulletPrefab;
-        [SerializeField] private EnemyAI _enemyPrefab;
+        [SerializeField] private EnemyBase _enemyPrefab;
 
         private Transform _poolParent;
 
@@ -26,7 +26,7 @@ namespace Internal.Core.Installers
                 .UnderTransform(CreateParentForPool("(pool)Bullets"))
                 .AsCached();
 
-            Container.BindMemoryPool<EnemyAI, EnemyPool>()
+            Container.BindMemoryPool<EnemyBase, EnemyPool>()
                 .WithInitialSize(ENEMY_POOL_START_SIZE)
                 .FromComponentInNewPrefab(_enemyPrefab)
                 .UnderTransform(CreateParentForPool("(pool)Enemies"))

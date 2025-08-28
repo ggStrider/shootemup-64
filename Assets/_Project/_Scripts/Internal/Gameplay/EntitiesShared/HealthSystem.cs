@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace Player
+namespace Internal.Gameplay.EntitiesShared
 {
     public class HealthSystem : MonoBehaviour
     {
@@ -25,6 +25,11 @@ namespace Player
 
         private void Awake()
         {
+            InitializeHealth();
+        }
+
+        public void InitializeHealth()
+        {
             CurrentHealth = _maxHealth;
         }
         
@@ -35,7 +40,7 @@ namespace Player
             OnDeath = null;
         }
 
-        public void Damage(int amount)
+        public void TakeDamage(int amount)
         {
             Debug.Log($"[{GetType().Name}] Damage {amount}");
             if (CurrentHealth <= 0)
@@ -57,6 +62,11 @@ namespace Player
             {
                 OnDeath?.Invoke();
             }
+        }
+
+        public void ForceDeath()
+        {
+            TakeDamage(CurrentHealth);
         }
 
         public void Heal(int amount)

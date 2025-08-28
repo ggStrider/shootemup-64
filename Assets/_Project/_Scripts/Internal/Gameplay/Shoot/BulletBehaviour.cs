@@ -1,11 +1,7 @@
 ﻿using System;
 using System.Threading;
 using Cysharp.Threading.Tasks;
-using DG.Tweening;
-using Enemy;
 using Internal.Core.Pools;
-using Internal.Gameplay;
-using Tools;
 using UnityEngine;
 using Zenject;
 
@@ -20,9 +16,8 @@ namespace Shoot
 
         [SerializeField] private float _lifeTime = 3f;
 
-        [Space]
-        [SerializeField] private float _subtractPointsOnFakeEnemyKilled = 1.5f;
-
+        [field: Space, SerializeField] public int Damage { get; private set; }= 1;
+        
         private BulletPool _bulletPool;
         private CancellationTokenSource _lifeTimeCts;
 
@@ -76,17 +71,15 @@ namespace Shoot
 
         private void OnCollisionEnter2D(Collision2D other)
         {
-            var allHittable = other.gameObject.GetComponents<IHittable>();
+            var allHittable = other.gameObject.GetComponents<IHittableByBullet>();
             if (allHittable.Length > 0)
             {
                 foreach (var hittable in allHittable)
                 {
-                    hittable?.OnHit(this);
+                    hittable?.OnHitByBullet(this);
                 }
             }
 
-            // TODO: hell nawh
-            Camera.main.DOShakePosition(0.1f, 0.25f);
             DespawnSelf();
         }
 

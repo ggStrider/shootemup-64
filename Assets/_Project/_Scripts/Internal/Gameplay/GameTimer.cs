@@ -1,7 +1,9 @@
 ﻿using System;
 using Cysharp.Threading.Tasks;
 using Internal.Core.Reactive;
+using Internal.Core.Signals;
 using UnityEngine;
+using Zenject;
 
 namespace Internal.Gameplay
 {
@@ -12,11 +14,30 @@ namespace Internal.Gameplay
         [Space]
         [SerializeField] private bool _startTimerOnStart = true;
 
-        public static GameTimer Instance { get; private set; }
+        [Space] [SerializeField] private float _subtractTimeWhenHitFakeEnemy = 1.5f;
 
+        public static GameTimer Instance { get; private set; }
         public ReactiveVariable<float> CurrentTimeReactive { get; private set; }
 
+        private SignalBus _signalBus;
+
         private const float UPDATE_TIME_INTERVAL = 0.1f;
+
+        [Inject]
+        private void Construct(SignalBus signalBus)
+        {
+            _signalBus = signalBus;
+        }
+
+        private void OnEnable()
+        {
+            _signalBus.Subscribe<EnemyDieSignal>(() => SubtractCurrentTime(_subtractTimeWhenHitFakeEnemy));
+        }
+
+        private void OnDisable()
+        {
+            _signalBus.TryUnsubscribe<EnemyDieSignal>(() => SubtractCurrentTime(_subtractTimeWhenHitFakeEnemy));
+        }
 
         private void Awake()
         {
