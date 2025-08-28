@@ -16,7 +16,8 @@ namespace Internal.Gameplay.Managers
         /// </summary>
         [Header("Injects by Zenject")]
         [SerializeField, ReadOnly] private Camera _mainCamera;
-        
+
+        private Vector3 _startCameraPosition;
         private SignalBus _signalBus;
 
         [Inject]
@@ -24,6 +25,11 @@ namespace Internal.Gameplay.Managers
         {
             _signalBus = signalBus;
             _mainCamera = playerCamera;
+        }
+
+        private void Awake()
+        {
+            _startCameraPosition = _mainCamera.transform.position;
         }
 
         private void OnEnable()
@@ -38,7 +44,9 @@ namespace Internal.Gameplay.Managers
 
         private void ShakeCamera()
         {
-            _mainCamera.DOShakePosition(_shakeDuration, _shakeStrength);
+            _mainCamera.DOKill();
+            _mainCamera.DOShakePosition(_shakeDuration, _shakeStrength)
+                .OnComplete(() => _mainCamera.transform.position = _startCameraPosition);
         }
     }
 }
