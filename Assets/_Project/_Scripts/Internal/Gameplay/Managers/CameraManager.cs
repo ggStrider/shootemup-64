@@ -8,6 +8,9 @@ namespace Internal.Gameplay.Managers
 {
     public class CameraManager : MonoBehaviour
     {
+        [SerializeField] private float _shakeDuration = 0.1f;
+        [SerializeField] private float _shakeStrength = 0.25f;
+        
         /// <summary>
         /// Injects by <see cref="Installers.PlayerInstaller"/>
         /// </summary>
@@ -35,7 +38,7 @@ namespace Internal.Gameplay.Managers
 
         private void ShakeCamera()
         {
-            _mainCamera.DOShakePosition(0.1f, 0.25f);
+            _mainCamera.DOShakePosition(_shakeDuration, _shakeStrength);
         }
     }
 }
