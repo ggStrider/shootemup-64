@@ -1,12 +1,13 @@
 using Audio;
 using Internal.Core.Pools;
 using Player;
+using Shoot;
 using UnityEngine;
 using Zenject;
 
 namespace Enemy
 {
-    public class EnemyAI : MonoBehaviour
+    public class EnemyAI : MonoBehaviour, IHittable
     {
         [SerializeField] private Vector2 _directionToPlayer;
         [SerializeField] private float _speed = 10;
@@ -53,11 +54,22 @@ namespace Enemy
 
         private void FixedUpdate()
         {
+            Move();
+        }
+
+        protected virtual void Move()
+        {
+            // transform is body of enemy
             transform.Translate(_directionToPlayer * (_speed * Time.fixedDeltaTime));
         }
 
         private void OnTriggerEnter2D(Collider2D other)
         {
+            if (other.CompareTag(StaticKeys.PLAYER_TAG))
+            {
+                OnHitInPlayer();
+            }
+            
             // TODO: Change Fake Enemy Tag into smth else. Like another 'Enemy' script
             if (!CompareTag(StaticKeys.FAKE_ENEMY_TAG))
             {
@@ -72,7 +84,17 @@ namespace Enemy
                     _audioEffectsManager.PlayEnemyHitSound();
                 }
             }
+        }
 
+        protected virtual void OnHitInPlayer()
+        {
+            DespawnSelf();
+        }
+
+        public void OnHit(BulletBehaviour bulletWhichHit)
+        {
+            // TODO: FUCK NO, add hp later
+            OnDie();
             DespawnSelf();
         }
     }

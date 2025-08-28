@@ -76,19 +76,17 @@ namespace Shoot
 
         private void OnCollisionEnter2D(Collision2D other)
         {
-            if (other.gameObject.TryGetComponent<EnemyAI>(out var enemy))
+            var allHittable = other.gameObject.GetComponents<IHittable>();
+            if (allHittable.Length > 0)
             {
-                if (other.gameObject.CompareTag(StaticKeys.FAKE_ENEMY_TAG))
+                foreach (var hittable in allHittable)
                 {
-                    GameTimer.Instance.SubtractCurrentTime(_subtractPointsOnFakeEnemyKilled);
+                    hittable?.OnHit(this);
                 }
-                
-                enemy.OnDie();
-                enemy.DespawnSelf();
             }
 
+            // TODO: hell nawh
             Camera.main.DOShakePosition(0.1f, 0.25f);
-
             DespawnSelf();
         }
 
