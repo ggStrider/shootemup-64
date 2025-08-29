@@ -841,13 +841,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _bulletPrefab: {fileID: 1009256292885892331, guid: f09f6a2746801e0478531bfd59f673f7, type: 3}
   _bulletOutPosition: {fileID: 3415329841169330935}
-  _audioPlayer:
-    audioSource: {fileID: 6687935520141221745}
-    audioClips:
-    - {fileID: 8300000, guid: 26cafc001e5ee894f9cc596a901d1e8f, type: 3}
-    minPitch: 0.95
-    maxPitch: 1.05
-    defaultPitch: 1
 --- !u!114 &6636736625055771375
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -985,7 +978,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad3bdfb7b36b4f108e78292744f72fd0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _cameraShake: {fileID: 4301573865840681837}
   _shakeDuration: 0.1
   _shakeStrength: 0.25
   _mainCamera: {fileID: 0}
@@ -1351,6 +1343,13 @@ MonoBehaviour:
     audioSource: {fileID: 8000795376743334822}
     audioClips:
     - {fileID: 8300000, guid: e575d686f486cc145be8c926d811568b, type: 3}
+    minPitch: 0.95
+    maxPitch: 1.05
+    defaultPitch: 1
+  _onPlayerShootEffect:
+    audioSource: {fileID: 8000795376743334822}
+    audioClips:
+    - {fileID: 8300000, guid: 26cafc001e5ee894f9cc596a901d1e8f, type: 3}
     minPitch: 0.95
     maxPitch: 1.05
     defaultPitch: 1
