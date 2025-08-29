@@ -56,13 +56,18 @@ namespace Spawners
             // InvokeRepeating(nameof(RandomizeBackgroundColor), _changeBackgroundColorInterval, _changeBackgroundColorInterval);
         }
 
+        // TODO: Refactor into another class
         private async UniTask RandomizeBackgroundColorCoroutine(int waveIndex, CancellationToken token)
         {
             try
             {
                 while (!token.IsCancellationRequested)
                 {
-                    var randomColor = Random.ColorHSV();
+                    var randomColor = Random.ColorHSV(
+                        0f, 1f,
+                        0.5f, 1f,
+                        0.5f, 1f
+                    );
                     randomColor.a = 1;
                     _backgroundRenderer.color = randomColor;
                     
