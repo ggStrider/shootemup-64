@@ -9,10 +9,10 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Effect
   - Water
   - UI
-  - 
+  - Bullet
   - 
   - 
   - 
@@ -48,6 +48,9 @@ TagManager:
   - name: Wall
     uniqueID: 1594346267
     locked: 0
+  - name: Effect
+    uniqueID: 2583626059
+    locked: 0
   - name: Player
     uniqueID: 3157011563
     locked: 0
@@ -59,6 +62,9 @@ TagManager:
     locked: 0
   - name: BackgroundOverlay
     uniqueID: 550899129
+    locked: 0
+  - name: Particles
+    uniqueID: 4228764181
     locked: 0
   m_RenderingLayers:
   - Default

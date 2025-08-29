@@ -15,6 +15,8 @@ namespace Enemy
         [Space] [SerializeField] protected EnemyHealth Health;
         [SerializeField] protected SpriteRenderer SpriteRenderer;
 
+        public float SpeedMultiplier { get; set; } = 1;
+
         protected SignalBus SignalBus;
 
         [Inject]
@@ -79,7 +81,8 @@ namespace Enemy
         protected virtual void Move()
         {
             // transform is body of this enemy
-            transform.Translate(_directionToPlayer * (Speed * Time.fixedDeltaTime));
+            transform.Translate(_directionToPlayer * 
+                                (Speed * Time.fixedDeltaTime * SpeedMultiplier));
         }
 
         protected void OnTriggerEnter2D(Collider2D other)
