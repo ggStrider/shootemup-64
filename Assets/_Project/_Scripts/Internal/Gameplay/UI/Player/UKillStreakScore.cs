@@ -62,6 +62,9 @@ namespace Internal.Gameplay.UI.Player
         private void UpdateStreakText()
         {
             _killPlaceholder.text = BEFORE_STREAK_TEXT + _streakCount;
+
+            _killPlaceholder.DOKill();
+            _killPlaceholder.rectTransform.localScale = _startScale;
             _killPlaceholder.rectTransform.DOPunchScale(
                 _endScale - _startScale,
                 _punchDuration,
