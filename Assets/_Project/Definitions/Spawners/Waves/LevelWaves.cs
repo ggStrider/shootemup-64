@@ -13,8 +13,8 @@ namespace Definitions.Waves
         
         [field: SerializeField] public bool UseRandomEnemyType = true;
 
-        [field: ShowIf(nameof(UseRandomEnemyType)), SerializeField]
-        public int RealEnemyChance = 3;
+        [field: ShowIf(nameof(UseRandomEnemyType)), SerializeField, Range(0f, 1f)]
+        public float RealEnemyChance = 0.6f;
 
         public static implicit operator EnemyWave[](LevelWaves level)
         {

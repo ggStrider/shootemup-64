@@ -118,9 +118,9 @@ namespace Spawners
         private void CreateAndInitializeEnemy(EnemyInWave enemy, int waveIndex, int enemyIndex)
         {
             bool shouldSpawnRealEnemy;
-            if (_levelWaves.UseRandomEnemyType) 
-                shouldSpawnRealEnemy = Random.Range(0, _levelWaves.RealEnemyChance) == 1;
-            
+            if (_levelWaves.UseRandomEnemyType && Random.value <= _levelWaves.RealEnemyChance) 
+                shouldSpawnRealEnemy = true;
+
             else shouldSpawnRealEnemy = !_levelWaves[waveIndex].EnemiesInWave[enemyIndex].IsFakeEnemy;
 
             var randomPoint = GetTransformPointByEnum(enemy.SideToSpawn);
