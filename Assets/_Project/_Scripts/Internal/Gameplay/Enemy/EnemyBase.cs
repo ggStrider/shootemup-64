@@ -34,6 +34,11 @@ namespace Enemy
         {
             if (Health) Health.OnDeath -= OnDie;
         }
+        
+        public void ChangeSkinColor(BackgroundChangedSignal newData)
+        {
+            ChangeSkinColor(newData.NewColor);
+        }
 
         public void ChangeSkinColor(Color newColor)
         {

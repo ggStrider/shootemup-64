@@ -62,7 +62,10 @@ namespace Spawners
             {
                 while (!token.IsCancellationRequested)
                 {
-                    _backgroundRenderer.color = GetRandomColor();
+                    var randomColor = Random.ColorHSV();
+                    randomColor.a = 1;
+                    _backgroundRenderer.color = randomColor;
+                    
                     _signalBus.Fire(new BackgroundChangedSignal(
                         _backgroundRenderer, _backgroundRenderer.color));
                     
@@ -126,7 +129,7 @@ namespace Spawners
             else
             {
                 unit = _fakeEnemyPool.Spawn();
-                unit.ChangeSkinColor(GetRandomColor());
+                (unit as FakeEnemy)?.SetAnalogueColor(_backgroundRenderer.color);
             }
             
             unit.transform.SetPositionAndRotation(randomPoint.position, Quaternion.identity);
@@ -143,15 +146,6 @@ namespace Spawners
                 SidesToSpawn.Right => _right,
                 _ => _down
             };
-        }
-
-        private Color GetRandomColor()
-        {
-            var r = Random.Range(0f, 256f);
-            var g = Random.Range(0f, 256f);
-            var b = Random.Range(0f, 256f);
-
-            return new Color(r / 255, g / 255, b / 255);
         }
 
 #if UNITY_EDITOR

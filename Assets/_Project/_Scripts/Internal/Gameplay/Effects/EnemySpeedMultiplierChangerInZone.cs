@@ -68,6 +68,7 @@ namespace Internal.Gameplay.Effects
                 ChangeSize(Vector3.zero);
                 await UniTask.WaitForSeconds(_tweenDuration, cancellationToken: _lifeTimeCts.Token);
                 
+                // TODO: Use pool instead is better
                 Destroy(gameObject);
             }
             catch (OperationCanceledException)

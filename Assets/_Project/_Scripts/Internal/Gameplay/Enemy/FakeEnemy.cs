@@ -1,6 +1,7 @@
-﻿using Internal.Core.Pools;
+﻿using Internal.Core.Extensions;
+using Internal.Core.Pools;
 using Internal.Core.Signals;
-using Shoot;
+using UnityEngine;
 using Zenject;
 
 namespace Enemy
@@ -13,6 +14,28 @@ namespace Enemy
         private void Construct(FakeEnemyPool fakeEnemyPool)
         {
             _fakeEnemyPool = fakeEnemyPool;
+        }
+
+        protected override void OnEnable()
+        {
+            base.OnEnable();
+            SignalBus.Subscribe<BackgroundChangedSignal>(SetAnalogueColor);
+        }
+
+        protected override void OnDisable()
+        {
+            base.OnDisable();
+            SignalBus.TryUnsubscribe<BackgroundChangedSignal>(SetAnalogueColor);
+        }
+
+        public void SetAnalogueColor(Color newColor)
+        {
+            ChangeSkinColor(newColor.GetComplementary());
+        }
+        
+        private void SetAnalogueColor(BackgroundChangedSignal bg)
+        {
+            ChangeSkinColor(bg.NewColor.GetComplementary());
         }
 
         protected override void OnDie()

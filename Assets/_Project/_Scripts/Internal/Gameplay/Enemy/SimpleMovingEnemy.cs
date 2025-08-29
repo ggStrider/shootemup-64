@@ -29,11 +29,6 @@ namespace Enemy
             SignalBus.TryUnsubscribe<BackgroundChangedSignal>(ChangeSkinColor);
         }
         
-        private void ChangeSkinColor(BackgroundChangedSignal newData)
-        {
-            ChangeSkinColor(newData.NewColor);
-        }
-        
         protected override void OnHitInPlayer(GameObject player)
         {
             if (player.TryGetComponent<PlayerHealth>(out var playerHealth))
