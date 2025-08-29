@@ -9,6 +9,7 @@ namespace Audio
         [SerializeField] private AudioSource _effectsSource;
 
         [Space] [SerializeField] private AudioPlayerAdvanced _onEnemyHitEffect;
+        [SerializeField] private AudioPlayerAdvanced _onPlayerShootEffect;
 
         private SignalBus _signalBus;
 
@@ -31,16 +32,23 @@ namespace Audio
         private void SubscribeOnSignalBusEvents()
         {
             _signalBus.Subscribe<EnemyHitInPlayerSignal>(PlayEnemyHitInPlayerSound);
+            _signalBus.Subscribe<PlayerShootSignal>(PlayPlayerShootSound);
         }
-        
+
         private void UnsubscribeOnSignalBusEvents()
         {
             _signalBus.TryUnsubscribe<EnemyHitInPlayerSignal>(PlayEnemyHitInPlayerSound);
+            _signalBus.TryUnsubscribe<PlayerShootSignal>(PlayPlayerShootSound);
         }
 
         private void PlayEnemyHitInPlayerSound()
         {
             _onEnemyHitEffect.PlayShotOfRandomSound();
+        }
+        
+        private void PlayPlayerShootSound()
+        {
+            _onPlayerShootEffect.PlayShotOfRandomSound();
         }
     }
 }

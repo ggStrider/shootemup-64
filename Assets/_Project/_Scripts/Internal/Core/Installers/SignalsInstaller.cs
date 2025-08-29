@@ -13,6 +13,7 @@ namespace Internal.Core.Installers
             Container.DeclareSignal<EnemyDieSignal>();
             Container.DeclareSignal<FakeEnemyDieSignal>();
             Container.DeclareSignal<BackgroundChangedSignal>();
+            Container.DeclareSignal<PlayerShootSignal>();
         }
     }
 }

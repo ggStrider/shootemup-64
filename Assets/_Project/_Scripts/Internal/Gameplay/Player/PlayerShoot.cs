@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using Audio;
 using Internal.Core.Pools;
+using Internal.Core.Signals;
 using Shoot;
 using UnityEngine;
 using UnityEngine.Pool;
@@ -13,10 +14,6 @@ namespace Player
         [SerializeField] private BulletBehaviour _bulletPrefab;
         [SerializeField] private Transform _bulletOutPosition;
 
-        [Space]
-        // TODO: Refactor into event and Manager
-        [SerializeField] private AudioPlayerAdvanced _audioPlayer;
-
         private readonly Dictionary<Vector2Int, Quaternion> _directionRotations = new()
         {
             { Vector2Int.right, Quaternion.Euler(0f, 0f, -90f) },   // right
@@ -26,11 +23,11 @@ namespace Player
         };
 
         private InputReader _inputReader;
-
+        private SignalBus _signalBus;
         private BulletPool _bulletsPool;
 
         [Inject]
-        private void Construct(InputReader inputReader, BulletPool bulletsPool)
+        private void Construct(InputReader inputReader, BulletPool bulletsPool, SignalBus signalBus)
         {
             if (inputReader == null)
             {
@@ -40,6 +37,7 @@ namespace Player
 
             _inputReader = inputReader;
             _bulletsPool = bulletsPool;
+            _signalBus = signalBus;
         }
 
         private void OnEnable()
@@ -89,8 +87,7 @@ namespace Player
             bullet.transform.position = _bulletOutPosition.position;
 
             bullet.InitializeBeforeShoot(roundedFireDirection);
-
-            _audioPlayer?.PlayShotOfRandomSound();
+            _signalBus.Fire(new PlayerShootSignal(bullet));
         }
 
         private void RotatePlayerTowardsFireDirection(Vector2 roundedFireDirection)
