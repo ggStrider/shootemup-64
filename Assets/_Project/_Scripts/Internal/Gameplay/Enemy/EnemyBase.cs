@@ -62,10 +62,13 @@ namespace Enemy
 
         protected virtual void OnDie()
         {
-            SignalBus.Fire(new EnemyDieSignal(this));
+            SignalBus.Fire(new AnyEnemyDieSignal(this));
+            FireThisTypeOfEnemyDied();
             InvokeAllIOnDestroy();
             DespawnSelf();
         }
+
+        protected abstract void FireThisTypeOfEnemyDied();
 
         protected void InvokeAllIOnDestroy()
         {

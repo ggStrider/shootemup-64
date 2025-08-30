@@ -39,7 +39,12 @@ namespace Enemy
             base.OnHitInPlayer(player);
             SignalBus.Fire(new RealEnemyHitInPlayerSignal(this));
         }
-        
+
+        protected override void FireThisTypeOfEnemyDied()
+        {
+            SignalBus.Fire(new RealEnemyDieSignal(this));
+        }
+
         protected override void DespawnSelf()
         {
             if (!gameObject.activeInHierarchy) return;

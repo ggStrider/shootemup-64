@@ -2,11 +2,11 @@
 
 namespace Internal.Core.Signals
 {
-    public class EnemyDieSignal
+    public class AnyEnemyDieSignal
     {
         public EnemyBase Enemy;
 
-        public EnemyDieSignal(EnemyBase enemy)
+        public AnyEnemyDieSignal(EnemyBase enemy)
         {
             Enemy = enemy;
         }

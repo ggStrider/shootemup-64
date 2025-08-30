@@ -38,7 +38,7 @@ namespace Internal.Gameplay.Managers
 
         private void OnEnable()
         {
-            _signalBus.Subscribe<EnemyDieSignal>(ShakeCamera);
+            _signalBus.Subscribe<RealEnemyDieSignal>(ShakeCamera);
             _signalBus.Subscribe<FakeEnemyDieSignal>(ShakeCamera);
 
             _playerHealth.OnDamageTaken += _ => ShakeCamera();
@@ -46,7 +46,7 @@ namespace Internal.Gameplay.Managers
 
         private void OnDisable()
         {
-            _signalBus.TryUnsubscribe<EnemyDieSignal>(ShakeCamera);
+            _signalBus.TryUnsubscribe<RealEnemyDieSignal>(ShakeCamera);
             _signalBus.TryUnsubscribe<FakeEnemyDieSignal>(ShakeCamera);
             
             _playerHealth.OnDamageTaken -= _ => ShakeCamera();

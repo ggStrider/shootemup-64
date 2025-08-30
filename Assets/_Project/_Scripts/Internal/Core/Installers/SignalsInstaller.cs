@@ -10,7 +10,9 @@ namespace Internal.Core.Installers
             SignalBusInstaller.Install(Container); 
             
             Container.DeclareSignal<AnyEnemyHitInPlayerSignal>().OptionalSubscriber();
-            Container.DeclareSignal<EnemyDieSignal>().OptionalSubscriber();
+            
+            Container.DeclareSignal<RealEnemyDieSignal>().OptionalSubscriber();
+            Container.DeclareSignal<AnyEnemyDieSignal>().OptionalSubscriber();
             Container.DeclareSignal<FakeEnemyDieSignal>().OptionalSubscriber();
 
             Container.DeclareSignal<FakeEnemyHitInPlayerSignal>().OptionalSubscriber();

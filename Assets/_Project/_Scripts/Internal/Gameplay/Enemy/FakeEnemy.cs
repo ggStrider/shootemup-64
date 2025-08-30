@@ -38,11 +38,9 @@ namespace Enemy
             ChangeSkinColor(bg.NewColor.GetComplementary());
         }
 
-        protected override void OnDie()
+        protected override void FireThisTypeOfEnemyDied()
         {
             SignalBus.Fire(new FakeEnemyDieSignal(this));
-            InvokeAllIOnDestroy();
-            DespawnSelf();
         }
 
         protected override void DespawnSelf()

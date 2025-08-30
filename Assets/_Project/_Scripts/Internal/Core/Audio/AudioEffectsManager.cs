@@ -12,6 +12,7 @@ namespace Audio
         [Space] [SerializeField] private AudioPlayerAdvanced _onEnemyHitEffect;
         [SerializeField] private AudioPlayerAdvanced _onPlayerShootEffect;
         [SerializeField] private AudioPlayerAdvanced _onPlayerDamagedEffect;
+        [SerializeField] private AudioPlayerAdvanced _onAnyEnemyDiesEffect;
 
         private SignalBus _signalBus;
         private PlayerHealth _playerHealth;
@@ -41,12 +42,14 @@ namespace Audio
         {
             _signalBus.Subscribe<FakeEnemyHitInPlayerSignal>(PlayFakeEnemyHitInPlayerSound);
             _signalBus.Subscribe<PlayerShootSignal>(PlayPlayerShootSound);
+            _signalBus.Subscribe<AnyEnemyDieSignal>(PlayAnyEnemyDieSound);
         }
 
         private void UnsubscribeOnSignalBusEvents()
         {
             _signalBus.TryUnsubscribe<FakeEnemyHitInPlayerSignal>(PlayFakeEnemyHitInPlayerSound);
             _signalBus.TryUnsubscribe<PlayerShootSignal>(PlayPlayerShootSound);
+            _signalBus.TryUnsubscribe<AnyEnemyDieSignal>(PlayAnyEnemyDieSound);
         }
 
         private void PlayFakeEnemyHitInPlayerSound()
@@ -62,6 +65,11 @@ namespace Audio
         private void PlayPlayerDamagedSound(int obj)
         {
             _onPlayerDamagedEffect.PlayShotOfRandomSound();
+        }
+        
+        private void PlayAnyEnemyDieSound()
+        {
+            _onAnyEnemyDiesEffect.PlayShotOfRandomSound();
         }
     }
 }

@@ -38,13 +38,13 @@ namespace Internal.Gameplay.UI.Player
         private void OnEnable()
         {
             _signalBus.Subscribe<FakeEnemyDieSignal>(OnFakeEnemyDies);
-            _signalBus.Subscribe<EnemyDieSignal>(OnRealEnemyDies);
+            _signalBus.Subscribe<RealEnemyDieSignal>(OnRealEnemyDies);
         }
 
         private void OnDisable()
         {
             _signalBus.TryUnsubscribe<FakeEnemyDieSignal>(OnFakeEnemyDies);
-            _signalBus.TryUnsubscribe<EnemyDieSignal>(OnRealEnemyDies);
+            _signalBus.TryUnsubscribe<RealEnemyDieSignal>(OnRealEnemyDies);
         }
 
         private void OnFakeEnemyDies()
