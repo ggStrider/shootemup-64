@@ -1,10 +1,8 @@
 ﻿using System.Collections.Generic;
-using Audio;
 using Internal.Core.Pools;
 using Internal.Core.Signals;
 using Shoot;
 using UnityEngine;
-using UnityEngine.Pool;
 using Zenject;
 
 namespace Player
@@ -22,9 +20,20 @@ namespace Player
             { Vector2Int.down, Quaternion.Euler(0f, 0f, 180f) }     // down
         };
 
+        private readonly List<IBulletModificator> _currentModificators = new()
+        {
+            new BulletPierceModificator()
+        };
+
         private InputReader _inputReader;
         private SignalBus _signalBus;
         private BulletPool _bulletsPool;
+        
+        // TODO: These fields for test; Remove after 
+        [Space] [SerializeField] private bool _applyModificators = true;
+        [SerializeField] private bool _usePierce = true;
+        [SerializeField] private bool _useSpawnOnHit = true;
+        [SerializeField] private GameObject _toSpawnOnHit;
 
         [Inject]
         private void Construct(InputReader inputReader, BulletPool bulletsPool, SignalBus signalBus)
@@ -47,6 +56,7 @@ namespace Player
                 Debug.LogError($"[{GetType().Name}] Input reader is null!");
                 return;
             }
+            _currentModificators.Add(new BulletSpawnGameObjectOnHitModificator(_toSpawnOnHit));
 
             _inputReader.OnShootPressed += Shoot;
 
@@ -87,7 +97,22 @@ namespace Player
             bullet.transform.position = _bulletOutPosition.position;
 
             bullet.InitializeBeforeShoot(roundedFireDirection);
+            TryApplyBulletModificators(bullet);
+            
             _signalBus.Fire(new PlayerShootSignal(bullet));
+        }
+
+        private void TryApplyBulletModificators(BulletBehaviour bullet)
+        {
+            if (!_applyModificators) return;
+            if (_currentModificators.Count == 0) return;
+            foreach (var modificator in _currentModificators)
+            {
+                if(modificator is BulletPierceModificator && !_usePierce) continue;
+                if(modificator is BulletSpawnGameObjectOnHitModificator && !_useSpawnOnHit) continue;
+                
+                modificator.ApplyModificator(bullet);
+            }
         }
 
         private void RotatePlayerTowardsFireDirection(Vector2 roundedFireDirection)
