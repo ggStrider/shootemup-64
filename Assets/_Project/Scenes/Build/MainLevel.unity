@@ -2595,17 +2595,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5471432156737554280, guid: fdc4ebb270bfa4c4e85b3cca49d8333d, type: 3}
-      propertyPath: _toSpawnOnHit
-      value: 
-      objectReference: {fileID: 2222049174004232278, guid: 1a15174ead576e445a3b26cbd57097d5, type: 3}
     - target: {fileID: 6198795844202835040, guid: fdc4ebb270bfa4c4e85b3cca49d8333d, type: 3}
       propertyPath: m_Name
       value: '####RequiredToPlay'
-      objectReference: {fileID: 0}
-    - target: {fileID: 6636736625055771375, guid: fdc4ebb270bfa4c4e85b3cca49d8333d, type: 3}
-      propertyPath: _maxHealth
-      value: 410
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

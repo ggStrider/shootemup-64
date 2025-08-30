@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using Definitions.BulletModificators.Scripts;
 using Internal.Core.Pools;
 using Internal.Core.Signals;
 using Shoot;
@@ -20,21 +21,12 @@ namespace Player
             { Vector2Int.down, Quaternion.Euler(0f, 0f, 180f) }     // down
         };
 
-        private readonly List<IBulletModificator> _currentModificators = new()
-        {
-            new BulletPierceModificator()
-        };
+        [SerializeField] private List<BulletModificatorSO> _currentModificators = new();
 
         private InputReader _inputReader;
         private SignalBus _signalBus;
         private BulletPool _bulletsPool;
         
-        // TODO: These fields for test; Remove after 
-        [Space] [SerializeField] private bool _applyModificators = true;
-        [SerializeField] private bool _usePierce = true;
-        [SerializeField] private bool _useSpawnOnHit = true;
-        [SerializeField] private GameObject _toSpawnOnHit;
-
         [Inject]
         private void Construct(InputReader inputReader, BulletPool bulletsPool, SignalBus signalBus)
         {
@@ -56,7 +48,6 @@ namespace Player
                 Debug.LogError($"[{GetType().Name}] Input reader is null!");
                 return;
             }
-            _currentModificators.Add(new BulletSpawnGameObjectOnHitModificator(_toSpawnOnHit));
 
             _inputReader.OnShootPressed += Shoot;
 
@@ -104,15 +95,14 @@ namespace Player
 
         private void TryApplyBulletModificators(BulletBehaviour bullet)
         {
-            if (!_applyModificators) return;
             if (_currentModificators.Count == 0) return;
+            
             foreach (var modificator in _currentModificators)
             {
-                if(modificator is BulletPierceModificator && !_usePierce) continue;
-                if(modificator is BulletSpawnGameObjectOnHitModificator && !_useSpawnOnHit) continue;
-                
                 modificator.ApplyModificator(bullet);
             }
+            
+            _currentModificators.Clear();
         }
 
         private void RotatePlayerTowardsFireDirection(Vector2 roundedFireDirection)
