@@ -844,6 +844,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _bulletPrefab: {fileID: 1009256292885892331, guid: f09f6a2746801e0478531bfd59f673f7, type: 3}
   _bulletOutPosition: {fileID: 3415329841169330935}
+  _applyModificators: 1
+  _usePierce: 1
+  _useSpawnOnHit: 1
+  _toSpawnOnHit: {fileID: 0}
 --- !u!114 &6636736625055771375
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1523,6 +1527,13 @@ MonoBehaviour:
     audioSource: {fileID: 8000795376743334822}
     audioClips:
     - {fileID: 8300000, guid: 26cafc001e5ee894f9cc596a901d1e8f, type: 3}
+    minPitch: 0.95
+    maxPitch: 1.05
+    defaultPitch: 1
+  _onPlayerDamagedEffect:
+    audioSource: {fileID: 8000795376743334822}
+    audioClips:
+    - {fileID: 8300000, guid: cd3b8dcd8741b27468f8d3fb09d07d36, type: 3}
     minPitch: 0.95
     maxPitch: 1.05
     defaultPitch: 1
