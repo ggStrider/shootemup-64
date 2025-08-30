@@ -1520,6 +1520,7 @@ MonoBehaviour:
     audioSource: {fileID: 8000795376743334822}
     audioClips:
     - {fileID: 8300000, guid: e575d686f486cc145be8c926d811568b, type: 3}
+    volume: 0.515
     minPitch: 0.95
     maxPitch: 1.05
     defaultPitch: 1
@@ -1527,6 +1528,7 @@ MonoBehaviour:
     audioSource: {fileID: 8000795376743334822}
     audioClips:
     - {fileID: 8300000, guid: 26cafc001e5ee894f9cc596a901d1e8f, type: 3}
+    volume: 0.515
     minPitch: 0.95
     maxPitch: 1.05
     defaultPitch: 1
@@ -1534,6 +1536,7 @@ MonoBehaviour:
     audioSource: {fileID: 8000795376743334822}
     audioClips:
     - {fileID: 8300000, guid: cd3b8dcd8741b27468f8d3fb09d07d36, type: 3}
+    volume: 1
     minPitch: 0.95
     maxPitch: 1.05
     defaultPitch: 1

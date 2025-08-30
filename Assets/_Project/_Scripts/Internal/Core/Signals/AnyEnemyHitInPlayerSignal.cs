@@ -2,11 +2,11 @@
 
 namespace Internal.Core.Signals
 {
-    public class EnemyHitInPlayerSignal
+    public class AnyEnemyHitInPlayerSignal
     {
         public EnemyBase Enemy;
 
-        public EnemyHitInPlayerSignal(EnemyBase enemy)
+        public AnyEnemyHitInPlayerSignal(EnemyBase enemy)
         {
             Enemy = enemy;
         }

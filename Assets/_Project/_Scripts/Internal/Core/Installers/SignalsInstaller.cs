@@ -9,11 +9,15 @@ namespace Internal.Core.Installers
         {
             SignalBusInstaller.Install(Container); 
             
-            Container.DeclareSignal<EnemyHitInPlayerSignal>();
-            Container.DeclareSignal<EnemyDieSignal>();
-            Container.DeclareSignal<FakeEnemyDieSignal>();
-            Container.DeclareSignal<BackgroundChangedSignal>();
-            Container.DeclareSignal<PlayerShootSignal>();
+            Container.DeclareSignal<AnyEnemyHitInPlayerSignal>().OptionalSubscriber();
+            Container.DeclareSignal<EnemyDieSignal>().OptionalSubscriber();
+            Container.DeclareSignal<FakeEnemyDieSignal>().OptionalSubscriber();
+
+            Container.DeclareSignal<FakeEnemyHitInPlayerSignal>().OptionalSubscriber();
+            Container.DeclareSignal<RealEnemyHitInPlayerSignal>().OptionalSubscriber();
+            
+            Container.DeclareSignal<BackgroundChangedSignal>().OptionalSubscriber();
+            Container.DeclareSignal<PlayerShootSignal>().OptionalSubscriber();
         }
     }
 }

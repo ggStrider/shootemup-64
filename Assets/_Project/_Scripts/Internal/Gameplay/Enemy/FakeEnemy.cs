@@ -50,5 +50,11 @@ namespace Enemy
             if (!gameObject.activeInHierarchy) return;
             _fakeEnemyPool.Despawn(this);
         }
+
+        protected override void OnHitInPlayer(GameObject player)
+        {
+            base.OnHitInPlayer(player);
+            SignalBus.Fire(new FakeEnemyHitInPlayerSignal(this));
+        }
     }
 }

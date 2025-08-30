@@ -35,7 +35,9 @@ namespace Enemy
             {
                 playerHealth.TakeDamage(_damage);
             }
+            
             base.OnHitInPlayer(player);
+            SignalBus.Fire(new RealEnemyHitInPlayerSignal(this));
         }
         
         protected override void DespawnSelf()

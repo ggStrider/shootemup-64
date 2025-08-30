@@ -39,17 +39,17 @@ namespace Audio
 
         private void SubscribeOnSignalBusEvents()
         {
-            // _signalBus.Subscribe<EnemyHitInPlayerSignal>(PlayEnemyHitInPlayerSound);
+            _signalBus.Subscribe<FakeEnemyHitInPlayerSignal>(PlayFakeEnemyHitInPlayerSound);
             _signalBus.Subscribe<PlayerShootSignal>(PlayPlayerShootSound);
         }
 
         private void UnsubscribeOnSignalBusEvents()
         {
-            _signalBus.TryUnsubscribe<EnemyHitInPlayerSignal>(PlayEnemyHitInPlayerSound);
+            _signalBus.TryUnsubscribe<FakeEnemyHitInPlayerSignal>(PlayFakeEnemyHitInPlayerSound);
             _signalBus.TryUnsubscribe<PlayerShootSignal>(PlayPlayerShootSound);
         }
 
-        private void PlayEnemyHitInPlayerSound()
+        private void PlayFakeEnemyHitInPlayerSound()
         {
             _onEnemyHitEffect.PlayShotOfRandomSound();
         }

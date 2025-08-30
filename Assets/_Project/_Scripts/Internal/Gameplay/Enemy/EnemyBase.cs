@@ -94,7 +94,7 @@ namespace Enemy
         {
             if (other.CompareTag(StaticKeys.PLAYER_TAG))
             {
-                SignalBus.Fire(new EnemyHitInPlayerSignal(this));
+                SignalBus.Fire(new AnyEnemyHitInPlayerSignal(this));
                 OnHitInPlayer(other.gameObject);
             }
         }

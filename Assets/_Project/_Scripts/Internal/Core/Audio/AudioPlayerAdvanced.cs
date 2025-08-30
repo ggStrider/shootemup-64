@@ -10,6 +10,10 @@ namespace Audio
         public AudioSource audioSource;
         public AudioClip[] audioClips;
 
+        [Space]
+        [Range(0f, 1f)] public float volume = 1f;
+
+        [Space]
         [Range(-3, 3)] public float minPitch = 0.95f;
         [Range(-3, 3)] public float maxPitch = 1.05f;
 
@@ -24,7 +28,7 @@ namespace Audio
             }
 
             audioSource.pitch = useRandomPitch ? GetRandomPitch() : defaultPitch;
-            audioSource.PlayOneShot(GetRandomClip());
+            audioSource.PlayOneShot(GetRandomClip(), volume);
         }
 
         public void PlayShotOfSound(int audioClipIndex, bool useRandomPitch = true)
@@ -35,7 +39,7 @@ namespace Audio
                 return;
             }
             audioSource.pitch = useRandomPitch ? GetRandomPitch() : defaultPitch;
-            audioSource.PlayOneShot(audioClips[audioClipIndex]);
+            audioSource.PlayOneShot(audioClips[audioClipIndex], volume);
         }
 
         public void PlayRandomSound(bool useRandomPitch = true)
