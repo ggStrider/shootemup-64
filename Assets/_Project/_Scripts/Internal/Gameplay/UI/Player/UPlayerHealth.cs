@@ -55,6 +55,7 @@ namespace UI.Player
             var sequence = DOTween.Sequence();
 
             var startColor = _healthIcon.color;
+            startColor.a = 1f;
             var fadedColor = _healthIcon.color;
             fadedColor.a = 36f / 255f;
 
