@@ -1,5 +1,6 @@
 ﻿using DG.Tweening;
 using Internal.Core.Signals;
+using Internal.Gameplay.EntitiesShared;
 using NaughtyAttributes;
 using UnityEngine;
 using Zenject;
@@ -20,11 +21,14 @@ namespace Internal.Gameplay.Managers
         private Vector3 _startCameraPosition;
         private SignalBus _signalBus;
 
+        private PlayerHealth _playerHealth;
+
         [Inject]
-        private void Construct(Camera playerCamera, SignalBus signalBus)
+        private void Construct(Camera playerCamera, SignalBus signalBus, PlayerHealth playerHealth)
         {
             _signalBus = signalBus;
             _mainCamera = playerCamera;
+            _playerHealth = playerHealth;
         }
 
         private void Awake()
@@ -36,12 +40,16 @@ namespace Internal.Gameplay.Managers
         {
             _signalBus.Subscribe<EnemyDieSignal>(ShakeCamera);
             _signalBus.Subscribe<FakeEnemyDieSignal>(ShakeCamera);
+
+            _playerHealth.OnDamageTaken += _ => ShakeCamera();
         }
 
         private void OnDisable()
         {
             _signalBus.TryUnsubscribe<EnemyDieSignal>(ShakeCamera);
             _signalBus.TryUnsubscribe<FakeEnemyDieSignal>(ShakeCamera);
+            
+            _playerHealth.OnDamageTaken -= _ => ShakeCamera();
         }
 
         private void ShakeCamera()
