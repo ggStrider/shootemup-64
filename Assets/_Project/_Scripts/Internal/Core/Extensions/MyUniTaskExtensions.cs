@@ -20,6 +20,11 @@ namespace Tools
             return cts != null && !cts.IsCancellationRequested;
         }
 
+        public static bool IsExistAndCanceled(this CancellationTokenSource cts)
+        {
+            return cts != null && cts.IsCancellationRequested;
+        }
+
         public static bool IsSameToken(this CancellationTokenSource cts, CancellationToken toCompare)
         {
             return cts != null && cts.Token == toCompare;
