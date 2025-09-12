@@ -1147,6 +1147,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _shakeDuration: 0.1
   _shakeStrength: 0.25
+  _bassShakeTransform: {fileID: 4301573865840681837}
+  _pulseStrength: 0.2
+  _pulseDuration: 0.1
+  _punchVibrato: 5
+  _zoomStrength: 0.2
+  _zoomDuration: 0.1
   _mainCamera: {fileID: 0}
 --- !u!1 &3894341283497770270
 GameObject:
@@ -1245,7 +1251,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4301573865840681837}
   m_Layer: 0
-  m_Name: CameraShaker
+  m_Name: CameraBassShaker
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
