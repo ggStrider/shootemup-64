@@ -50,12 +50,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _toMove: {fileID: 2569901563863431674}
-  _duration: 1.7
+  _duration: 1.2
   _hiddenOnLeftPosition: {x: -2630, y: 0, z: 0}
   _hiddenOnRightPosition: {x: 2630, y: 0, z: 0}
   _overlayScreenPosition: {x: 0, y: 0, z: 0}
   _moveOnStart: 1
-  _moveToOnStart: 1
+  _moveToOnStart: 0
 --- !u!1 &1855530511274653091
 GameObject:
   m_ObjectHideFlags: 0

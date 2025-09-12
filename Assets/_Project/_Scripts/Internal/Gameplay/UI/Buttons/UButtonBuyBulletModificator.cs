@@ -1,5 +1,6 @@
 ﻿using Definitions.BulletModificators.Scripts;
 using Internal.Core.DataModel;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using Zenject;
@@ -12,6 +13,7 @@ namespace Internal.Gameplay.UI.Buttons
 
         [Space] 
         [SerializeField] private Image _itemImagePlaceholder;
+        [SerializeField] private TextMeshProUGUI _pricePlaceholder;
         [SerializeField] private BulletModificatorSO _toBuy;
 
         private PlayerData _playerData;
@@ -24,8 +26,10 @@ namespace Internal.Gameplay.UI.Buttons
 
         private void Awake()
         {
-            _itemImagePlaceholder.sprite = _toBuy.BulletModificatorUI.ModificatorIcon;
-            _itemImagePlaceholder.color = _toBuy.BulletModificatorUI.IconColor;
+            _itemImagePlaceholder.sprite = _toBuy.ItemIcon;
+            _itemImagePlaceholder.color = _toBuy.IconColor;
+            _pricePlaceholder.text = _toBuy.ItemName;
+            
             _buttonToBind.onClick.AddListener(TryBuyModificator);
         }
 
@@ -38,8 +42,8 @@ namespace Internal.Gameplay.UI.Buttons
                 return;
             }
 
-            _playerData.Coins.Value -= _toBuy.Price;
             _playerData.AddBulletModificatorInInventory(_toBuy);
+            _playerData.Coins.Value -= _toBuy.Price;
         }
 
 #if UNITY_EDITOR

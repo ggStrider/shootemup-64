@@ -36,8 +36,8 @@ namespace Internal.Gameplay.UI.Player
             }
             
             _buttonWhichSelects.onClick.AddListener(SetToUseModificatorInNextBullet);
-            _modificatorIconPlaceholder.sprite = _modificatorToUse.BulletModificatorUI.ModificatorIcon;
-            _modificatorIconPlaceholder.color = _modificatorToUse.BulletModificatorUI.IconColor;
+            _modificatorIconPlaceholder.sprite = _modificatorToUse.ItemIcon;
+            _modificatorIconPlaceholder.color = _modificatorToUse.IconColor;
         }
 
         private void SetToUseModificatorInNextBullet()
