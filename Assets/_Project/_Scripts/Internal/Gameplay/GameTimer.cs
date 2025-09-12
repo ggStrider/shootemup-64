@@ -29,12 +29,12 @@ namespace Internal.Gameplay
 
         private void OnEnable()
         {
-            _signalBus.Subscribe<FakeEnemyDieSignal>(() => SubtractCurrentTime(_subtractTimeWhenHitFakeEnemy));
+            _signalBus.Subscribe<FakeEnemyKilledSignal>(() => SubtractCurrentTime(_subtractTimeWhenHitFakeEnemy));
         }
 
         private void OnDisable()
         {
-            _signalBus.TryUnsubscribe<FakeEnemyDieSignal>(() => SubtractCurrentTime(_subtractTimeWhenHitFakeEnemy));
+            _signalBus.TryUnsubscribe<FakeEnemyKilledSignal>(() => SubtractCurrentTime(_subtractTimeWhenHitFakeEnemy));
         }
 
         private void Awake()

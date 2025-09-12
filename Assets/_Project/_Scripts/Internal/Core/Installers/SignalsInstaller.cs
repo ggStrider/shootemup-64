@@ -11,9 +11,9 @@ namespace Internal.Core.Installers
             
             Container.DeclareSignal<AnyEnemyHitInPlayerSignal>().OptionalSubscriber();
             
-            Container.DeclareSignal<RealEnemyDieSignal>().OptionalSubscriber();
-            Container.DeclareSignal<AnyEnemyDieSignal>().OptionalSubscriber();
-            Container.DeclareSignal<FakeEnemyDieSignal>().OptionalSubscriber();
+            Container.DeclareSignal<RealEnemyKilledSignal>().OptionalSubscriber();
+            Container.DeclareSignal<AnyEnemyKilledSignal>().OptionalSubscriber();
+            Container.DeclareSignal<FakeEnemyKilledSignal>().OptionalSubscriber();
 
             Container.DeclareSignal<FakeEnemyHitInPlayerSignal>().OptionalSubscriber();
             Container.DeclareSignal<RealEnemyHitInPlayerSignal>().OptionalSubscriber();

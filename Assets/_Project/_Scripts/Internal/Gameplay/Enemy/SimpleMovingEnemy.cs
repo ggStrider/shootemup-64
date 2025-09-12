@@ -42,7 +42,7 @@ namespace Enemy
 
         protected override void FireThisTypeOfEnemyDied()
         {
-            SignalBus.Fire(new RealEnemyDieSignal(this));
+            SignalBus.Fire(new RealEnemyKilledSignal(this));
         }
 
         protected override void DespawnSelf()

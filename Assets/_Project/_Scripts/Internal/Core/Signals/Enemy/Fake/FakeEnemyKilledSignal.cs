@@ -2,11 +2,11 @@
 
 namespace Internal.Core.Signals
 {
-    public class FakeEnemyDieSignal
+    public class FakeEnemyKilledSignal
     {
         public FakeEnemy FakeEnemy;
 
-        public FakeEnemyDieSignal(FakeEnemy fakeEnemy)
+        public FakeEnemyKilledSignal(FakeEnemy fakeEnemy)
         {
             FakeEnemy = fakeEnemy;
         }

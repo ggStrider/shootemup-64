@@ -42,14 +42,14 @@ namespace Audio
         {
             _signalBus.Subscribe<FakeEnemyHitInPlayerSignal>(PlayFakeEnemyHitInPlayerSound);
             _signalBus.Subscribe<PlayerShootSignal>(PlayPlayerShootSound);
-            _signalBus.Subscribe<AnyEnemyDieSignal>(PlayAnyEnemyDieSound);
+            _signalBus.Subscribe<AnyEnemyKilledSignal>(PlayAnyEnemyDieSound);
         }
 
         private void UnsubscribeOnSignalBusEvents()
         {
             _signalBus.TryUnsubscribe<FakeEnemyHitInPlayerSignal>(PlayFakeEnemyHitInPlayerSound);
             _signalBus.TryUnsubscribe<PlayerShootSignal>(PlayPlayerShootSound);
-            _signalBus.TryUnsubscribe<AnyEnemyDieSignal>(PlayAnyEnemyDieSound);
+            _signalBus.TryUnsubscribe<AnyEnemyKilledSignal>(PlayAnyEnemyDieSound);
         }
 
         private void PlayFakeEnemyHitInPlayerSound()

@@ -75,3 +75,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _musicManagerPrefab: {fileID: 6120178621476380287, guid: 758d53d6ed7950946a34c7692161bf39, type: 3}
+  _sceneCardHolder: {fileID: 8433555049365856330, guid: b16c14286eec84149b4c397533390c0c, type: 3}
+  _playerData:
+    _coins: 0

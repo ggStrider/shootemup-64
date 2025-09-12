@@ -10,12 +10,18 @@ namespace Internal.Core.Installers
     public class ProjectInstaller : MonoInstaller
     {
         [SerializeField] private MusicManager _musicManagerPrefab;
+        [SerializeField] private SceneCardHolder _sceneCardHolder;
         
         [Space]
         [SerializeField, ReadOnly] private PlayerData _playerData;
 
         public override void InstallBindings()
         {
+            Container.Bind<SceneCardHolder>()
+                .FromInstance(_sceneCardHolder)
+                .AsSingle()
+                .NonLazy();
+            
             Container.Bind<MusicManager>()
                 .FromComponentInNewPrefab(_musicManagerPrefab)
                 .AsSingle()

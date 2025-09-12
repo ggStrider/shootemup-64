@@ -27,12 +27,12 @@ namespace Enemy
 
         protected virtual void OnEnable()
         {
-            if (Health) Health.OnDeath += OnDie;
+            if (Health) Health.OnDeath += OnKilled;
         }
 
         protected virtual void OnDisable()
         {
-            if (Health) Health.OnDeath -= OnDie;
+            if (Health) Health.OnDeath -= OnKilled;
         }
         
         public void ChangeSkinColor(BackgroundChangedSignal newData)
@@ -60,9 +60,9 @@ namespace Enemy
             Health.InitializeHealth();
         }
 
-        protected virtual void OnDie()
+        protected virtual void OnKilled()
         {
-            SignalBus.Fire(new AnyEnemyDieSignal(this));
+            SignalBus.Fire(new AnyEnemyKilledSignal(this));
             FireThisTypeOfEnemyDied();
             InvokeAllIOnDestroy();
             DespawnSelf();

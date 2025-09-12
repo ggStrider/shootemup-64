@@ -1,17 +1,19 @@
 using System;
 using System.Collections.Generic;
+using UnityEngine;
 
 namespace Internal.Core.Reactive
 {
+    [Serializable]
     public class ReactiveVariable<T> : IDisposable
     {
+        [SerializeField] private T _value;
+        
         public ReactiveVariable(T value = default)
         {
             _value = value;
         }
-
-        private T _value;
-
+        
         public T Value
         {
             get => _value;

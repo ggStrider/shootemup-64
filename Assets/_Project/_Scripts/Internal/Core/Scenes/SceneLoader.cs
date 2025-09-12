@@ -1,13 +1,23 @@
 using Definitions.Scenes.Cards;
 using UI.Images;
 using UnityEngine.SceneManagement;
+using Zenject;
 
 namespace Internal.Core.Scenes
 {
     public class SceneLoader
     {
+        private SceneCardHolder _sceneCardHolder;
+        
+        [Inject]
+        private void Construct(SceneCardHolder sceneCardHolder)
+        {
+            _sceneCardHolder = sceneCardHolder;
+        }
+        
         public void LoadScene(SceneCard sceneCard)
         {
+            _sceneCardHolder.SetCurrentSceneCard(sceneCard);
             SceneManager.LoadScene(sceneCard.SceneFileName);
         }
 
