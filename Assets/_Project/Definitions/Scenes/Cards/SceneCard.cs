@@ -1,4 +1,5 @@
 using Definitions.Scenes.Earnings;
+using Definitions.Waves;
 using UnityEngine;
 
 namespace Definitions.Scenes.Cards
@@ -9,8 +10,15 @@ namespace Definitions.Scenes.Cards
     {
         [field: SerializeField] public string SceneFileName { get; private set; } = "theFish";
         [field: SerializeField] public string ScenePreviewName { get; private set; } = "The Fish";
+        
+        [field: Space, Header("Spawners")]
+        [field: SerializeField] public LevelWaves LevelWaves { get; private set; }
 
         [field: Space, Header("Earnings")] 
         [field: SerializeField] public EarningSettingsInSceneCard EarningSettingsInSceneCard;
+        
+        [field: Space, Header("Music")]
+        [field: SerializeField] public AudioClip LevelClip { get; private set; }
+        [field: SerializeField] public float Volume { get; private set; } = 0.8f;
     }
 }

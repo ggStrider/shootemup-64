@@ -1,3 +1,5 @@
+using System;
+using DG.Tweening;
 using UnityEngine;
 
 namespace Audio
@@ -27,6 +29,28 @@ namespace Audio
         private void OnDestroy()
         {
             CancelInvoke(nameof(SetupManager));
+        }
+
+        public void FadeCurrentClip(float timeToFade = 0.4f, Action onFaded = null)
+        {
+            CancelInvoke(nameof(SetupManager));
+            
+            DOVirtual.Float(_audioPlayerAdvanced.audioSource.volume, 0, timeToFade,
+                x => _audioPlayerAdvanced.audioSource.volume = x)
+                .OnComplete(() => onFaded?.Invoke());
+        }
+
+        public void StartAndUnFadeClip(AudioClip clip, float unFadeDuration = 0.7f)
+        {
+            CancelInvoke(nameof(SetupManager));
+            
+            _audioPlayerAdvanced.audioSource.volume = 0;
+            _audioPlayerAdvanced.audioSource.clip = clip;
+            
+            _audioPlayerAdvanced.audioSource.Play();
+            
+            DOVirtual.Float(_audioPlayerAdvanced.audioSource.volume, _volumeOnSetup, unFadeDuration,
+                x => _audioPlayerAdvanced.audioSource.volume = x);
         }
 
 #if UNITY_EDITOR

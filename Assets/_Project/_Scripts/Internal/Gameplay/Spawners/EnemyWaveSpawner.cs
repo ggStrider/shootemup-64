@@ -5,6 +5,7 @@ using Cysharp.Threading.Tasks;
 using Definitions.Waves;
 using Enemy;
 using Internal.Core.Pools;
+using Internal.Core.Scenes;
 using Internal.Core.Signals;
 using Player;
 using Tools;
@@ -30,62 +31,18 @@ namespace Spawners
         private SimpleEnemyPool _simpleEnemyPool;
         private FakeEnemyPool _fakeEnemyPool;
         
-        private CancellationTokenSource _changingBackgroundCts;
-        private SignalBus _signalBus;
-
-        private const int FIRST_WAVE_INDEX = 0;
-
         [Inject]
-        private void Construct(SimpleEnemyPool simpleEnemyPool, FakeEnemyPool fakeEnemyPool, SignalBus signalBus)
+        private void Construct(SimpleEnemyPool simpleEnemyPool, FakeEnemyPool fakeEnemyPool, 
+            SceneCardHolder sceneCardHolder)
         {
             _simpleEnemyPool = simpleEnemyPool;
             _fakeEnemyPool = fakeEnemyPool;
-            _signalBus = signalBus;
+            _levelWaves = sceneCardHolder.CurrentSceneCard.LevelWaves;
         }
 
-        // TODO: Refactor into some smth else, not coroutine, idk rn
-        private IEnumerator Start()
+        public void InitializeSpawning()
         {
-            yield return new WaitForSeconds(3f);
-            
-            MyUniTaskExtensions.SafeCancelAndCleanToken(ref _changingBackgroundCts,
-                createNewTokenAfter: true);
-
-            SpawnWave(FIRST_WAVE_INDEX).Forget();
-            RandomizeBackgroundColorCoroutine(FIRST_WAVE_INDEX, _changingBackgroundCts.Token).Forget();
-            // InvokeRepeating(nameof(RandomizeBackgroundColor), _changeBackgroundColorInterval, _changeBackgroundColorInterval);
-        }
-
-        private void OnDestroy()
-        {
-            MyUniTaskExtensions.SafeCancelAndCleanToken(ref _changingBackgroundCts);
-        }
-
-        // TODO: Refactor into another class
-        private async UniTask RandomizeBackgroundColorCoroutine(int waveIndex, CancellationToken token)
-        {
-            try
-            {
-                while (!token.IsCancellationRequested)
-                {
-                    var randomColor = Random.ColorHSV(
-                        0f, 1f,
-                        0.5f, 1f,
-                        0.5f, 1f
-                    );
-                    randomColor.a = 1;
-                    _backgroundRenderer.color = randomColor;
-                    
-                    _signalBus.Fire(new BackgroundChangedSignal(
-                        _backgroundRenderer, _backgroundRenderer.color));
-                    
-                    await UniTask.WaitForSeconds(
-                        _levelWaves[waveIndex].DelayToChangeBackground, cancellationToken: token);
-                }
-            }
-            catch (OperationCanceledException)
-            {
-            }
+            SpawnWave(0).Forget();
         }
 
         private async UniTask SpawnWave(int waveIndex)
@@ -103,16 +60,11 @@ namespace Spawners
 
         private async UniTask WaitForNextWave(int currentWaveIndex)
         {
-            MyUniTaskExtensions.SafeCancelAndCleanToken(ref _changingBackgroundCts,
-                createNewTokenAfter: true);
-
             await UniTask.WaitForSeconds(_levelWaves[currentWaveIndex].DelayToNextWave);
 
             if (currentWaveIndex + 1 < _levelWaves.Length)
             {
                 SpawnWave(currentWaveIndex + 1).Forget();
-                RandomizeBackgroundColorCoroutine(currentWaveIndex + 1,
-                    _changingBackgroundCts.Token).Forget();
             }
             else
             {
@@ -142,7 +94,7 @@ namespace Spawners
                 (unit as FakeEnemy)?.SetAnalogueColor(_backgroundRenderer.color);
             }
             
-            unit.transform.SetPositionAndRotation(randomPoint.position, Quaternion.identity);
+            unit!.transform.SetPositionAndRotation(randomPoint.position, Quaternion.identity);
             unit.Initialize(_player);
         }
 

@@ -14,4 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <SceneFileName>k__BackingField: MainLevel
   <ScenePreviewName>k__BackingField: My Main Level
+  <LevelWaves>k__BackingField: {fileID: 11400000, guid: c8ac2d440666c174082cbbec3e490d21, type: 2}
   EarningSettingsInSceneCard: {fileID: 11400000, guid: 8dde347a831cf2346a0c0e60537f1070, type: 2}
+  <LevelClip>k__BackingField: {fileID: 8300000, guid: dc15e5c992b69ed47a85a862b4e816a7, type: 3}
+  <Volume>k__BackingField: 0.8

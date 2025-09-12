@@ -21,6 +21,9 @@ namespace UI.Images
 
         private Tween _currentTween;
 
+        private bool _isStartTransition;
+        public event Action StartTransitionEnded;
+
         public enum MoveToTypes
         {
             ToLeft,
@@ -28,16 +31,20 @@ namespace UI.Images
             OverlayScreen
         }
 
-        private void Start()
+        private void Awake()
         {
             if (Instance == null)
             {
                 Instance = this;
-            }
-            
+            }   
+        }
+
+        private void Start()
+        {
             if (_moveOnStart)
             {
                 _toMove.anchoredPosition = _overlayScreenPosition;
+                _isStartTransition = true;
                 MoveTo(_moveToOnStart);
             }
         }
@@ -66,6 +73,7 @@ namespace UI.Images
             _currentTween = _toMove.DOLocalMove(_hiddenOnLeftPosition, _duration)
                 .OnComplete(() => {
                     onMoved?.Invoke();
+                    IfStartInvokeAction();
                 });;
         }
 
@@ -74,6 +82,7 @@ namespace UI.Images
             _currentTween = _toMove.DOLocalMove(_hiddenOnRightPosition, _duration)
                 .OnComplete(() => {
                     onMoved?.Invoke();
+                    IfStartInvokeAction();
                 });;
         }
 
@@ -82,7 +91,18 @@ namespace UI.Images
             _currentTween = _toMove.DOLocalMove(_overlayScreenPosition, _duration)
                 .OnComplete(() => {
                     onMoved?.Invoke();
+                    IfStartInvokeAction();
                 });
+        }
+
+        private void IfStartInvokeAction()
+        {
+            if (_isStartTransition)
+            {
+                _isStartTransition = false;
+                StartTransitionEnded?.Invoke();
+                StartTransitionEnded = null;
+            }
         }
 
         #region FOR EDITOR BUTTONS
