@@ -1,7 +1,13 @@
-﻿using DG.Tweening;
+﻿using System;
+using System.Threading;
+using Cysharp.Threading.Tasks;
+using Definitions.Scenes.Cards;
+using DG.Tweening;
+using Internal.Core.Scenes;
 using Internal.Core.Signals;
 using Internal.Gameplay.EntitiesShared;
 using NaughtyAttributes;
+using Tools;
 using UnityEngine;
 using Zenject;
 
@@ -33,13 +39,19 @@ namespace Internal.Gameplay.Managers
         private SignalBus _signalBus;
 
         private PlayerHealth _playerHealth;
+        private SceneCard _sceneCard;
+
+        private CancellationTokenSource _cameraBassShakeCts;
 
         [Inject]
-        private void Construct(Camera playerCamera, SignalBus signalBus, PlayerHealth playerHealth)
+        private void Construct(Camera playerCamera, SignalBus signalBus, PlayerHealth playerHealth,
+            SceneCardHolder sceneCardHolder)
         {
             _signalBus = signalBus;
             _mainCamera = playerCamera;
             _playerHealth = playerHealth;
+
+            _sceneCard = sceneCardHolder.CurrentSceneCard;
         }
 
         private void Awake()
@@ -50,12 +62,38 @@ namespace Internal.Gameplay.Managers
             _defaultBassShakePosition = _bassShakeTransform.localPosition;
         }
 
+        private void OnDestroy()
+        {
+            MyUniTaskExtensions.SafeCancelAndCleanToken(ref _cameraBassShakeCts);
+        }
+
         private void OnEnable()
         {
             _signalBus.Subscribe<RealEnemyKilledSignal>(ShakeCamera);
             _signalBus.Subscribe<FakeEnemyKilledSignal>(ShakeCamera);
 
             _playerHealth.OnDamageTaken += _ => ShakeCamera();
+        }
+
+        public void InitializeCameraBassShake()
+        {
+            MyUniTaskExtensions.SafeCancelAndCleanToken(ref _cameraBassShakeCts, true);
+            ProcessCameraBassShake(_cameraBassShakeCts.Token).Forget();
+        }
+
+        private async UniTaskVoid ProcessCameraBassShake(CancellationToken token)
+        {
+            try
+            {
+                for (var i = 0; i < _sceneCard.CameraBassShakeWaves.Count; i++)
+                {
+                    BassShakeCamera();
+                    await UniTask.WaitForSeconds(_sceneCard.CameraBassShakeWaves[i], cancellationToken: token);
+                }
+            }
+            catch (OperationCanceledException)
+            {
+            }
         }
 
         private void OnDisable()

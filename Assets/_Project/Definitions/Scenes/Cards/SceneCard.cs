@@ -1,3 +1,4 @@
+using Definitions.Scenes.CameraBassShake;
 using Definitions.Scenes.Earnings;
 using Definitions.Waves;
 using UnityEngine;
@@ -20,5 +21,6 @@ namespace Definitions.Scenes.Cards
         [field: Space, Header("Music")]
         [field: SerializeField] public AudioClip LevelClip { get; private set; }
         [field: SerializeField] public float Volume { get; private set; } = 0.8f;
+        [field: SerializeField] public CameraBassShakeWaves CameraBassShakeWaves { get; private set; }
     }
 }

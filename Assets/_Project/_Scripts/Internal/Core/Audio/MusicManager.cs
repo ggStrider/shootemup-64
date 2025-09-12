@@ -31,6 +31,11 @@ namespace Audio
             CancelInvoke(nameof(SetupManager));
         }
 
+        public void StopPlayingMusic()
+        {
+            _audioPlayerAdvanced.audioSource.Stop();
+        }
+
         public void FadeCurrentClip(float timeToFade = 0.4f, Action onFaded = null)
         {
             CancelInvoke(nameof(SetupManager));

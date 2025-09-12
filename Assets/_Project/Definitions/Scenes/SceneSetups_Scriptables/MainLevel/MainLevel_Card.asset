@@ -18,3 +18,4 @@ MonoBehaviour:
   EarningSettingsInSceneCard: {fileID: 11400000, guid: 8dde347a831cf2346a0c0e60537f1070, type: 2}
   <LevelClip>k__BackingField: {fileID: 8300000, guid: dc15e5c992b69ed47a85a862b4e816a7, type: 3}
   <Volume>k__BackingField: 0.8
+  <CameraBassShakeWaves>k__BackingField: {fileID: 11400000, guid: 310c4de5bafdbf84dade304df61ed511, type: 2}

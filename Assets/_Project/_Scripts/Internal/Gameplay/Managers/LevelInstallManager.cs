@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using Audio;
 using Internal.Core.Scenes;
+using Internal.Gameplay.LevelCreator;
 using Spawners;
 using UI.Images;
 using UnityEngine;
@@ -16,6 +17,11 @@ namespace Internal.Gameplay.Managers
         private SceneCardHolder _sceneCardHolder;
         private MusicManager _musicManager;
 
+        private EnemyWaveSpawner _enemyWaveSpawner;
+        private BackgroundColorChanger _backgroundColorChanger;
+        private CameraManager _cameraManager;
+        private LevelWavesCreator _levelWavesCreator;
+
         [Inject]
         private void Construct(MusicManager musicManager, SceneCardHolder sceneCardHolder)
         {
@@ -25,11 +31,17 @@ namespace Internal.Gameplay.Managers
 
         private void Awake()
         {
+            _enemyWaveSpawner = FindAnyObjectByType<EnemyWaveSpawner>();
+            _backgroundColorChanger = FindAnyObjectByType<BackgroundColorChanger>();
+            _cameraManager = FindAnyObjectByType<CameraManager>();
+            _levelWavesCreator = FindAnyObjectByType<LevelWavesCreator>();
+            
             FindAnyObjectByType<TransitionImageMover>().StartTransitionEnded += OnTransitionEnded;
         }
 
         private void OnTransitionEnded()
         {
+            _musicManager.
             StartCoroutine(WaitAndInit());
         }
 
@@ -39,12 +51,13 @@ namespace Internal.Gameplay.Managers
 
             _musicManager.StartAndUnFadeClip(_sceneCardHolder.CurrentSceneCard.LevelClip,
                 _sceneCardHolder.CurrentSceneCard.Volume);
-
-            var enemyWaveSpawner = FindAnyObjectByType<EnemyWaveSpawner>();
-            var backgroundColorChanger = FindAnyObjectByType<BackgroundColorChanger>();
             
-            enemyWaveSpawner.InitializeSpawning();
-            backgroundColorChanger.Initialize();
+            _cameraManager.InitializeCameraBassShake();
+            _enemyWaveSpawner?.InitializeSpawning();
+            _backgroundColorChanger?.Initialize();
+            _levelWavesCreator?.CompleteInitialization();
+            
+            Destroy(this);
         }
     }
 }
