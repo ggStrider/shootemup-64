@@ -27,44 +27,73 @@ namespace Spawners
         [Space] [SerializeField] private Transform _player;
         [Space] [SerializeField] private SpriteRenderer _backgroundRenderer;
 
+        private SignalBus _signalBus;
+
         // Pools
         private SimpleEnemyPool _simpleEnemyPool;
         private FakeEnemyPool _fakeEnemyPool;
-        
+
+        private CancellationTokenSource _spawnCts;
+
         [Inject]
-        private void Construct(SimpleEnemyPool simpleEnemyPool, FakeEnemyPool fakeEnemyPool, 
-            SceneCardHolder sceneCardHolder)
+        private void Construct(SimpleEnemyPool simpleEnemyPool, FakeEnemyPool fakeEnemyPool,
+            SceneCardHolder sceneCardHolder, SignalBus signalBus)
         {
             _simpleEnemyPool = simpleEnemyPool;
             _fakeEnemyPool = fakeEnemyPool;
             _levelWaves = sceneCardHolder.CurrentSceneCard.LevelWaves;
+
+            _signalBus = signalBus;
+        }
+
+        private void OnEnable()
+        {
+            _signalBus.Subscribe<GameEndSignal>(StopSpawning);
+        }
+
+        private void OnDisable()
+        {
+            _signalBus.TryUnsubscribe<GameEndSignal>(StopSpawning);
+            StopSpawning();
+        }
+
+        private void StopSpawning()
+        {
+            MyUniTaskExtensions.SafeCancelAndCleanToken(ref _spawnCts);
         }
 
         public void InitializeSpawning()
         {
-            SpawnWave(0).Forget();
+            MyUniTaskExtensions.SafeCancelAndCleanToken(ref _spawnCts, createNewTokenAfter: true);
+            SpawnWave(0, _spawnCts.Token).Forget();
         }
 
-        private async UniTask SpawnWave(int waveIndex)
+        private async UniTask SpawnWave(int waveIndex, CancellationToken token)
         {
-            for (var enemyIndex = 0; enemyIndex < _levelWaves[waveIndex].EnemiesInWave.Count; enemyIndex++)
+            try
             {
-                var enemy = _levelWaves[waveIndex].EnemiesInWave[enemyIndex];
+                for (var enemyIndex = 0; enemyIndex < _levelWaves[waveIndex].EnemiesInWave.Count; enemyIndex++)
+                {
+                    var enemy = _levelWaves[waveIndex].EnemiesInWave[enemyIndex];
                 
-                CreateAndInitializeEnemy(enemy, waveIndex, enemyIndex);
-                await UniTask.WaitForSeconds(enemy.DelayToNextEnemy);
-            }
+                    CreateAndInitializeEnemy(enemy, waveIndex, enemyIndex);
+                    await UniTask.WaitForSeconds(enemy.DelayToNextEnemy, cancellationToken: token);
+                }
 
-            WaitForNextWave(waveIndex).Forget();
+                WaitForNextWave(waveIndex, token).Forget();
+            }
+            catch (OperationCanceledException)
+            {
+            }
         }
 
-        private async UniTask WaitForNextWave(int currentWaveIndex)
+        private async UniTask WaitForNextWave(int currentWaveIndex, CancellationToken token)
         {
-            await UniTask.WaitForSeconds(_levelWaves[currentWaveIndex].DelayToNextWave);
+            await UniTask.WaitForSeconds(_levelWaves[currentWaveIndex].DelayToNextWave, cancellationToken: token);
 
             if (currentWaveIndex + 1 < _levelWaves.Length)
             {
-                SpawnWave(currentWaveIndex + 1).Forget();
+                SpawnWave(currentWaveIndex + 1, token).Forget();
             }
             else
             {

@@ -1,6 +1,7 @@
 ﻿using Audio;
 using Internal.Gameplay;
 using Internal.Gameplay.EntitiesShared;
+using Internal.Gameplay.Player;
 using Player;
 using UnityEngine;
 using Zenject;
@@ -13,6 +14,7 @@ namespace Installers
         [SerializeField] private PlayerHealth _playerHealth;
         [SerializeField] private AudioEffectsManager _audioEffectsManager;
         [SerializeField] private Camera _playerCamera;
+        [SerializeField] private PlayerStatisticObserver _playerStatisticObserver;
         
         public override void InstallBindings()
         {
@@ -48,6 +50,11 @@ namespace Installers
             
             Container.Bind<PlayerShoot>()
                 .FromInstance(_playerShoot)
+                .AsSingle()
+                .NonLazy();
+            
+            Container.Bind<PlayerStatisticObserver>()
+                .FromInstance(_playerStatisticObserver)
                 .AsSingle()
                 .NonLazy();
         }

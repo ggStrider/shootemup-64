@@ -20,6 +20,8 @@ namespace Internal.Core.Installers
             
             Container.DeclareSignal<BackgroundChangedSignal>().OptionalSubscriber();
             Container.DeclareSignal<PlayerShootSignal>().OptionalSubscriber();
+
+            Container.DeclareSignal<GameEndSignal>().OptionalSubscriber();
         }
     }
 }

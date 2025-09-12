@@ -71,10 +71,12 @@ namespace Internal.Gameplay.Managers
         {
             _signalBus.Subscribe<RealEnemyKilledSignal>(ShakeCameraOnKillSomeone);
             _signalBus.Subscribe<FakeEnemyKilledSignal>(ShakeCameraOnKillSomeone);
+            
+            _signalBus.Subscribe<GameEndSignal>(StopShakeBassCamera);
 
             _playerHealth.OnDamageTaken += _ => ShakeCameraOnKillSomeone();
         }
-
+        
         public void InitializeCameraBassShake()
         {
             MyUniTaskExtensions.SafeCancelAndCleanToken(ref _cameraBassShakeCts, true);
@@ -112,6 +114,11 @@ namespace Internal.Gameplay.Managers
             _mainCamera.DOKill();
             _mainCamera.DOShakePosition(_shakeDuration, _shakeStrength)
                 .OnComplete(() => _mainCamera.transform.position = _startCameraPosition);
+        }
+        
+        private void StopShakeBassCamera()
+        {
+            MyUniTaskExtensions.SafeCancelAndCleanToken(ref _cameraBassShakeCts);
         }
 
         [Button]

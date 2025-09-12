@@ -1,5 +1,6 @@
 ﻿using Definitions.Scenes.Cards;
 using Internal.Core.Scenes;
+using NaughtyAttributes;
 using TMPro;
 using UI.Images;
 using UnityEngine;
@@ -11,7 +12,9 @@ namespace UI.Buttons
     public class UButtonSceneChangerWithTransition : MonoBehaviour
     {
         [SerializeField] private Button _buttonToBind;
-        [SerializeField] private TextMeshProUGUI _levelNamePlaceholder;
+
+        [Space] [SerializeField] private bool _writeAutoSceneName = true;
+        [SerializeField, ShowIf(nameof(_writeAutoSceneName))] private TextMeshProUGUI _levelNamePlaceholder;
         
         [Space]
         [SerializeField] private SceneCard _sceneCard;
@@ -43,7 +46,7 @@ namespace UI.Buttons
 
         private void Initialize()
         {
-            _levelNamePlaceholder.text = _sceneCard.ScenePreviewName;
+            if(_writeAutoSceneName) _levelNamePlaceholder.text = _sceneCard.ScenePreviewName;
             
             _buttonToBind.onClick.AddListener(() =>
             {

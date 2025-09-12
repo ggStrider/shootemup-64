@@ -27,20 +27,35 @@ namespace Internal.Gameplay.Managers
             _sceneCard = sceneCardHolder.CurrentSceneCard;
         }
 
+        private void OnEnable()
+        {
+            _signalBus.Subscribe<GameEndSignal>(StopChangingColor);
+        }
+
+        private void OnDisable()
+        {
+            _signalBus.TryUnsubscribe<GameEndSignal>(StopChangingColor);
+        }
+        
         public void Initialize()
         {
             MyUniTaskExtensions.SafeCancelAndCleanToken(ref _changingBackgroundCts,
                 createNewTokenAfter: true);
             
-            RandomizeBackgroundColorCoroutine(0, _changingBackgroundCts.Token).Forget();
+            RandomizeBackgroundColorAsync(0, _changingBackgroundCts.Token).Forget();
         }
         
         private void OnDestroy()
         {
+            StopChangingColor();
+        }
+        
+        private void StopChangingColor()
+        {
             MyUniTaskExtensions.SafeCancelAndCleanToken(ref _changingBackgroundCts);
         }
 
-        private async UniTask RandomizeBackgroundColorCoroutine(int waveIndex, CancellationToken token)
+        private async UniTask RandomizeBackgroundColorAsync(int waveIndex, CancellationToken token)
         {
             try
             {

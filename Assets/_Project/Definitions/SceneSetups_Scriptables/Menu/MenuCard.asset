@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 843f0f371db9e8444bdb750803d42eb3, type: 3}
+  m_Name: MenuCard
+  m_EditorClassIdentifier: 
+  <SceneFileName>k__BackingField: Menu
+  <ScenePreviewName>k__BackingField: Menu
+  <LevelWaves>k__BackingField: {fileID: 0}
+  EarningSettingsInSceneCard: {fileID: 0}
+  <LevelClip>k__BackingField: {fileID: 8300000, guid: 0d407e9b2b63f4047b53d97dd91df901, type: 3}
+  <Volume>k__BackingField: 0.8
+  <CameraBassShakeWaves>k__BackingField: {fileID: 0}
+  <ShakeCameraWhenPlayerKillSomeone>k__BackingField: 1
