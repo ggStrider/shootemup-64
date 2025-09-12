@@ -2,6 +2,7 @@
 using Internal.Core.DataModel;
 using NaughtyAttributes;
 using Player;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using Zenject;
@@ -11,6 +12,7 @@ namespace Internal.Gameplay.UI.Player
     public class USelectModificatorForNextBullet : MonoBehaviour
     {
         [SerializeField] private Button _buttonWhichSelects;
+        [SerializeField] private TextMeshProUGUI _amountLabel;
         [SerializeField] private BulletModificatorSO _modificatorToUse;
 
         [Space] [SerializeField] private Image _modificatorIconPlaceholder;
@@ -38,17 +40,27 @@ namespace Internal.Gameplay.UI.Player
             _buttonWhichSelects.onClick.AddListener(SetToUseModificatorInNextBullet);
             _modificatorIconPlaceholder.sprite = _modificatorToUse.ItemIcon;
             _modificatorIconPlaceholder.color = _modificatorToUse.IconColor;
+            
+            SetAmountToLabel();
         }
 
         private void SetToUseModificatorInNextBullet()
         {
-            if (_playerData.TryGetBulletModificatorInInventoryBy(_modificatorToUse) != null)
+            var itemInInventory = _playerData.TryGetBulletModificatorInInventoryBy(_modificatorToUse);
+            if (itemInInventory != null)
             {
                 if (_playerShoot.TryAddBulletModificatorToNextBullet(_modificatorToUse))
                 {
                     _playerData.SubtractBulletModificatorInInventory(_modificatorToUse);
+                    SetAmountToLabel(itemInInventory);
                 }
             }
+        }
+
+        private void SetAmountToLabel(BulletModificatorInInventory itemInInventory = null)
+        {
+            itemInInventory ??= _playerData.TryGetBulletModificatorInInventoryBy(_modificatorToUse);
+            _amountLabel.text = itemInInventory.Amount.ToString();
         }
 
         public void SetModificatorToSelect(BulletModificatorSO bulletModificator)

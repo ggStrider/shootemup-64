@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 843f0f371db9e8444bdb750803d42eb3, type: 3}
   m_Name: KawaiGun_Card
   m_EditorClassIdentifier: 
-  <SceneFileName>k__BackingField: MainLevel
+  <SceneFileName>k__BackingField: KawaiGun
   <ScenePreviewName>k__BackingField: Kawai Gun
   <LevelWaves>k__BackingField: {fileID: 11400000, guid: c8ac2d440666c174082cbbec3e490d21, type: 2}
   EarningSettingsInSceneCard: {fileID: 11400000, guid: 8dde347a831cf2346a0c0e60537f1070, type: 2}
