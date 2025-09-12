@@ -70,6 +70,14 @@ namespace Player
             }
         }
 
+        public bool TryAddBulletModificatorToNextBullet(BulletModificatorSO modificator)
+        {
+            if (_currentModificators.Contains(modificator)) return false;
+            _currentModificators.Add(modificator);
+
+            return true;
+        }
+
         private void Shoot(Vector2 fireDirection)
         {
             // Debug.Log($"[{GetType().Name}] Fire direction: {fireDirection}");

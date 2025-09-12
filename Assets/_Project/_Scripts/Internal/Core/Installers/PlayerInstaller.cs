@@ -9,6 +9,7 @@ namespace Installers
 {
     public class PlayerInstaller : MonoInstaller
     {
+        [SerializeField] private PlayerShoot _playerShoot;
         [SerializeField] private PlayerHealth _playerHealth;
         [SerializeField] private AudioEffectsManager _audioEffectsManager;
         [SerializeField] private Camera _playerCamera;
@@ -42,6 +43,11 @@ namespace Installers
 
             Container.Bind<Camera>()
                 .FromInstance(_playerCamera)
+                .AsSingle()
+                .NonLazy();
+            
+            Container.Bind<PlayerShoot>()
+                .FromInstance(_playerShoot)
                 .AsSingle()
                 .NonLazy();
         }

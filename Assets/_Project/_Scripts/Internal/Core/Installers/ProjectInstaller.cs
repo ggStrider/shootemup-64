@@ -1,7 +1,6 @@
 using Audio;
 using Internal.Core.DataModel;
 using Internal.Core.Scenes;
-using NaughtyAttributes;
 using UnityEngine;
 using Zenject;
 
@@ -13,7 +12,7 @@ namespace Internal.Core.Installers
         [SerializeField] private SceneCardHolder _sceneCardHolder;
         
         [Space]
-        [SerializeField, ReadOnly] private PlayerData _playerData;
+        [SerializeField] private PlayerData _playerData;
 
         public override void InstallBindings()
         {

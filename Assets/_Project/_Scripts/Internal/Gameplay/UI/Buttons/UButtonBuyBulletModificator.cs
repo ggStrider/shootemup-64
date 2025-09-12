@@ -11,7 +11,7 @@ namespace Internal.Gameplay.UI.Buttons
         [SerializeField] private Button _buttonToBind;
 
         [Space] 
-        [SerializeField] private int _cost = 10;
+        [SerializeField] private Image _itemImagePlaceholder;
         [SerializeField] private BulletModificatorSO _toBuy;
 
         private PlayerData _playerData;
@@ -24,19 +24,21 @@ namespace Internal.Gameplay.UI.Buttons
 
         private void Awake()
         {
+            _itemImagePlaceholder.sprite = _toBuy.BulletModificatorUI.ModificatorIcon;
+            _itemImagePlaceholder.color = _toBuy.BulletModificatorUI.IconColor;
             _buttonToBind.onClick.AddListener(TryBuyModificator);
         }
 
         private void TryBuyModificator()
         {
             // seems strange to check it in this class. Maybe TODO: ?
-            if (_playerData.Coins < _cost)
+            if (_playerData.Coins < _toBuy.Price)
             {
                 Debug.Log($"[{nameof(UButtonBuyBulletModificator)}] Not enough coins!");
                 return;
             }
 
-            _playerData.Coins.Value -= _cost;
+            _playerData.Coins.Value -= _toBuy.Price;
             _playerData.AddBulletModificatorInInventory(_toBuy);
         }
 

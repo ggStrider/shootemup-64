@@ -37,15 +37,18 @@ namespace UI.Any
         #if UNITY_EDITOR
         private void Reset()
         {
-            _target ??= GetComponent<RectTransform>();
+            if (_target == null)
+            {
+                _target = GetComponent<RectTransform>();
+            }
             if (_sizeOnHover == Vector2.zero)
             {
-                _sizeOnHover = _target.localScale;
+                _sizeOnHover = _target.localScale + new Vector3(0.1f, 0.1f);
             }
 
             if (_sizeOnUnHover == Vector2.zero)
             {
-                _sizeOnUnHover = _target.localScale + new Vector3(0.1f, 0.1f);
+                _sizeOnUnHover = _target.localScale;
             }
         }
         #endif
