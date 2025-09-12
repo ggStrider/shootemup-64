@@ -25,6 +25,20 @@ namespace Enemy
             SignalBus = signalBus;
         }
 
+        private void Awake()
+        {
+            SignalBus.Subscribe<GameEndSignal>(OnGameEnd);
+        }
+
+        private void OnGameEnd()
+        {
+            if (!gameObject.activeInHierarchy) return;
+            InvokeAllIOnDestroy();
+            DespawnSelf();
+            
+            SignalBus.TryUnsubscribe<GameEndSignal>(OnGameEnd);
+        }
+
         protected virtual void OnEnable()
         {
             if (Health) Health.OnDeath += OnKilled;
@@ -80,7 +94,7 @@ namespace Enemy
         }
 
         protected abstract void DespawnSelf();
-
+        
         private void FixedUpdate()
         {
             Move();
