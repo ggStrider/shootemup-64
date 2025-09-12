@@ -1,4 +1,5 @@
 using System;
+using Definitions.BulletModificators.Scripts;
 using Internal.Core.Reactive;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -10,6 +11,10 @@ namespace Internal.Core.DataModel
     public class PlayerData : IInitializable, IDisposable
     {
         [field: SerializeField] public ReactiveVariable<int> Coins { get; private set; } = new();
+
+        [field: Space] 
+        [field: SerializeField] public ReactiveList<BulletModificatorInInventory> BulletModificators { get; private set; } 
+            = new();
         
         public void AddCoins(int addValue)
         {
@@ -32,6 +37,34 @@ namespace Internal.Core.DataModel
 
             // Clamps, so value never < 0
             Coins.Value = Mathf.Max(Coins.Value - subtractValue, 0);
+        }
+
+        public void AddBulletModificatorInInventory(BulletModificatorSO modificator)
+        {
+            foreach (var itemInInventory in BulletModificators.List)
+            {
+                if (itemInInventory.BulletModificatorSO == modificator)
+                {
+                    itemInInventory.Amount++;
+                    return;
+                }
+            }
+            
+            BulletModificators.List.Add(new(modificator));
+        }
+
+        public void SubtractBulletModificatorInInventory(BulletModificatorSO modificator)
+        {
+            foreach (var itemInInventory in BulletModificators.List)
+            {
+                if (itemInInventory.BulletModificatorSO == modificator)
+                {
+                    if (itemInInventory.Amount > 0) itemInInventory.Amount--;
+                    if (itemInInventory.Amount == 0) BulletModificators.List.Remove(itemInInventory);
+
+                    return;
+                }
+            }
         }
         
         public void Initialize()
