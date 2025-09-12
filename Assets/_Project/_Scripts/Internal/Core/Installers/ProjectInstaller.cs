@@ -1,4 +1,5 @@
 using Audio;
+using Definitions.Scenes.Cards;
 using Internal.Core.DataModel;
 using Internal.Core.Scenes;
 using UnityEngine;
@@ -10,6 +11,7 @@ namespace Internal.Core.Installers
     {
         [SerializeField] private MusicManager _musicManagerPrefab;
         [SerializeField] private SceneCardHolder _sceneCardHolder;
+        [SerializeField] private SceneCard _startSceneCard;
         
         [Space]
         [SerializeField] private PlayerData _playerData;

@@ -18,9 +18,11 @@ namespace Internal.Core.Scenes
             _musicManager = musicManager;
         }
         
-        public void LoadScene(SceneCard sceneCard)
+        public void LoadScene(SceneCard sceneCard, bool setupMusicForMusicManager = false)
         {
             _musicManager.FadeCurrentClip();
+            if(setupMusicForMusicManager) _musicManager.StartAndUnFadeClip(sceneCard.LevelClip);
+            
             _sceneCardHolder.SetCurrentSceneCard(sceneCard);
             SceneManager.LoadScene(sceneCard.SceneFileName);
         }
@@ -36,10 +38,10 @@ namespace Internal.Core.Scenes
             return SceneManager.GetActiveScene().name;
         }
 
-        public void LoadSceneWithTransition(SceneCard sceneCard)
+        public void LoadSceneWithTransition(SceneCard sceneCard, bool setupMusicForMusicManager = false)
         {
             TransitionImageMover.Instance.MoveTo(TransitionImageMover.MoveToTypes.OverlayScreen,
-                () => LoadScene(sceneCard));
+                () => LoadScene(sceneCard, setupMusicForMusicManager));
         }
 
         public void ReloadSceneWithTransition()

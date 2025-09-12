@@ -19,8 +19,7 @@ namespace UI.Buttons
         [Space]
         [SerializeField] private SceneCard _sceneCard;
         [SerializeField] private bool _initializeOnAwake = true;
-        
-        [Space] [SerializeField] private TransitionImageMover.MoveToTypes _moveTo = TransitionImageMover.MoveToTypes.OverlayScreen;
+        [SerializeField] private bool _playMusicOfNextSceneInstantly = false;
 
         private SceneLoader _sceneLoader;
 
@@ -47,16 +46,12 @@ namespace UI.Buttons
         private void Initialize()
         {
             if(_writeAutoSceneName) _levelNamePlaceholder.text = _sceneCard.ScenePreviewName;
-            
-            _buttonToBind.onClick.AddListener(() =>
-            {
-                TransitionImageMover.Instance.MoveTo(_moveTo, OnButtonClick);
-            });
+            _buttonToBind.onClick.AddListener(OnButtonClick);
         }
 
         private void OnButtonClick()
         {
-            _sceneLoader.LoadScene(_sceneCard);
+            _sceneLoader.LoadSceneWithTransition(_sceneCard, _playMusicOfNextSceneInstantly);
         }
         
 #if UNITY_EDITOR

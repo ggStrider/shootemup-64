@@ -15,7 +15,7 @@ namespace Audio
             SetupManager();
         }
 
-        private void SetupManager()
+        public void SetupManager()
         {
             if (!_audioPlayerAdvanced.audioSource.isPlaying)
             {

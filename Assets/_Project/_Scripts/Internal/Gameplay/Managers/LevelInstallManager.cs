@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using Audio;
 using Internal.Core.Scenes;
+using Internal.Core.Signals;
 using Internal.Gameplay.LevelCreator;
 using Spawners;
 using UI.Images;
@@ -22,15 +23,21 @@ namespace Internal.Gameplay.Managers
         private CameraManager _cameraManager;
         private LevelWavesCreator _levelWavesCreator;
 
+        private SignalBus _signalBus;
+
         [Inject]
-        private void Construct(MusicManager musicManager, SceneCardHolder sceneCardHolder)
+        private void Construct(MusicManager musicManager, SceneCardHolder sceneCardHolder, SignalBus signalBus)
         {
             _musicManager = musicManager;
             _sceneCardHolder = sceneCardHolder;
+
+            _signalBus = signalBus;
         }
 
         private void Awake()
         {
+            _signalBus.Subscribe<GameEndSignal>(FadeCurrentClip);
+            
             _enemyWaveSpawner = FindAnyObjectByType<EnemyWaveSpawner>();
             _backgroundColorChanger = FindAnyObjectByType<BackgroundColorChanger>();
             _cameraManager = FindAnyObjectByType<CameraManager>();
@@ -38,6 +45,13 @@ namespace Internal.Gameplay.Managers
             
             FindAnyObjectByType<TransitionImageMover>().StartTransitionEnded += OnTransitionEnded;
         }
+
+        private void OnDestroy()
+        {
+            _signalBus.TryUnsubscribe<GameEndSignal>(FadeCurrentClip);
+        }
+
+        private void FadeCurrentClip() => _musicManager.FadeCurrentClip();
 
         private void OnTransitionEnded()
         {
@@ -56,8 +70,6 @@ namespace Internal.Gameplay.Managers
             _enemyWaveSpawner?.InitializeSpawning();
             _backgroundColorChanger?.Initialize();
             _levelWavesCreator?.CompleteInitialization();
-            
-            Destroy(this);
         }
     }
 }
