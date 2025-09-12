@@ -10,7 +10,7 @@ namespace Internal.Core.DataModel
 {
     public static class SaveSystem
     {
-        private static readonly string SavePath = Path.Combine(Application.persistentDataPath, "save.json");
+        public static readonly string SavePath = Path.Combine(Application.persistentDataPath, "save.json");
 
         public static void Save(PlayerData playerData)
         {
@@ -30,6 +30,7 @@ namespace Internal.Core.DataModel
             return JsonUtility.FromJson<PlayerData>(jsonText);
         }
         
+        // ReSharper disable Unity.PerformanceAnalysis
         public static bool TryDeleteSave()
         {
             if (!File.Exists(SavePath))
