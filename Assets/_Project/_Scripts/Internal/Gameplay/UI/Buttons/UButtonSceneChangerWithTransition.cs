@@ -1,5 +1,6 @@
 ﻿using Definitions.Scenes.Cards;
 using Internal.Core.Scenes;
+using TMPro;
 using UI.Images;
 using UnityEngine;
 using UnityEngine.UI;
@@ -10,8 +11,11 @@ namespace UI.Buttons
     public class UButtonSceneChangerWithTransition : MonoBehaviour
     {
         [SerializeField] private Button _buttonToBind;
+        [SerializeField] private TextMeshProUGUI _levelNamePlaceholder;
+        
+        [Space]
         [SerializeField] private SceneCard _sceneCard;
-        [SerializeField] private TransitionImageMover _transitionImageMover;
+        [SerializeField] private bool _initializeOnAwake = true;
         
         [Space] [SerializeField] private TransitionImageMover.MoveToTypes _moveTo = TransitionImageMover.MoveToTypes.OverlayScreen;
 
@@ -25,9 +29,25 @@ namespace UI.Buttons
 
         private void Awake()
         {
+            if (_initializeOnAwake)
+            {
+                Initialize();
+            }
+        }
+
+        public void SetSceneCardAndInitialize(SceneCard sceneCard)
+        {
+            _sceneCard = sceneCard;
+            Initialize();
+        }
+
+        private void Initialize()
+        {
+            _levelNamePlaceholder.text = _sceneCard.ScenePreviewName;
+            
             _buttonToBind.onClick.AddListener(() =>
             {
-                _transitionImageMover.MoveTo(_moveTo, OnButtonClick);
+                TransitionImageMover.Instance.MoveTo(_moveTo, OnButtonClick);
             });
         }
 
