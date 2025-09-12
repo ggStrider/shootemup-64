@@ -238,7 +238,7 @@ MonoBehaviour:
   _startCountingDelay: 2
   _useMusicManager: 1
   _stopMusicOnStart: 1
-  _canPlayerShoot: 1
+  _canPlayerShoot: 0
   _waveToWrite: {fileID: 11400000, guid: 45a962055d8c4ab45972fa6d583e97d3, type: 2}
   _cameraBassShakeWavesToWrite: {fileID: 11400000, guid: 310c4de5bafdbf84dade304df61ed511, type: 2}
 --- !u!4 &69854496

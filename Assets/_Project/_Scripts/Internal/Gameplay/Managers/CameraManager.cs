@@ -69,10 +69,10 @@ namespace Internal.Gameplay.Managers
 
         private void OnEnable()
         {
-            _signalBus.Subscribe<RealEnemyKilledSignal>(ShakeCamera);
-            _signalBus.Subscribe<FakeEnemyKilledSignal>(ShakeCamera);
+            _signalBus.Subscribe<RealEnemyKilledSignal>(ShakeCameraOnKillSomeone);
+            _signalBus.Subscribe<FakeEnemyKilledSignal>(ShakeCameraOnKillSomeone);
 
-            _playerHealth.OnDamageTaken += _ => ShakeCamera();
+            _playerHealth.OnDamageTaken += _ => ShakeCameraOnKillSomeone();
         }
 
         public void InitializeCameraBassShake()
@@ -98,15 +98,17 @@ namespace Internal.Gameplay.Managers
 
         private void OnDisable()
         {
-            _signalBus.TryUnsubscribe<RealEnemyKilledSignal>(ShakeCamera);
-            _signalBus.TryUnsubscribe<FakeEnemyKilledSignal>(ShakeCamera);
+            _signalBus.TryUnsubscribe<RealEnemyKilledSignal>(ShakeCameraOnKillSomeone);
+            _signalBus.TryUnsubscribe<FakeEnemyKilledSignal>(ShakeCameraOnKillSomeone);
 
-            _playerHealth.OnDamageTaken -= _ => ShakeCamera();
+            _playerHealth.OnDamageTaken -= _ => ShakeCameraOnKillSomeone();
         }
 
         [Button]
-        private void ShakeCamera()
+        private void ShakeCameraOnKillSomeone()
         {
+            if (!_sceneCard.ShakeCameraWhenPlayerKillSomeone) return;
+            
             _mainCamera.DOKill();
             _mainCamera.DOShakePosition(_shakeDuration, _shakeStrength)
                 .OnComplete(() => _mainCamera.transform.position = _startCameraPosition);

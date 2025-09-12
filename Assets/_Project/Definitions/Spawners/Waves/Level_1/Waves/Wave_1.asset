@@ -14,334 +14,2350 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <EnemiesInWave>k__BackingField:
   - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 1.6774648
+  - <IsFakeEnemy>k__BackingField: 1
     <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.61538565
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.59145945
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.5360811
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.36063236
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 1.0628359
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.59899986
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.52917147
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.39214182
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 1.0635436
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.6079458
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.5603204
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.49118686
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.9800147
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.62435335
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.47939998
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.40014216
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.4080612
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.3190438
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.26430026
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.36814022
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.3270576
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.32798988
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.2805261
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.36775112
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.3354816
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.29623967
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.32792062
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.3277017
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.3284119
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.34496236
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.3099601
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.31335798
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.302991
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.23250362
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.17613867
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.262036
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.32100692
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.29645446
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.35882702
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.32034895
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.29667452
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.3756498
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.31977907
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.2883575
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.35946572
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.31952694
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.31923303
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.31204832
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.31295812
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.25482985
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.29689696
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.13511527
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.2891652
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.18319984
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.15143931
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.24873659
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.10385428
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.20877177
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.1041508
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.2314104
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.0964749
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.25568354
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.31118572
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.12720239
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.16070986
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.2159859
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.2158954
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.20006101
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.11226742
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.10328279
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.20057665
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.13548018
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.19303313
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.16711332
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.1667847
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.32111633
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.2803588
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.16837452
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.13525808
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.3686954
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.22346835
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.17530684
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.33608198
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.23896775
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.28789917
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.37643513
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.35125002
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.2176163
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.17580594
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.2639783
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.1914358
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.19283593
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.2883972
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.270428
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.32797766
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.33663726
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.30335528
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.32060534
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.31076688
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.36856678
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.32005715
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.32805023
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.3044177
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.28678986
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.29577208
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.24864548
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.17644848
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.2314415
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.1366394
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.2284433
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.12280039
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.15148972
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.15113631
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.18431894
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.1279149
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.09568871
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.13564692
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.19324972
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.20776506
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.25659424
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.24743195
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.08829259
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.27225444
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.1038357
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.0315444
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.16790491
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.07939051
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.24867503
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.080322884
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.19892277
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.088478096
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.2554741
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.1037714
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.23297231
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.07668141
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.23455606
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.1121944
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.25653684
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.0947767
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.2160155
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.12841502
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.18796334
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.11546338
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.24830021
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.09597397
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.22388229
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.15090103
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.15429989
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.13568251
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.2241063
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.29478592
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.32009563
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.36028612
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.31992787
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.2475621
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.1111497
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.016922103
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.23993036
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.14420637
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.19171302
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.3276504
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.3123064
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.30390465
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.16729477
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.16895534
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.16779935
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.17618908
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.23984285
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.19927347
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.21719503
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.1667387
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.19361334
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.16674402
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.17627943
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.10444171
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.14181101
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.09705671
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.1599709
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.09614761
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.15492079
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.10806829
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.13544539
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.10469521
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.13583443
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.105074696
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.14453518
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.1027147
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.1367591
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.128108
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.17601423
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.118837215
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.1400629
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.1086814
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.20874855
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.1274593
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.119031906
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.11225609
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.11105739
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.113135
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.0867576
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.12927221
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.1039446
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.14398828
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.1283469
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.19228533
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.09580852
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.1578866
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.10921178
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.1313037
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.103697605
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.12014221
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.1128589
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.11184878
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.22335121
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.23192915
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.19994293
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.19984092
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.1119558
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.16815364
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.09636891
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.120687984
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.0945315
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.16121969
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.112067096
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.183161
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.1121717
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.16807078
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.1202372
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.14411965
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.11207488
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.12822331
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.24744123
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.13556132
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.14404853
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.07984791
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.1280134
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.102782
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.1531366
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.13562466
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.119188204
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.1380066
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.1353258
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.120493606
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.13505149
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.11265261
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.16753864
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.10343149
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.16889907
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.14189963
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.28167656
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.27999052
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.2242617
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.21506122
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.2879007
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.2879276
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.3279808
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.3103729
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.34614816
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.31176046
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.30415165
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.22384378
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.15168998
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.22388995
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.1123435
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.21562551
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.108238705
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.21235661
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.088633396
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.2146524
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.079649895
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.23353702
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.09455911
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.26474386
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.10431527
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.28611544
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.0800267
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.26029783
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.06817769
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.28804353
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.06304589
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.24115658
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.07963589
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.25591558
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.086785495
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.20809318
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.081989
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.2717758
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.0792781
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.19596076
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.10036381
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.24700312
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.06510781
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.24806082
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.071420796
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.27238548
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.0802032
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.20013346
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.08679439
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.2727178
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.062302504
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.26509666
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.07091928
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.25720564
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.0959314
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.23989515
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.047565896
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.2645125
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.063591704
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.2792108
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.056831006
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.007188102
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.27320418
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.06402641
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.24737205
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.0647222
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.24684702
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.06430851
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.29547787
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.08442411
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.20375322
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.06484439
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.2447241
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.034376
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.2711962
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.064880505
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.23956229
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.054375205
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.25707015
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.063848
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.2490087
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.0717356
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.29604462
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.0556254
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.27991226
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.0639273
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.049264103
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.21472847
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.016838301
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.07894129
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.26397437
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.104666196
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.23196551
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.08826331
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.2120802
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.0838972
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.2163846
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.34277177
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.17499493
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.18505032
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.11927021
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.16086316
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.23919037
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.16816008
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.14440599
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.17536873
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.18482162
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.15176503
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.19985409
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.104883514
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.1584759
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.16868241
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.12873614
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.1425502
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.21670094
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.1319342
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.20433484
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.0879881
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.1347829
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.12895681
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.19155554
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.17598312
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.1444608
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.13579471
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.15205747
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.13470939
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.17480572
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.1378708
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.14457732
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.19898783
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.13593028
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.1371046
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.1503267
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.13709047
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.17563787
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.14310017
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.16876848
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.13228157
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.13101774
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.19261543
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.1603452
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.18604408
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.17414238
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.15987873
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.15149543
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.21621983
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.16400139
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.16351558
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.14374593
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.17518522
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.16827573
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.14493136
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.13451347
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.15673111
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.22112234
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.143137
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.12765498
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.14344397
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.16874933
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.23305178
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.11832602
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.21629821
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.13587938
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.14441529
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.12038161
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.19937876
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.11233569
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.16011655
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.14348999
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.17648132
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.13608012
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.1513766
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.12751241
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.21627691
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.14371888
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.16808191
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.116466075
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.1709352
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.11196079
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.15291269
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.11215501
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.13523011
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.112683
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.17605914
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.12004988
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.1270241
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.11987679
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.28818095
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.18486032
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.18416853
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.1589956
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.15217656
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.20051631
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.1430442
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.1854559
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.118930794
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.16665903
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.14451818
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.19246273
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.15254031
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.15928277
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.13624118
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.21040452
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.22893308
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.19241442
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.14301836
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.2092534
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.16760918
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.18391684
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.11951609
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.2287839
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.0914496
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.23968162
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.096272595
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.22400749
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.10425
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.24017842
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.0954289
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.22487664
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.079383
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.27093276
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.08047279
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.19914591
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.06462771
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.2715491
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.064463995
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.26369423
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.079972886
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.23993975
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.0649162
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.23188192
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.0952547
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.27188218
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.0722715
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.2171244
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.062123504
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.272997
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.0719982
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.2557205
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.34337315
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.089180894
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.23046874
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.0885377
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.2475627
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.0885298
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.23113808
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.08875018
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.23914984
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.095916905
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.22357842
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.056727313
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.28880054
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.063127205
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.27222416
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.0635963
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.23958778
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.05758239
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.2472339
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.0639713
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.2711187
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.065426305
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.2555687
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.0801829
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.23219524
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.078834504
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.26498124
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.0702364
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.1677301
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.105171196
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.23132885
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.088385
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.30333993
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.0481914
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.2564998
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.080346994
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.25502962
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.080635905
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.22403014
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.076321304
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.25590965
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.091554336
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.26467657
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.09568053
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.22346108
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.09649929
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.22429319
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.0860049
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.20116356
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.0883653
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.26303098
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.08881111
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.2306375
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.09697841
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.22357719
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.08832949
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.24636735
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.097251885
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.20769852
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.095626175
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.23242348
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.104297906
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.20815197
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.0953566
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.2563166
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.112273894
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.22486612
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.079155095
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.24074495
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.08762351
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.21517198
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.1039415
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.23174733
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.11268129
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.18412565
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.087872885
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.26231617
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.04787731
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.25687134
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.0635267
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.23178202
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.0717129
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.2724075
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.07120011
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.26553628
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.0551639
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.2881668
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.04027511
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.27265674
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.0476559
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.28801945
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.063391596
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.0477124
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
     <DelayToNextEnemy>k__BackingField: 0
   - <IsFakeEnemy>k__BackingField: 1
-    <SideToSpawn>k__BackingField: 2
-    <DelayToNextEnemy>k__BackingField: 1.3517803
-  - <IsFakeEnemy>k__BackingField: 1
-    <SideToSpawn>k__BackingField: 0
-    <DelayToNextEnemy>k__BackingField: 1.2261978
-  - <IsFakeEnemy>k__BackingField: 1
-    <SideToSpawn>k__BackingField: 1
-    <DelayToNextEnemy>k__BackingField: 1.3089993
-  - <IsFakeEnemy>k__BackingField: 1
-    <SideToSpawn>k__BackingField: 0
-    <DelayToNextEnemy>k__BackingField: 0.3563351
-  - <IsFakeEnemy>k__BackingField: 1
     <SideToSpawn>k__BackingField: 3
-    <DelayToNextEnemy>k__BackingField: 0.27222773
-  - <IsFakeEnemy>k__BackingField: 1
-    <SideToSpawn>k__BackingField: 0
-    <DelayToNextEnemy>k__BackingField: 1.8404846
+    <DelayToNextEnemy>k__BackingField: 0.0655161
   - <IsFakeEnemy>k__BackingField: 1
     <SideToSpawn>k__BackingField: 2
-    <DelayToNextEnemy>k__BackingField: 0.073203884
+    <DelayToNextEnemy>k__BackingField: 0.1674136
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.0639107
   - <IsFakeEnemy>k__BackingField: 1
     <SideToSpawn>k__BackingField: 2
-    <DelayToNextEnemy>k__BackingField: 0.062344205
-  - <IsFakeEnemy>k__BackingField: 1
-    <SideToSpawn>k__BackingField: 1
-    <DelayToNextEnemy>k__BackingField: 2.3602192
+    <DelayToNextEnemy>k__BackingField: 0.24779731
   - <IsFakeEnemy>k__BackingField: 1
     <SideToSpawn>k__BackingField: 3
-    <DelayToNextEnemy>k__BackingField: 0.022726098
-  - <IsFakeEnemy>k__BackingField: 1
-    <SideToSpawn>k__BackingField: 1
-    <DelayToNextEnemy>k__BackingField: 0.102795795
-  - <IsFakeEnemy>k__BackingField: 1
-    <SideToSpawn>k__BackingField: 0
-    <DelayToNextEnemy>k__BackingField: 0.58502597
+    <DelayToNextEnemy>k__BackingField: 0.0877916
   - <IsFakeEnemy>k__BackingField: 1
     <SideToSpawn>k__BackingField: 2
-    <DelayToNextEnemy>k__BackingField: 0.06313789
+    <DelayToNextEnemy>k__BackingField: 0.23192671
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.1049375
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.20773941
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.055846106
   - <IsFakeEnemy>k__BackingField: 1
     <SideToSpawn>k__BackingField: 2
-    <DelayToNextEnemy>k__BackingField: 0.054263595
-  - <IsFakeEnemy>k__BackingField: 1
-    <SideToSpawn>k__BackingField: 1
-    <DelayToNextEnemy>k__BackingField: 0.35470864
+    <DelayToNextEnemy>k__BackingField: 0.23795013
   - <IsFakeEnemy>k__BackingField: 1
     <SideToSpawn>k__BackingField: 3
-    <DelayToNextEnemy>k__BackingField: 1.171839
+    <DelayToNextEnemy>k__BackingField: 0.112828285
   - <IsFakeEnemy>k__BackingField: 1
     <SideToSpawn>k__BackingField: 0
-    <DelayToNextEnemy>k__BackingField: 1.3743119
+    <DelayToNextEnemy>k__BackingField: 0.23213005
   - <IsFakeEnemy>k__BackingField: 1
     <SideToSpawn>k__BackingField: 1
-    <DelayToNextEnemy>k__BackingField: 0.41734216
-  - <IsFakeEnemy>k__BackingField: 1
-    <SideToSpawn>k__BackingField: 3
-    <DelayToNextEnemy>k__BackingField: 1.192101
+    <DelayToNextEnemy>k__BackingField: 0.070547596
   - <IsFakeEnemy>k__BackingField: 1
     <SideToSpawn>k__BackingField: 2
-    <DelayToNextEnemy>k__BackingField: 0.7937352
+    <DelayToNextEnemy>k__BackingField: 0.2251548
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.08915949
   - <IsFakeEnemy>k__BackingField: 1
     <SideToSpawn>k__BackingField: 0
-    <DelayToNextEnemy>k__BackingField: 0.2035051
+    <DelayToNextEnemy>k__BackingField: 0.30326626
   - <IsFakeEnemy>k__BackingField: 1
     <SideToSpawn>k__BackingField: 1
-    <DelayToNextEnemy>k__BackingField: 0.5906647
-  - <IsFakeEnemy>k__BackingField: 1
-    <SideToSpawn>k__BackingField: 3
-    <DelayToNextEnemy>k__BackingField: 0.6715893
-  - <IsFakeEnemy>k__BackingField: 1
-    <SideToSpawn>k__BackingField: 0
-    <DelayToNextEnemy>k__BackingField: 1.012083
-  - <IsFakeEnemy>k__BackingField: 1
-    <SideToSpawn>k__BackingField: 3
-    <DelayToNextEnemy>k__BackingField: 0.7919085
-  - <IsFakeEnemy>k__BackingField: 1
-    <SideToSpawn>k__BackingField: 3
-    <DelayToNextEnemy>k__BackingField: 0.15172377
-  - <IsFakeEnemy>k__BackingField: 1
-    <SideToSpawn>k__BackingField: 1
-    <DelayToNextEnemy>k__BackingField: 0.016600503
+    <DelayToNextEnemy>k__BackingField: 0.0637013
   - <IsFakeEnemy>k__BackingField: 1
     <SideToSpawn>k__BackingField: 2
-    <DelayToNextEnemy>k__BackingField: 0.5139692
-  - <IsFakeEnemy>k__BackingField: 1
-    <SideToSpawn>k__BackingField: 0
-    <DelayToNextEnemy>k__BackingField: 0.5559653
+    <DelayToNextEnemy>k__BackingField: 0.25655508
   - <IsFakeEnemy>k__BackingField: 1
     <SideToSpawn>k__BackingField: 3
-    <DelayToNextEnemy>k__BackingField: 0.9256181
+    <DelayToNextEnemy>k__BackingField: 0.102995224
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.2005649
   - <IsFakeEnemy>k__BackingField: 1
     <SideToSpawn>k__BackingField: 1
-    <DelayToNextEnemy>k__BackingField: 1.2897116
+    <DelayToNextEnemy>k__BackingField: 0.072281905
   - <IsFakeEnemy>k__BackingField: 1
     <SideToSpawn>k__BackingField: 2
-    <DelayToNextEnemy>k__BackingField: 1.1360614
-  - <IsFakeEnemy>k__BackingField: 1
-    <SideToSpawn>k__BackingField: 0
-    <DelayToNextEnemy>k__BackingField: 0.5640783
-  - <IsFakeEnemy>k__BackingField: 1
-    <SideToSpawn>k__BackingField: 1
-    <DelayToNextEnemy>k__BackingField: 0.7378539
+    <DelayToNextEnemy>k__BackingField: 0.2245238
   - <IsFakeEnemy>k__BackingField: 1
     <SideToSpawn>k__BackingField: 3
-    <DelayToNextEnemy>k__BackingField: 0.6120403
+    <DelayToNextEnemy>k__BackingField: 0.1040778
   - <IsFakeEnemy>k__BackingField: 1
     <SideToSpawn>k__BackingField: 0
-    <DelayToNextEnemy>k__BackingField: 0.6522305
+    <DelayToNextEnemy>k__BackingField: 0.25493765
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.079601705
   - <IsFakeEnemy>k__BackingField: 1
     <SideToSpawn>k__BackingField: 2
-    <DelayToNextEnemy>k__BackingField: 0.6441896
-  - <IsFakeEnemy>k__BackingField: 1
-    <SideToSpawn>k__BackingField: 1
-    <DelayToNextEnemy>k__BackingField: 0.513146
+    <DelayToNextEnemy>k__BackingField: 0.20783544
   - <IsFakeEnemy>k__BackingField: 1
     <SideToSpawn>k__BackingField: 3
-    <DelayToNextEnemy>k__BackingField: 0.5191881
-  - <IsFakeEnemy>k__BackingField: 1
-    <SideToSpawn>k__BackingField: 0
-    <DelayToNextEnemy>k__BackingField: 0.6037304
+    <DelayToNextEnemy>k__BackingField: 0.104838304
   - <IsFakeEnemy>k__BackingField: 1
     <SideToSpawn>k__BackingField: 2
-    <DelayToNextEnemy>k__BackingField: 0.60344374
-  - <IsFakeEnemy>k__BackingField: 1
-    <SideToSpawn>k__BackingField: 1
-    <DelayToNextEnemy>k__BackingField: 0.5682895
+    <DelayToNextEnemy>k__BackingField: 0.26415387
   - <IsFakeEnemy>k__BackingField: 1
     <SideToSpawn>k__BackingField: 3
-    <DelayToNextEnemy>k__BackingField: 0.57921773
-  - <IsFakeEnemy>k__BackingField: 1
-    <SideToSpawn>k__BackingField: 0
-    <DelayToNextEnemy>k__BackingField: 0.55121446
+    <DelayToNextEnemy>k__BackingField: 0.0874643
   - <IsFakeEnemy>k__BackingField: 1
     <SideToSpawn>k__BackingField: 2
-    <DelayToNextEnemy>k__BackingField: 0.51607394
-  - <IsFakeEnemy>k__BackingField: 1
-    <SideToSpawn>k__BackingField: 0
-    <DelayToNextEnemy>k__BackingField: 0.63157207
+    <DelayToNextEnemy>k__BackingField: 0.23071001
   - <IsFakeEnemy>k__BackingField: 1
     <SideToSpawn>k__BackingField: 3
-    <DelayToNextEnemy>k__BackingField: 0.2715041
-  - <IsFakeEnemy>k__BackingField: 1
-    <SideToSpawn>k__BackingField: 0
-    <DelayToNextEnemy>k__BackingField: 0.56472903
-  - <IsFakeEnemy>k__BackingField: 1
-    <SideToSpawn>k__BackingField: 3
-    <DelayToNextEnemy>k__BackingField: 0.35105821
+    <DelayToNextEnemy>k__BackingField: 0.09757619
   - <IsFakeEnemy>k__BackingField: 1
     <SideToSpawn>k__BackingField: 2
-    <DelayToNextEnemy>k__BackingField: 0.3549026
-  - <IsFakeEnemy>k__BackingField: 1
-    <SideToSpawn>k__BackingField: 0
-    <DelayToNextEnemy>k__BackingField: 0.34503627
-  - <IsFakeEnemy>k__BackingField: 1
-    <SideToSpawn>k__BackingField: 1
-    <DelayToNextEnemy>k__BackingField: 0.4101511
+    <DelayToNextEnemy>k__BackingField: 0.19103262
   - <IsFakeEnemy>k__BackingField: 1
     <SideToSpawn>k__BackingField: 3
-    <DelayToNextEnemy>k__BackingField: 0.37392122
-  - <IsFakeEnemy>k__BackingField: 1
-    <SideToSpawn>k__BackingField: 0
-    <DelayToNextEnemy>k__BackingField: 0.3479844
-  - <IsFakeEnemy>k__BackingField: 1
-    <SideToSpawn>k__BackingField: 1
-    <DelayToNextEnemy>k__BackingField: 0.32713306
-  - <IsFakeEnemy>k__BackingField: 1
-    <SideToSpawn>k__BackingField: 3
-    <DelayToNextEnemy>k__BackingField: 0.5265166
-  - <IsFakeEnemy>k__BackingField: 1
-    <SideToSpawn>k__BackingField: 0
-    <DelayToNextEnemy>k__BackingField: 0.33723238
+    <DelayToNextEnemy>k__BackingField: 0.0728027
   - <IsFakeEnemy>k__BackingField: 1
     <SideToSpawn>k__BackingField: 2
-    <DelayToNextEnemy>k__BackingField: 0.35412285
-  - <IsFakeEnemy>k__BackingField: 1
-    <SideToSpawn>k__BackingField: 1
-    <DelayToNextEnemy>k__BackingField: 0.31968388
+    <DelayToNextEnemy>k__BackingField: 0.1030246
   - <IsFakeEnemy>k__BackingField: 1
     <SideToSpawn>k__BackingField: 3
-    <DelayToNextEnemy>k__BackingField: 0.32058212
+    <DelayToNextEnemy>k__BackingField: 0.08784041
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.11313461
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.08666781
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.0717085
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.16860598
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.032424405
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.079228416
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.104679205
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.008682901
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.10273792
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.0799998
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.24798633
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.0627882
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.23783948
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.07069449
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.2447821
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.07174519
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.27199915
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.032651905
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.0314952
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.21583503
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.06440051
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.23993649
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.048745498
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.26356354
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.031958096
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.2152039
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.20890151
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.25688812
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.11001131
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.21641955
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.0717422
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.19209774
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.08717379
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.22537342
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.087122194
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.29583126
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.07156199
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.24113737
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.0724135
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.2474739
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.07153302
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.2633715
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.048518404
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.22457394
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.08716139
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.08943601
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.0627599
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.1113925
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.048637304
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.1511213
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.0932802
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.06013799
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.09561969
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.0729774
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.08646971
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.0491579
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.14830539
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.043291394
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.19092351
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.0794506
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.18541774
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.031136904
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.08826079
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.168699
   - <IsFakeEnemy>k__BackingField: 1
     <SideToSpawn>k__BackingField: 0
-    <DelayToNextEnemy>k__BackingField: 0.31353232
+    <DelayToNextEnemy>k__BackingField: 0.079433486
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.0953291
   - <IsFakeEnemy>k__BackingField: 1
     <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.07201591
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.056271188
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.0717669
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.0726771
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.118735105
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.15285042
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.12002044
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.07219898
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.09230091
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.05977911
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.1028742
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.05645071
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.11177891
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.032503303
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.11916009
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.0732614
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.1032742
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.072634995
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.10382209
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.0647014
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.1110608
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.03975471
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.16043426
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.0556224
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.09665481
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.08722928
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.0722284
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.08771999
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.06410481
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.14437541
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.0876207
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.07323449
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.102792315
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.07255689
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.09520683
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.08009931
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.10300541
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.16841517
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.047835
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.10317218
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.08092039
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.066530794
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.071853705
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.070138
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.07842351
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.1361023
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.0757072
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.07203101
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.0802647
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.22084531
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.0826103
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.07874689
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.1404328
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.095260605
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
     <DelayToNextEnemy>k__BackingField: 0
   - <IsFakeEnemy>k__BackingField: 1
     <SideToSpawn>k__BackingField: 3
-    <DelayToNextEnemy>k__BackingField: 0.6335099
+    <DelayToNextEnemy>k__BackingField: 0.21062212
   - <IsFakeEnemy>k__BackingField: 1
     <SideToSpawn>k__BackingField: 2
-    <DelayToNextEnemy>k__BackingField: 0.63536155
-  - <IsFakeEnemy>k__BackingField: 1
-    <SideToSpawn>k__BackingField: 1
-    <DelayToNextEnemy>k__BackingField: 0.71372867
+    <DelayToNextEnemy>k__BackingField: 0.0973519
   - <IsFakeEnemy>k__BackingField: 1
     <SideToSpawn>k__BackingField: 3
-    <DelayToNextEnemy>k__BackingField: 0.6466792
-  - <IsFakeEnemy>k__BackingField: 1
-    <SideToSpawn>k__BackingField: 0
-    <DelayToNextEnemy>k__BackingField: 0.700679
+    <DelayToNextEnemy>k__BackingField: 0.11133192
   - <IsFakeEnemy>k__BackingField: 1
     <SideToSpawn>k__BackingField: 2
-    <DelayToNextEnemy>k__BackingField: 0.61913687
-  - <IsFakeEnemy>k__BackingField: 1
-    <SideToSpawn>k__BackingField: 1
-    <DelayToNextEnemy>k__BackingField: 0.5899877
+    <DelayToNextEnemy>k__BackingField: 0.08883281
   - <IsFakeEnemy>k__BackingField: 1
     <SideToSpawn>k__BackingField: 3
-    <DelayToNextEnemy>k__BackingField: 0.59318346
+    <DelayToNextEnemy>k__BackingField: 0.1115432
   - <IsFakeEnemy>k__BackingField: 1
     <SideToSpawn>k__BackingField: 2
-    <DelayToNextEnemy>k__BackingField: 0.66691107
-  - <IsFakeEnemy>k__BackingField: 1
-    <SideToSpawn>k__BackingField: 1
-    <DelayToNextEnemy>k__BackingField: 0.5938302
-  - <IsFakeEnemy>k__BackingField: 1
-    <SideToSpawn>k__BackingField: 0
-    <DelayToNextEnemy>k__BackingField: 0.26248068
+    <DelayToNextEnemy>k__BackingField: 0.096481696
   - <IsFakeEnemy>k__BackingField: 1
     <SideToSpawn>k__BackingField: 3
-    <DelayToNextEnemy>k__BackingField: 0.60224885
+    <DelayToNextEnemy>k__BackingField: 0.103032604
   - <IsFakeEnemy>k__BackingField: 1
     <SideToSpawn>k__BackingField: 2
-    <DelayToNextEnemy>k__BackingField: 0.3157212
-  - <IsFakeEnemy>k__BackingField: 1
-    <SideToSpawn>k__BackingField: 0
-    <DelayToNextEnemy>k__BackingField: 0.35343304
-  - <IsFakeEnemy>k__BackingField: 1
-    <SideToSpawn>k__BackingField: 1
-    <DelayToNextEnemy>k__BackingField: 0.32274142
-  - <IsFakeEnemy>k__BackingField: 1
-    <SideToSpawn>k__BackingField: 0
-    <DelayToNextEnemy>k__BackingField: 0.34603924
-  - <IsFakeEnemy>k__BackingField: 1
-    <SideToSpawn>k__BackingField: 1
-    <DelayToNextEnemy>k__BackingField: 0.30720615
-  - <IsFakeEnemy>k__BackingField: 1
-    <SideToSpawn>k__BackingField: 0
-    <DelayToNextEnemy>k__BackingField: 0.29019275
-  - <IsFakeEnemy>k__BackingField: 1
-    <SideToSpawn>k__BackingField: 1
-    <DelayToNextEnemy>k__BackingField: 0.33791405
-  - <IsFakeEnemy>k__BackingField: 1
-    <SideToSpawn>k__BackingField: 0
-    <DelayToNextEnemy>k__BackingField: 0.33985296
+    <DelayToNextEnemy>k__BackingField: 0.10383739
   - <IsFakeEnemy>k__BackingField: 1
     <SideToSpawn>k__BackingField: 3
-    <DelayToNextEnemy>k__BackingField: 0.32905665
+    <DelayToNextEnemy>k__BackingField: 0.11240252
   - <IsFakeEnemy>k__BackingField: 1
     <SideToSpawn>k__BackingField: 2
-    <DelayToNextEnemy>k__BackingField: 0.22737803
+    <DelayToNextEnemy>k__BackingField: 0.111715786
   - <IsFakeEnemy>k__BackingField: 1
-    <SideToSpawn>k__BackingField: 0
-    <DelayToNextEnemy>k__BackingField: 0.30302492
-  - <IsFakeEnemy>k__BackingField: 1
-    <SideToSpawn>k__BackingField: 1
-    <DelayToNextEnemy>k__BackingField: 0.4444464
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.1122696
   - <IsFakeEnemy>k__BackingField: 1
     <SideToSpawn>k__BackingField: 2
-    <DelayToNextEnemy>k__BackingField: 0.2627539
+    <DelayToNextEnemy>k__BackingField: 0.13543117
   - <IsFakeEnemy>k__BackingField: 1
-    <SideToSpawn>k__BackingField: 0
-    <DelayToNextEnemy>k__BackingField: 0.345424
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.112906404
   - <IsFakeEnemy>k__BackingField: 1
     <SideToSpawn>k__BackingField: 2
-    <DelayToNextEnemy>k__BackingField: 0.2991848
-  - <IsFakeEnemy>k__BackingField: 1
-    <SideToSpawn>k__BackingField: 1
-    <DelayToNextEnemy>k__BackingField: 0.22951087
+    <DelayToNextEnemy>k__BackingField: 0.119070224
   - <IsFakeEnemy>k__BackingField: 1
     <SideToSpawn>k__BackingField: 3
-    <DelayToNextEnemy>k__BackingField: 0.2991989
-  - <IsFakeEnemy>k__BackingField: 1
-    <SideToSpawn>k__BackingField: 0
-    <DelayToNextEnemy>k__BackingField: 0.24288206
-  - <IsFakeEnemy>k__BackingField: 1
-    <SideToSpawn>k__BackingField: 1
-    <DelayToNextEnemy>k__BackingField: 0.29733518
-  - <IsFakeEnemy>k__BackingField: 1
-    <SideToSpawn>k__BackingField: 0
-    <DelayToNextEnemy>k__BackingField: 0.25424647
-  - <IsFakeEnemy>k__BackingField: 1
-    <SideToSpawn>k__BackingField: 1
-    <DelayToNextEnemy>k__BackingField: 0.29647994
-  - <IsFakeEnemy>k__BackingField: 1
-    <SideToSpawn>k__BackingField: 3
-    <DelayToNextEnemy>k__BackingField: 0.24139355
+    <DelayToNextEnemy>k__BackingField: 0.1034276
   - <IsFakeEnemy>k__BackingField: 1
     <SideToSpawn>k__BackingField: 2
-    <DelayToNextEnemy>k__BackingField: 0.29165307
+    <DelayToNextEnemy>k__BackingField: 0.104904175
   - <IsFakeEnemy>k__BackingField: 1
     <SideToSpawn>k__BackingField: 3
-    <DelayToNextEnemy>k__BackingField: 0.29492873
-  - <IsFakeEnemy>k__BackingField: 1
-    <SideToSpawn>k__BackingField: 0
-    <DelayToNextEnemy>k__BackingField: 0.23552819
-  - <IsFakeEnemy>k__BackingField: 1
-    <SideToSpawn>k__BackingField: 1
-    <DelayToNextEnemy>k__BackingField: 0.34249416
-  - <IsFakeEnemy>k__BackingField: 1
-    <SideToSpawn>k__BackingField: 3
-    <DelayToNextEnemy>k__BackingField: 0.30294394
+    <DelayToNextEnemy>k__BackingField: 0.096457
   - <IsFakeEnemy>k__BackingField: 1
     <SideToSpawn>k__BackingField: 2
-    <DelayToNextEnemy>k__BackingField: 0.28256452
+    <DelayToNextEnemy>k__BackingField: 0.11169791
   - <IsFakeEnemy>k__BackingField: 1
-    <SideToSpawn>k__BackingField: 0
-    <DelayToNextEnemy>k__BackingField: 0.29745007
-  - <IsFakeEnemy>k__BackingField: 1
-    <SideToSpawn>k__BackingField: 1
-    <DelayToNextEnemy>k__BackingField: 0.30690044
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.101975426
   - <IsFakeEnemy>k__BackingField: 1
     <SideToSpawn>k__BackingField: 2
-    <DelayToNextEnemy>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.0887346
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.13582203
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 2
+    <DelayToNextEnemy>k__BackingField: 0.104305506
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.1364215
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.1353309
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 3
+    <DelayToNextEnemy>k__BackingField: 0.048643406
   - <IsFakeEnemy>k__BackingField: 1
     <SideToSpawn>k__BackingField: 0
-    <DelayToNextEnemy>k__BackingField: 0.20412728
-  - <IsFakeEnemy>k__BackingField: 1
-    <SideToSpawn>k__BackingField: 3
-    <DelayToNextEnemy>k__BackingField: 1.272933
-  - <IsFakeEnemy>k__BackingField: 1
-    <SideToSpawn>k__BackingField: 3
-    <DelayToNextEnemy>k__BackingField: 0.0637225
+    <DelayToNextEnemy>k__BackingField: 0.0072223
   - <IsFakeEnemy>k__BackingField: 1
     <SideToSpawn>k__BackingField: 1
-    <DelayToNextEnemy>k__BackingField: 0.053323105
+    <DelayToNextEnemy>k__BackingField: 0.04846801
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.23117453
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.06527749
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.23234339
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.08683691
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.2561226
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.06459779
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.26330823
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.0567663
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.27986377
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.0798497
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.25054425
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.08579929
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.23986761
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.04800421
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 0
+    <DelayToNextEnemy>k__BackingField: 0.2311503
+  - <IsFakeEnemy>k__BackingField: 1
+    <SideToSpawn>k__BackingField: 1
+    <DelayToNextEnemy>k__BackingField: 0.0638827
   <DelayToNextWave>k__BackingField: 3
   <DelayToChangeBackground>k__BackingField: 5

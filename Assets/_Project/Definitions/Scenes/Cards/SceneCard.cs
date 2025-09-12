@@ -22,5 +22,8 @@ namespace Definitions.Scenes.Cards
         [field: SerializeField] public AudioClip LevelClip { get; private set; }
         [field: SerializeField] public float Volume { get; private set; } = 0.8f;
         [field: SerializeField] public CameraBassShakeWaves CameraBassShakeWaves { get; private set; }
+        
+        [field: Space, Header("Other")]
+        [field: SerializeField] public bool ShakeCameraWhenPlayerKillSomeone { get; private set; } = true;
     }
 }
