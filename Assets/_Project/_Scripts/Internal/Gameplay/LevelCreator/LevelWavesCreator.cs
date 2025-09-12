@@ -80,8 +80,8 @@ namespace Internal.Gameplay.LevelCreator
 
         private void ReadIntoWaveSO(Vector2 direction)
         {
-            // if(_startCountingDelay == StartCountingDelayMethods.WhenAnyButtonPressed)
-            _startedWriting = true;
+            if (_startCountingDelay == StartCountingDelayMethods.WhenAnyButtonPressed) _startedWriting = true;
+            if (!_startedWriting) return;
 
             var sideToSpawn = GetSideToSpawn(direction);
             var enemyInWave = new EnemyInWave(sideToSpawn, _delayToNextEnemy);
