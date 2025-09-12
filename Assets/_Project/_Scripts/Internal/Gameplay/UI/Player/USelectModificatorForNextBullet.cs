@@ -44,7 +44,7 @@ namespace Internal.Gameplay.UI.Player
             SetAmountToLabel();
         }
 
-        private void SetToUseModificatorInNextBullet()
+        public void SetToUseModificatorInNextBullet()
         {
             var itemInInventory = _playerData.TryGetBulletModificatorInInventoryBy(_modificatorToUse);
             if (itemInInventory != null)

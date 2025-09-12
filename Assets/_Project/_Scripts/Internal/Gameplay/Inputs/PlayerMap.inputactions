@@ -13,6 +13,33 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "ModificatorSlot1",
+                    "type": "Button",
+                    "id": "8db81426-f6e9-428e-a6b8-55ab4c6e7e01",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "ModificatorSlot2",
+                    "type": "Button",
+                    "id": "902c467d-f23e-4988-8fc5-28c8a9c145f1",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "ModificatorSlot3",
+                    "type": "Button",
+                    "id": "fd547c3b-0140-4367-a49a-447af462a559",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -145,6 +172,39 @@
                     "processors": "",
                     "groups": "Joystick",
                     "action": "Shoot",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "64ba6bdb-d9b2-424e-b821-a4502199895c",
+                    "path": "<Keyboard>/1",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "ModificatorSlot1",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8d392648-06a1-4cfd-abc2-bbac2db7473b",
+                    "path": "<Keyboard>/2",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "ModificatorSlot2",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2bf8b223-3329-4e4a-a0de-7b54ffd00de8",
+                    "path": "<Keyboard>/3",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "ModificatorSlot3",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
