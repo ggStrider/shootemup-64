@@ -56,6 +56,11 @@ namespace Spawners
             // InvokeRepeating(nameof(RandomizeBackgroundColor), _changeBackgroundColorInterval, _changeBackgroundColorInterval);
         }
 
+        private void OnDestroy()
+        {
+            MyUniTaskExtensions.SafeCancelAndCleanToken(ref _changingBackgroundCts);
+        }
+
         // TODO: Refactor into another class
         private async UniTask RandomizeBackgroundColorCoroutine(int waveIndex, CancellationToken token)
         {
