@@ -7,6 +7,7 @@ using Enemy;
 using Internal.Core.Pools;
 using Internal.Core.Scenes;
 using Internal.Core.Signals;
+using Internal.Gameplay.Managers;
 using Player;
 using Tools;
 using UnityEngine;
@@ -98,6 +99,9 @@ namespace Spawners
             else
             {
                 Debug.Log("All waves completed!");
+                
+                // TODO: Refactor
+                FindAnyObjectByType<GameStateManager>().WinGame();
             }
         }
 

@@ -9,8 +9,6 @@ namespace Internal.Gameplay.Managers
 {
     public class GameStateManager : MonoBehaviour
     {
-        private SceneLoader _sceneLoader;
-        
         private HealthSystem _playerHealth;
         private InputReader _inputReader;
 
@@ -18,12 +16,10 @@ namespace Internal.Gameplay.Managers
 
         [Inject]
         private void Construct(PlayerHealth playerHealth, 
-            SceneLoader sceneLoader,
             InputReader inputReader,
             SignalBus signalBus)
         {
             _playerHealth = playerHealth;
-            _sceneLoader = sceneLoader;
             _inputReader = inputReader;
             _signalBus = signalBus;
         }
@@ -39,6 +35,12 @@ namespace Internal.Gameplay.Managers
             {
                 _playerHealth.OnDeath -= LoseGame;
             }
+        }
+
+        public void WinGame()
+        {
+            _inputReader.UnsubscribeInGameButtons();
+            _signalBus.Fire(new GameEndSignal(won: true));
         }
 
         private void LoseGame()
