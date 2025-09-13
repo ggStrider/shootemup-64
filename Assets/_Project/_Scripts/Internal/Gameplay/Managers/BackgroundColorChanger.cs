@@ -92,12 +92,12 @@ namespace Internal.Gameplay.Managers
                     else
                     {
                         _backgroundRenderer.color = randomColor;
+                        _signalBus.Fire(new BackgroundChangedSignal(
+                            _backgroundRenderer, _backgroundRenderer.color, _backgroundRenderer.color.GetComplementary()));
+                        
                         await UniTask.WaitForSeconds(
                             _sceneCard.LevelWaves[waveIndex].DelayToChangeBackground, cancellationToken: token);
                     }
-
-                    _signalBus.Fire(new BackgroundChangedSignal(
-                        _backgroundRenderer, _backgroundRenderer.color, _backgroundRenderer.color.GetComplementary()));
                 }
             }
             catch (OperationCanceledException)
