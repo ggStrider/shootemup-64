@@ -2,6 +2,7 @@
 using Internal.Core.DataModel;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 using Zenject;
 
@@ -13,7 +14,10 @@ namespace Internal.Gameplay.UI.Buttons
 
         [Space] 
         [SerializeField] private Image _itemImagePlaceholder;
+        [SerializeField] private TextMeshProUGUI _namePlaceholder;
         [SerializeField] private TextMeshProUGUI _pricePlaceholder;
+        
+        [Space]
         [SerializeField] private BulletModificatorSO _toBuy;
 
         private PlayerData _playerData;
@@ -28,7 +32,8 @@ namespace Internal.Gameplay.UI.Buttons
         {
             _itemImagePlaceholder.sprite = _toBuy.ItemIcon;
             _itemImagePlaceholder.color = _toBuy.IconColor;
-            _pricePlaceholder.text = _toBuy.ItemName;
+            _namePlaceholder.text = _toBuy.ItemName;
+            _pricePlaceholder.text = _toBuy.Price.ToString();
             
             _buttonToBind.onClick.AddListener(TryBuyModificator);
         }
