@@ -13,7 +13,7 @@ namespace Definitions.Scenes.Delays.BackgroundChanger
         [Header("Color (Any1) - color of bg")] 
         [Header("Bool (Any2) - smooth changing of bg")] 
         
-        [SerializeField]
-        private bool _dummyForHeader;
+        // [SerializeField]
+        // private ///// _dummyForHeader;
     }
 }

@@ -15,10 +15,10 @@ MonoBehaviour:
   <DelaysWith2T>k__BackingField:
   - <Delay>k__BackingField: 2.2938974
     <Any1>k__BackingField: {r: 0.25195572, g: 0.5858767, b: 0.5159109, a: 1}
-    <Any2>k__BackingField: 0
+    <Any2>k__BackingField: 1
   - <Delay>k__BackingField: 1.4215475
     <Any1>k__BackingField: {r: 0.2920029, g: 0.46465197, b: 0.74271715, a: 1}
-    <Any2>k__BackingField: 0
+    <Any2>k__BackingField: 1
   - <Delay>k__BackingField: 2.684681
     <Any1>k__BackingField: {r: 0.46973032, g: 0.29230824, b: 0.7629508, a: 1}
     <Any2>k__BackingField: 0
