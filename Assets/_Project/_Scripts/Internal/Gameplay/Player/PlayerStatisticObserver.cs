@@ -68,6 +68,13 @@ namespace Internal.Gameplay.Player
         private void AddFakeEnemyHitInPlayerCount() => FakeEnemiesHitInPlayer++;
 
         private void AddPlayerShotCount() => PlayerShot++;
-        private void AddBackgroundChangedCount() => BackgroundChanged++;
+
+        private void AddBackgroundChangedCount(BackgroundChangedSignal signal)
+        {
+            if (signal.CompletelyChanged)
+            {
+                BackgroundChanged++;
+            }
+        }
     }
 }

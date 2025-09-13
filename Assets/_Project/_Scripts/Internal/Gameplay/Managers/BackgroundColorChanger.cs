@@ -118,16 +118,24 @@ namespace Internal.Gameplay.Managers
                 float t = Mathf.Clamp01(elapsed / duration);
                 _backgroundRenderer.color = Color.Lerp(startColor, targetColor, t);
                 _signalBus.Fire(new BackgroundChangedSignal(
-                    _backgroundRenderer, _backgroundRenderer.color, _backgroundRenderer.color.GetComplementary()));
+                    _backgroundRenderer, _backgroundRenderer.color, _backgroundRenderer.color.GetComplementary(),
+                        false));
+                
                 await UniTask.Yield(PlayerLoopTiming.Update, token);
             }
+            
+            _signalBus.Fire(new BackgroundChangedSignal(
+                _backgroundRenderer, _backgroundRenderer.color, _backgroundRenderer.color.GetComplementary(),
+                true));
         }
 
         private async UniTask InstantChangeColor(Color targetColor, float delay, CancellationToken token)
         {
             _backgroundRenderer.color = targetColor;
             _signalBus.Fire(new BackgroundChangedSignal(
-                _backgroundRenderer, _backgroundRenderer.color, _backgroundRenderer.color.GetComplementary()));
+                _backgroundRenderer, _backgroundRenderer.color, _backgroundRenderer.color.GetComplementary(),
+                    true));
+            
             await UniTask.WaitForSeconds(delay, cancellationToken: token);
         }
     }
