@@ -45,7 +45,24 @@ namespace UI.Buttons
 
         private void Initialize()
         {
-            if(_writeAutoSceneName) _levelNamePlaceholder.text = _sceneCard.ScenePreviewName;
+            if (_writeAutoSceneName)
+            {
+                if (_levelNamePlaceholder == null || _sceneCard == null)
+                {
+                    Debug.LogError($"[{nameof(UButtonSceneChangerWithTransition)}] Missing references! " +
+                                   $"LevelNamePlaceholder={_levelNamePlaceholder}, SceneCard={_sceneCard}");
+                    return;
+                }
+
+                _levelNamePlaceholder.text = _sceneCard.ScenePreviewName;
+            }
+
+            if (_buttonToBind == null)
+            {
+                Debug.LogError($"[{nameof(UButtonSceneChangerWithTransition)}] ButtonToBind is null!");
+                return;
+            }
+
             _buttonToBind.onClick.AddListener(OnButtonClick);
         }
 

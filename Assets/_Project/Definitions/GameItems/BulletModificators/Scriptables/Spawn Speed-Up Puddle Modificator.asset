@@ -15,5 +15,5 @@ MonoBehaviour:
   <ItemName>k__BackingField: Speed-up puddle
   <ItemIcon>k__BackingField: {fileID: 21300000, guid: 4a75e3310e7af0c4aa59edbd372ba334, type: 3}
   <IconColor>k__BackingField: {r: 0.039215688, g: 0.3137255, b: 0, a: 1}
-  <Price>k__BackingField: 10
+  <Price>k__BackingField: 90
   _prefabToSpawn: {fileID: 5932896759992430572, guid: 079bdb5aeff913444abe6f3bf53dff58, type: 3}

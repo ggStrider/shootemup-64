@@ -152,10 +152,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _buttonToBind: {fileID: 6108703937298478740}
+  _writeAutoSceneName: 1
   _levelNamePlaceholder: {fileID: 6450130378476493695}
   _sceneCard: {fileID: 0}
-  _initializeOnAwake: 1
-  _moveTo: 2
+  _initializeOnAwake: 0
+  _playMusicOfNextSceneInstantly: 0
 --- !u!1 &2818118613185537380
 GameObject:
   m_ObjectHideFlags: 0

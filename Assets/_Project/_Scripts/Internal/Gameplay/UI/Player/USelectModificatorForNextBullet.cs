@@ -60,7 +60,15 @@ namespace Internal.Gameplay.UI.Player
         private void SetAmountToLabel(BulletModificatorInInventory itemInInventory = null)
         {
             itemInInventory ??= _playerData.TryGetBulletModificatorInInventoryBy(_modificatorToUse);
-            _amountLabel.text = itemInInventory.Amount.ToString();
+
+            if (itemInInventory == null)
+            {
+                _amountLabel.text = "0";
+            }
+            else
+            {
+                _amountLabel.text = itemInInventory.Amount.ToString();
+            }
         }
 
         public void SetModificatorToSelect(BulletModificatorSO bulletModificator)
