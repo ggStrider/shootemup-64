@@ -3,13 +3,13 @@ using UnityEngine;
 
 namespace Definitions.Scenes.CameraBassShake
 {
-    [CreateAssetMenu(fileName = "New Camera Shake Waves", menuName = 
-        StaticKeys.PROJECT_NAME + "/Definitions/Camera Shake Waves")]
-    public class CameraBassShakeWaves : ScriptableObject
+    [CreateAssetMenu(fileName = "New Delays Wave", menuName = 
+        StaticKeys.PROJECT_NAME + "/Definitions/Delays/Any Delays Waves")]
+    public class DelaysWave : ScriptableObject
     {
         [field:SerializeField] public List<float> Delays { get; private set; } = new();
 
-        public static implicit operator List<float>(CameraBassShakeWaves waves)
+        public static implicit operator List<float>(DelaysWave waves)
         {
             return waves.Delays;
         }

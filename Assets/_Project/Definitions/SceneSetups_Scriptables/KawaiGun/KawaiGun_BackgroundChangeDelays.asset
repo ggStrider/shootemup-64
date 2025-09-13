@@ -1,0 +1,1285 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0feb6774635e4a84a231cfaed9fc8271, type: 3}
+  m_Name: KawaiGun_BackgroundChangeDelays
+  m_EditorClassIdentifier: 
+  <DelaysWith2T>k__BackingField:
+  - <Delay>k__BackingField: 2.2938974
+    <Any1>k__BackingField: {r: 0.25195572, g: 0.5858767, b: 0.5159109, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 1.4215475
+    <Any1>k__BackingField: {r: 0.2920029, g: 0.46465197, b: 0.74271715, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 2.684681
+    <Any1>k__BackingField: {r: 0.46973032, g: 0.29230824, b: 0.7629508, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 2.5403144
+    <Any1>k__BackingField: {r: 0.1832264, g: 0.09769791, b: 0.67102045, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 2.5750237
+    <Any1>k__BackingField: {r: 0.744004, g: 0.7190682, b: 0.23822048, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.66876715
+    <Any1>k__BackingField: {r: 0.011385371, g: 0.65221167, b: 0.6707311, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.6906334
+    <Any1>k__BackingField: {r: 0.18578018, g: 0.6278628, b: 0.34462938, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.6314148
+    <Any1>k__BackingField: {r: 0.47850412, g: 0.092063494, b: 0.620141, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.63433003
+    <Any1>k__BackingField: {r: 0.0690191, g: 0.5632105, b: 0.9645455, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.6743273
+    <Any1>k__BackingField: {r: 0.20065293, g: 0.8758586, b: 0.6400914, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.640337
+    <Any1>k__BackingField: {r: 0.44563246, g: 0.22426508, b: 0.87086284, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.6763944
+    <Any1>k__BackingField: {r: 0.24118483, g: 0.61446315, b: 0.47674322, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.6880827
+    <Any1>k__BackingField: {r: 0.024466235, g: 0.1152208, b: 0.95465595, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.6889574
+    <Any1>k__BackingField: {r: 0.45080882, g: 0.22438246, b: 0.9187525, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.62217003
+    <Any1>k__BackingField: {r: 0.66575706, g: 0.102762006, b: 0.07190742, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.64405686
+    <Any1>k__BackingField: {r: 0.62593275, g: 0.61812603, b: 0.16021912, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.5937653
+    <Any1>k__BackingField: {r: 0.5558409, g: 0.14260387, b: 0.10914121, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.6197136
+    <Any1>k__BackingField: {r: 0.6730761, g: 0.072394885, b: 0.29522973, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.71213156
+    <Any1>k__BackingField: {r: 0.4793147, g: 0.9642064, b: 0.41632715, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.5938003
+    <Any1>k__BackingField: {r: 0.9462744, g: 0.8495976, b: 0.22373965, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.6969548
+    <Any1>k__BackingField: {r: 0.7975891, g: 0.87921685, b: 0.22329798, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.61903465
+    <Any1>k__BackingField: {r: 0.30233148, g: 0.9856993, b: 0.8043817, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.65969205
+    <Any1>k__BackingField: {r: 0.6561939, g: 0.21861152, b: 0.3690795, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.6009093
+    <Any1>k__BackingField: {r: 0.39000136, g: 0.8147707, b: 0.31601235, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.6872416
+    <Any1>k__BackingField: {r: 0.3532212, g: 0.51247054, b: 0.8770063, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.6209448
+    <Any1>k__BackingField: {r: 0.88909775, g: 0.43098742, b: 0.91575843, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.6631773
+    <Any1>k__BackingField: {r: 0.3715767, g: 0.8227962, b: 0.18179664, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.6664388
+    <Any1>k__BackingField: {r: 0.87191916, g: 0.63469934, b: 0.42409557, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.6706766
+    <Any1>k__BackingField: {r: 0.3347129, g: 0.97483766, b: 0.57851255, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.32772925
+    <Any1>k__BackingField: {r: 0.41448745, g: 0.26725623, b: 0.6038438, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.34118164
+    <Any1>k__BackingField: {r: 0.18652771, g: 0.2960287, b: 0.7525637, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.3251102
+    <Any1>k__BackingField: {r: 0.7072186, g: 0.022988783, b: 0.94440585, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.3212391
+    <Any1>k__BackingField: {r: 0.3471248, g: 0.27254155, b: 0.6077387, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.32674646
+    <Any1>k__BackingField: {r: 0.81846094, g: 0.33048853, b: 0.17853557, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.3288628
+    <Any1>k__BackingField: {r: 0.030278642, g: 0.63711315, b: 0.7682718, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.32099488
+    <Any1>k__BackingField: {r: 0.7374644, g: 0.31711322, b: 0.628802, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.31188646
+    <Any1>k__BackingField: {r: 0.6389621, g: 0.0372619, b: 0.49914566, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.3111011
+    <Any1>k__BackingField: {r: 0.5325636, g: 0.07099248, b: 0.43627414, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.35719758
+    <Any1>k__BackingField: {r: 0.9663989, g: 0.17274326, b: 0.3775302, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.34072208
+    <Any1>k__BackingField: {r: 0.61236864, g: 0.18400073, b: 0.69326806, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.28674307
+    <Any1>k__BackingField: {r: 0.23192063, g: 0.3506516, b: 0.7620081, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.32043013
+    <Any1>k__BackingField: {r: 0.059003178, g: 0.37886974, b: 0.5967636, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.305048
+    <Any1>k__BackingField: {r: 0.22162512, g: 0.63434577, b: 0.24291992, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.34130567
+    <Any1>k__BackingField: {r: 0.50657916, g: 0.0869399, b: 0.68083096, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.3003033
+    <Any1>k__BackingField: {r: 0.5875505, g: 0.20823596, b: 0.7537371, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.32429203
+    <Any1>k__BackingField: {r: 0.32897693, g: 0.29048476, b: 0.7809069, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.3369315
+    <Any1>k__BackingField: {r: 0.005228013, g: 0.5828449, b: 0.80098903, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.31375548
+    <Any1>k__BackingField: {r: 0.20730159, g: 0.23104317, b: 0.5618586, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.35787517
+    <Any1>k__BackingField: {r: 0.29039872, g: 0.673564, b: 0.3891983, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.3095369
+    <Any1>k__BackingField: {r: 0.22720273, g: 0.5813954, b: 0.18764077, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.31033525
+    <Any1>k__BackingField: {r: 0.86548483, g: 0.0428077, b: 0.14893125, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.3502529
+    <Any1>k__BackingField: {r: 0.11173425, g: 0.8159294, b: 0.5305046, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.27157992
+    <Any1>k__BackingField: {r: 0.64243376, g: 0.6203378, b: 0.081102915, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.19767003
+    <Any1>k__BackingField: {r: 0.49869207, g: 0.9187348, b: 0.13263585, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.16049713
+    <Any1>k__BackingField: {r: 0.5179636, g: 0.7929685, b: 0.22255193, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.15766202
+    <Any1>k__BackingField: {r: 0.65636164, g: 0.49722284, b: 0.29172507, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.1608505
+    <Any1>k__BackingField: {r: 0.9818839, g: 0.555419, b: 0.39969182, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.18503684
+    <Any1>k__BackingField: {r: 0.38635537, g: 0.94766164, b: 0.66302264, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.48875296
+    <Any1>k__BackingField: {r: 0.31139973, g: 0.062460635, b: 0.6821812, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.14590023
+    <Any1>k__BackingField: {r: 0.25255713, g: 0.41032022, b: 0.6524643, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.16320978
+    <Any1>k__BackingField: {r: 0.045865886, g: 0.81365025, b: 0.8295908, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.1714913
+    <Any1>k__BackingField: {r: 0.41412887, g: 0.06538706, b: 0.575407, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.15885438
+    <Any1>k__BackingField: {r: 0.75667864, g: 0.9114807, b: 0.3136585, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.6283344
+    <Any1>k__BackingField: {r: 0.91717166, g: 0.74412763, b: 0.40698522, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.14978169
+    <Any1>k__BackingField: {r: 0.7240944, g: 0.28805935, b: 0.549021, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.16988891
+    <Any1>k__BackingField: {r: 0.29333264, g: 0.7434058, b: 0.08802047, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.15393203
+    <Any1>k__BackingField: {r: 0.1649582, g: 0.97173876, b: 0.46691346, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.1969419
+    <Any1>k__BackingField: {r: 0.8806341, g: 0.6082431, b: 0.33651885, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.16506542
+    <Any1>k__BackingField: {r: 0.008024855, g: 0.7702788, b: 0.36286816, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.20776194
+    <Any1>k__BackingField: {r: 0.4984207, g: 0.6216159, b: 0.13666266, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.28044286
+    <Any1>k__BackingField: {r: 0.27226117, g: 0.55721694, b: 0.8853929, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.3254672
+    <Any1>k__BackingField: {r: 0.89491653, g: 0.5545652, b: 0.38329315, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.30601618
+    <Any1>k__BackingField: {r: 0.623461, g: 0.57302964, b: 0.30235064, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.31230763
+    <Any1>k__BackingField: {r: 0.81773853, g: 0.5250918, b: 0.29499725, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.31435704
+    <Any1>k__BackingField: {r: 0.23761587, g: 0.7895919, b: 0.7718278, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.34020847
+    <Any1>k__BackingField: {r: 0.6279841, g: 0.03271749, b: 0.47513062, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.3325095
+    <Any1>k__BackingField: {r: 0.62073624, g: 0.3083741, b: 0.2688658, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.3540322
+    <Any1>k__BackingField: {r: 0.23996322, g: 0.6609777, b: 0.66724324, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.33318898
+    <Any1>k__BackingField: {r: 0.35195604, g: 0.8280077, b: 0.72441053, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.33249736
+    <Any1>k__BackingField: {r: 0.23109186, g: 0.71943307, b: 0.28848967, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.3152074
+    <Any1>k__BackingField: {r: 0.46311715, g: 0.28205124, b: 0.62284267, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.28667334
+    <Any1>k__BackingField: {r: 0.24282986, g: 0.03170373, b: 0.6181782, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.3192479
+    <Any1>k__BackingField: {r: 0.015138588, g: 0.19054426, b: 0.808738, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.62407005
+    <Any1>k__BackingField: {r: 0.13817236, g: 0.89745, b: 0.8824074, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.6570744
+    <Any1>k__BackingField: {r: 0.6445809, g: 0.6876261, b: 0.2592015, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.6688284
+    <Any1>k__BackingField: {r: 0.11793804, g: 0.55578053, b: 0.19055909, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.67020583
+    <Any1>k__BackingField: {r: 0.5105744, g: 0.26913282, b: 0.54442185, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.3034667
+    <Any1>k__BackingField: {r: 0.66385233, g: 0.86421824, b: 0.10856547, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.33000934
+    <Any1>k__BackingField: {r: 0.7448123, g: 0.4050195, b: 0.8196273, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.32023537
+    <Any1>k__BackingField: {r: 0.84828925, g: 0.5855163, b: 0.42061463, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.32587606
+    <Any1>k__BackingField: {r: 0.013817881, g: 0.91942835, b: 0.1358408, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.32654318
+    <Any1>k__BackingField: {r: 0.62445706, g: 0.27513745, b: 0.48230693, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.32295725
+    <Any1>k__BackingField: {r: 0.5605341, g: 0.96164817, b: 0.2615983, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.34465724
+    <Any1>k__BackingField: {r: 0.5036716, g: 0.8046652, b: 0.22048973, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.32688427
+    <Any1>k__BackingField: {r: 0.23346244, g: 0.8196297, b: 0.8591305, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.36215538
+    <Any1>k__BackingField: {r: 0.69809973, g: 0.046417285, b: 0.045798156, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.2967618
+    <Any1>k__BackingField: {r: 0.8253542, g: 0.41328534, b: 0.026909439, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.2829363
+    <Any1>k__BackingField: {r: 0.35586005, g: 0.9715979, b: 0.55508214, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.32818347
+    <Any1>k__BackingField: {r: 0.19216278, g: 0.83109653, b: 0.391389, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.31959498
+    <Any1>k__BackingField: {r: 0.26427928, g: 0.9621083, b: 0.6660143, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.30870226
+    <Any1>k__BackingField: {r: 0.85551393, g: 0.009792365, b: 0.62760705, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.3352709
+    <Any1>k__BackingField: {r: 0.8414414, g: 0.34806782, b: 0.78622735, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.32945445
+    <Any1>k__BackingField: {r: 0.25224397, g: 0.2835535, b: 0.5179679, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.2307456
+    <Any1>k__BackingField: {r: 0.1525792, g: 0.081545435, b: 0.62085295, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.15645008
+    <Any1>k__BackingField: {r: 0.7180488, g: 0.27499005, b: 0.37771836, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.17855978
+    <Any1>k__BackingField: {r: 0.28805652, g: 0.8115125, b: 0.7932837, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.14207122
+    <Any1>k__BackingField: {r: 0.44228873, g: 0.6119657, b: 0.136084, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.11669762
+    <Any1>k__BackingField: {r: 0.78930104, g: 0.102763444, b: 0.31263098, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.1407168
+    <Any1>k__BackingField: {r: 0.11590762, g: 0.9719342, b: 0.28235945, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.09352891
+    <Any1>k__BackingField: {r: 0.08541767, g: 0.51736414, b: 0.5028722, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.122730605
+    <Any1>k__BackingField: {r: 0.71780527, g: 0.4913959, b: 0.9845174, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.11050878
+    <Any1>k__BackingField: {r: 0.3932512, g: 0.78280663, b: 0.21277611, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.09021543
+    <Any1>k__BackingField: {r: 0.18473768, g: 0.0068595544, b: 0.5976911, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.1360019
+    <Any1>k__BackingField: {r: 0.72221243, g: 0.5162305, b: 0.20243633, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.117256485
+    <Any1>k__BackingField: {r: 0.58935344, g: 0.23190072, b: 0.26956126, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.0762658
+    <Any1>k__BackingField: {r: 0.5734275, g: 0.38385972, b: 0.21607247, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.124040596
+    <Any1>k__BackingField: {r: 0.6785814, g: 0.11381463, b: 0.8059393, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.103678115
+    <Any1>k__BackingField: {r: 0.0147926025, g: 0.21573713, b: 0.84065676, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.11438609
+    <Any1>k__BackingField: {r: 0.79275405, g: 0.19654481, b: 0.22752896, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.1325008
+    <Any1>k__BackingField: {r: 0.79752564, g: 0.11547882, b: 0.38461637, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.14542617
+    <Any1>k__BackingField: {r: 0.17968999, g: 0.313084, b: 0.61348784, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.19808377
+    <Any1>k__BackingField: {r: 0.9896561, g: 0.4913691, b: 0.93547887, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.17607479
+    <Any1>k__BackingField: {r: 0.27961597, g: 0.053081915, b: 0.72075534, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.2600885
+    <Any1>k__BackingField: {r: 0.7211313, g: 0.39804578, b: 0.8357488, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.27589446
+    <Any1>k__BackingField: {r: 0.56864214, g: 0.6810836, b: 0.024175743, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.31227913
+    <Any1>k__BackingField: {r: 0.23322356, g: 0.71672595, b: 0.2677305, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.33340874
+    <Any1>k__BackingField: {r: 0.33710727, g: 0.85418737, b: 0.85224396, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.32013667
+    <Any1>k__BackingField: {r: 0.2234694, g: 0.3589993, b: 0.519063, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.31053153
+    <Any1>k__BackingField: {r: 0.16252063, g: 0.04766769, b: 0.74330807, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.17512433
+    <Any1>k__BackingField: {r: 0.47345203, g: 0.5850688, b: 0.15901963, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.18389413
+    <Any1>k__BackingField: {r: 0.040418092, g: 0.53638154, b: 0.65877527, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.3078627
+    <Any1>k__BackingField: {r: 0.18648416, g: 0.6697483, b: 0.3848701, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.21031521
+    <Any1>k__BackingField: {r: 0.014439172, g: 0.085642435, b: 0.6663983, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.2199253
+    <Any1>k__BackingField: {r: 0.84575105, g: 0.43007952, b: 0.25841326, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.18845403
+    <Any1>k__BackingField: {r: 0.3579585, g: 0.68493074, b: 0.08911407, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.15056242
+    <Any1>k__BackingField: {r: 0.17362314, g: 0.6922782, b: 0.72508645, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.19061947
+    <Any1>k__BackingField: {r: 0.64192045, g: 0.4903861, b: 0.15517394, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.17779107
+    <Any1>k__BackingField: {r: 0.7446842, g: 0.2517183, b: 0.8650106, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.20554371
+    <Any1>k__BackingField: {r: 0.36217007, g: 0.96454537, b: 0.5361612, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.17796342
+    <Any1>k__BackingField: {r: 0.57006556, g: 0.231391, b: 0.50035244, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.18075113
+    <Any1>k__BackingField: {r: 0.5659439, g: 0.22810768, b: 0.1837449, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.17004628
+    <Any1>k__BackingField: {r: 0.61847717, g: 0.11141478, b: 0.94923264, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.17197692
+    <Any1>k__BackingField: {r: 0.022045366, g: 0.67061305, b: 0.45633247, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.25547948
+    <Any1>k__BackingField: {r: 0.7139801, g: 0.79419434, b: 0.30779484, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.1753325
+    <Any1>k__BackingField: {r: 0.167371, g: 0.5029929, b: 0.3589705, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.17483915
+    <Any1>k__BackingField: {r: 0.17243205, g: 0.5173366, b: 0.44100457, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.31900495
+    <Any1>k__BackingField: {r: 0.80320525, g: 0.073506765, b: 0.33149755, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.31489277
+    <Any1>k__BackingField: {r: 0.5619251, g: 0.8343413, b: 0.05234585, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.31561142
+    <Any1>k__BackingField: {r: 0.2567353, g: 0.20358734, b: 0.5382257, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.33074832
+    <Any1>k__BackingField: {r: 0.06002233, g: 0.4583759, b: 0.5304214, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.3570824
+    <Any1>k__BackingField: {r: 0.37479183, g: 0.080817, b: 0.79052424, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.29983822
+    <Any1>k__BackingField: {r: 0.17580003, g: 0.32663813, b: 0.85937047, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.29999146
+    <Any1>k__BackingField: {r: 0.44702992, g: 0.1729204, b: 0.5898634, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.2912113
+    <Any1>k__BackingField: {r: 0.06856356, g: 0.59509045, b: 0.3209264, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.12581241
+    <Any1>k__BackingField: {r: 0.33197138, g: 0.7801491, b: 0.6866545, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.13754964
+    <Any1>k__BackingField: {r: 0.27913982, g: 0.59595096, b: 0.08132123, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.1385999
+    <Any1>k__BackingField: {r: 0.22490862, g: 0.88476586, b: 0.87682515, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.39793673
+    <Any1>k__BackingField: {r: 0.14883333, g: 0.21536562, b: 0.79956686, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.1413472
+    <Any1>k__BackingField: {r: 0.12489006, g: 0.4032032, b: 0.5295896, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.18581074
+    <Any1>k__BackingField: {r: 0.15445946, g: 0.79253805, b: 0.4722379, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.27379236
+    <Any1>k__BackingField: {r: 0.9422074, g: 0.7038659, b: 0.45570213, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.142673
+    <Any1>k__BackingField: {r: 0.8634856, g: 0.19407913, b: 0.20811841, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.1612446
+    <Any1>k__BackingField: {r: 0.81931627, g: 0.25585946, b: 0.73236644, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.1350975
+    <Any1>k__BackingField: {r: 0.12083352, g: 0.53108954, b: 0.90391994, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.20077337
+    <Any1>k__BackingField: {r: 0.61499184, g: 0.03710145, b: 0.57495135, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.15416785
+    <Any1>k__BackingField: {r: 0.79590726, g: 0.4560187, b: 0.059167735, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.15293612
+    <Any1>k__BackingField: {r: 0.9150741, g: 0.62012684, b: 0.31144795, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.29893932
+    <Any1>k__BackingField: {r: 0.5055154, g: 0.6491303, b: 0.0992185, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.31800485
+    <Any1>k__BackingField: {r: 0.9071246, g: 0.35272256, b: 0.45814887, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.30689952
+    <Any1>k__BackingField: {r: 0.09661492, g: 0.63028705, b: 0.18026584, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.32794598
+    <Any1>k__BackingField: {r: 0.21607526, g: 0.2424953, b: 0.9696946, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.31837386
+    <Any1>k__BackingField: {r: 0.79578817, g: 0.2998832, b: 0.108138144, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.6315619
+    <Any1>k__BackingField: {r: 0.73591995, g: 0.3248623, b: 0.7363446, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.6111897
+    <Any1>k__BackingField: {r: 0.163588, g: 0.7951009, b: 0.041769866, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.6708171
+    <Any1>k__BackingField: {r: 0.84665406, g: 0.7470138, b: 0.4137867, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.64779705
+    <Any1>k__BackingField: {r: 0.0624746, g: 0.55538917, b: 0.071795814, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.67482334
+    <Any1>k__BackingField: {r: 0.11493307, g: 0.25093213, b: 0.75831676, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.64981496
+    <Any1>k__BackingField: {r: 0.95407397, g: 0.12450411, b: 0.3221537, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.67109704
+    <Any1>k__BackingField: {r: 0.29687944, g: 0.21218541, b: 0.5367071, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.6100461
+    <Any1>k__BackingField: {r: 0.38779575, g: 0.8351232, b: 0.60260123, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.62646675
+    <Any1>k__BackingField: {r: 0.5636216, g: 0.7511083, b: 0.22249532, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.64336663
+    <Any1>k__BackingField: {r: 0.70336294, g: 0.22468817, b: 0.0595576, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.65197664
+    <Any1>k__BackingField: {r: 0.5661241, g: 0.4141933, b: 0.057769287, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.6722665
+    <Any1>k__BackingField: {r: 0.8835074, g: 0.049575146, b: 0.75596994, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.6375718
+    <Any1>k__BackingField: {r: 0.8283921, g: 0.015458067, b: 0.99595743, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.64894944
+    <Any1>k__BackingField: {r: 0.8335388, g: 0.3630609, b: 0.9424588, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.33978164
+    <Any1>k__BackingField: {r: 0.6823039, g: 0.2632115, b: 0.93678826, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.34849787
+    <Any1>k__BackingField: {r: 0.9673017, g: 0.28353855, b: 0.100754276, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.34164277
+    <Any1>k__BackingField: {r: 0.11720408, g: 0.93060017, b: 0.71472996, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.3077716
+    <Any1>k__BackingField: {r: 0.8744805, g: 0.46424726, b: 0.32229647, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.33885235
+    <Any1>k__BackingField: {r: 0.86645484, g: 0.8509056, b: 0.40782785, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.29549003
+    <Any1>k__BackingField: {r: 0.3679455, g: 0.5407879, b: 0.15428208, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.30722535
+    <Any1>k__BackingField: {r: 0.12645423, g: 0.77445734, b: 0.33363333, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.3206992
+    <Any1>k__BackingField: {r: 0.019272218, g: 0.03395632, b: 0.85192406, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.1321832
+    <Any1>k__BackingField: {r: 0.5179388, g: 0.2306049, b: 0.6397487, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.14095078
+    <Any1>k__BackingField: {r: 0.48999774, g: 0.5572568, b: 0.09581691, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.13798322
+    <Any1>k__BackingField: {r: 0.5460219, g: 0.034914196, b: 0.44973296, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.28860047
+    <Any1>k__BackingField: {r: 0.5170894, g: 0.72328866, b: 0.08883933, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.15150398
+    <Any1>k__BackingField: {r: 0.77899134, g: 0.34771848, b: 0.47079527, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.16002567
+    <Any1>k__BackingField: {r: 0.8241925, g: 0.31788602, b: 0.3971799, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.10801621
+    <Any1>k__BackingField: {r: 0.5739771, g: 0.7825465, b: 0.37708318, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.27205083
+    <Any1>k__BackingField: {r: 0.8275815, g: 0.16878676, b: 0.36106047, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.16006409
+    <Any1>k__BackingField: {r: 0.29433712, g: 0.42735863, b: 0.80112565, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.14890358
+    <Any1>k__BackingField: {r: 0.6680675, g: 0.9422267, b: 0.10359536, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.1352019
+    <Any1>k__BackingField: {r: 0.9912341, g: 0.22644927, b: 0.86915094, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.22547469
+    <Any1>k__BackingField: {r: 0.7230133, g: 0.431209, b: 0.19603841, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.13860208
+    <Any1>k__BackingField: {r: 0.6257075, g: 0.9912503, b: 0.2113174, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.15170132
+    <Any1>k__BackingField: {r: 0.27979025, g: 0.06302809, b: 0.5460995, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.3056325
+    <Any1>k__BackingField: {r: 0.58843917, g: 0.008225591, b: 0.15485378, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.29108274
+    <Any1>k__BackingField: {r: 0.049728688, g: 0.17418878, b: 0.64108914, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.33747363
+    <Any1>k__BackingField: {r: 0.27523547, g: 0.6645835, b: 0.8748182, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.26291645
+    <Any1>k__BackingField: {r: 0.16837715, g: 0.38999334, b: 0.57127887, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.35334426
+    <Any1>k__BackingField: {r: 0.5974025, g: 0.78929305, b: 0.064918086, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.32764566
+    <Any1>k__BackingField: {r: 0.88144547, g: 0.16663098, b: 0.9408684, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.2873374
+    <Any1>k__BackingField: {r: 0.13097644, g: 0.14900723, b: 0.85362554, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.32049006
+    <Any1>k__BackingField: {r: 0.30619434, g: 0.7952893, b: 0.54964614, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.35266563
+    <Any1>k__BackingField: {r: 0.3486923, g: 0.37865758, b: 0.7224076, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.23320082
+    <Any1>k__BackingField: {r: 0.338344, g: 0.09007571, b: 0.7184665, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.1305837
+    <Any1>k__BackingField: {r: 0.107865706, g: 0.2521261, b: 0.6167554, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.2550879
+    <Any1>k__BackingField: {r: 0.03297225, g: 0.7818868, b: 0.13942969, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.23061737
+    <Any1>k__BackingField: {r: 0.5247662, g: 0.13784342, b: 0.11156792, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.139662
+    <Any1>k__BackingField: {r: 0.38552803, g: 0.80792344, b: 0.7759043, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.26438817
+    <Any1>k__BackingField: {r: 0.9746248, g: 0.2526475, b: 0.3229603, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.28160688
+    <Any1>k__BackingField: {r: 0.598125, g: 0.7803135, b: 0.14115515, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.13053288
+    <Any1>k__BackingField: {r: 0.5596235, g: 0.8028358, b: 0.14606065, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.24016997
+    <Any1>k__BackingField: {r: 0.605858, g: 0.07630571, b: 0.12989847, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.17132257
+    <Any1>k__BackingField: {r: 0.2932455, g: 0.731568, b: 0.19549555, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.26446974
+    <Any1>k__BackingField: {r: 0.124599166, g: 0.337319, b: 0.91060835, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.26246396
+    <Any1>k__BackingField: {r: 0.7966247, g: 0.89351106, b: 0.14420722, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.3696867
+    <Any1>k__BackingField: {r: 0.32651487, g: 0.66945803, b: 0.067116484, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.34936905
+    <Any1>k__BackingField: {r: 0.11371448, g: 0.19328554, b: 0.5790683, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.29809976
+    <Any1>k__BackingField: {r: 0.7102574, g: 0.9212395, b: 0.27846366, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.26434612
+    <Any1>k__BackingField: {r: 0.6698633, g: 0.21948642, b: 0.67262363, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.3263019
+    <Any1>k__BackingField: {r: 0.9344912, g: 0.45411295, b: 0.041111067, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.3334522
+    <Any1>k__BackingField: {r: 0.056652218, g: 0.30414453, b: 0.50761396, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.309044
+    <Any1>k__BackingField: {r: 0.33770147, g: 0.18162972, b: 0.54188365, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.3211113
+    <Any1>k__BackingField: {r: 0.65227133, g: 0.23306926, b: 0.2522582, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.34975863
+    <Any1>k__BackingField: {r: 0.23790285, g: 0.60371524, b: 0.25547487, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.35434845
+    <Any1>k__BackingField: {r: 0.48541358, g: 0.16667646, b: 0.5442819, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.3317988
+    <Any1>k__BackingField: {r: 0.6912786, g: 0.15552887, b: 0.48533723, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.32583165
+    <Any1>k__BackingField: {r: 0.3054719, g: 0.24920511, b: 0.8628391, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.31116125
+    <Any1>k__BackingField: {r: 0.066644736, g: 0.5632412, b: 0.14071347, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.3391789
+    <Any1>k__BackingField: {r: 0.9118809, g: 0.48682177, b: 0.11445787, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.32853046
+    <Any1>k__BackingField: {r: 0.78673303, g: 0.62135524, b: 0.12030432, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.31878003
+    <Any1>k__BackingField: {r: 0.85808957, g: 0.18022549, b: 0.926149, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.34000012
+    <Any1>k__BackingField: {r: 0.26990995, g: 0.941202, b: 0.3684702, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.32330987
+    <Any1>k__BackingField: {r: 0.22197917, g: 0.5313968, b: 0.25518265, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.3429956
+    <Any1>k__BackingField: {r: 0.6939974, g: 0.19909531, b: 0.3023234, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.28035206
+    <Any1>k__BackingField: {r: 0.15426496, g: 0.96035886, b: 0.3946907, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.35493457
+    <Any1>k__BackingField: {r: 0.6208614, g: 0.29599735, b: 0.8225677, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.31814337
+    <Any1>k__BackingField: {r: 0.63832253, g: 0.6798868, b: 0.29811648, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.2886342
+    <Any1>k__BackingField: {r: 0.20053838, g: 0.45202675, b: 0.5674206, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.3138915
+    <Any1>k__BackingField: {r: 0.78659284, g: 0.50498074, b: 0.15591301, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.22817758
+    <Any1>k__BackingField: {r: 0.10360531, g: 0.93091375, b: 0.4170591, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.11163591
+    <Any1>k__BackingField: {r: 0.260767, g: 0.35489175, b: 0.53350353, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.3016651
+    <Any1>k__BackingField: {r: 0.5256951, g: 0.23147626, b: 0.18481039, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.21901868
+    <Any1>k__BackingField: {r: 0.053707663, g: 0.4668458, b: 0.92803466, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.1345483
+    <Any1>k__BackingField: {r: 0.3507709, g: 0.51757836, b: 0.16864505, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.28289717
+    <Any1>k__BackingField: {r: 0.93859255, g: 0.10827707, b: 0.7017049, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.25953302
+    <Any1>k__BackingField: {r: 0.34653664, g: 0.24766131, b: 0.8043667, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.09896189
+    <Any1>k__BackingField: {r: 0.87312454, g: 0.42156094, b: 0.96523374, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.26260665
+    <Any1>k__BackingField: {r: 0.06568776, g: 0.82989776, b: 0.2730404, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.24406071
+    <Any1>k__BackingField: {r: 0.31345126, g: 0.654735, b: 0.22895825, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.15054329
+    <Any1>k__BackingField: {r: 0.74541974, g: 0.15672807, b: 0.49796203, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.29679513
+    <Any1>k__BackingField: {r: 0.61475605, g: 0.26258567, b: 0.18560572, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.3752078
+    <Any1>k__BackingField: {r: 0.4684904, g: 0.825374, b: 0.3239556, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.1647046
+    <Any1>k__BackingField: {r: 0.7215818, g: 0.6357719, b: 0.32324824, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.15030451
+    <Any1>k__BackingField: {r: 0.13015524, g: 0.31638026, b: 0.68274415, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.27397862
+    <Any1>k__BackingField: {r: 0.5515542, g: 0.69115055, b: 0.33110914, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.31877106
+    <Any1>k__BackingField: {r: 0.4191761, g: 0.7699194, b: 0.12374667, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.29517666
+    <Any1>k__BackingField: {r: 0.58729887, g: 0.030751552, b: 0.63100266, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.31816873
+    <Any1>k__BackingField: {r: 0.35331288, g: 0.0007765359, b: 0.50330734, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.30224454
+    <Any1>k__BackingField: {r: 0.30610827, g: 0.7099962, b: 0.7630671, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.33302835
+    <Any1>k__BackingField: {r: 0.4016728, g: 0.65122885, b: 0.008669457, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.22527918
+    <Any1>k__BackingField: {r: 0.5585811, g: 0.9905386, b: 0.46889004, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.1573275
+    <Any1>k__BackingField: {r: 0.01297105, g: 0.3555947, b: 0.52290803, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.1779788
+    <Any1>k__BackingField: {r: 0.86696446, g: 0.18582617, b: 0.73118156, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.19303735
+    <Any1>k__BackingField: {r: 0.20039694, g: 0.48922756, b: 0.5183129, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.19388089
+    <Any1>k__BackingField: {r: 0.26808465, g: 0.6181817, b: 0.23102333, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.18289772
+    <Any1>k__BackingField: {r: 0.8293295, g: 0.49501875, b: 0.1675662, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.184214
+    <Any1>k__BackingField: {r: 0.9269502, g: 0.48971894, b: 0.98419225, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.17780614
+    <Any1>k__BackingField: {r: 0.7237371, g: 0.6680422, b: 0.09387729, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.19166386
+    <Any1>k__BackingField: {r: 0.27269486, g: 0.7099681, b: 0.653752, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.18229513
+    <Any1>k__BackingField: {r: 0.59879106, g: 0.36119232, b: 0.17894582, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.20262901
+    <Any1>k__BackingField: {r: 0.81947815, g: 0.7454317, b: 0.11962537, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.18324293
+    <Any1>k__BackingField: {r: 0.26432598, g: 0.08933211, b: 0.55797577, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.16531868
+    <Any1>k__BackingField: {r: 0.33036998, g: 0.06401757, b: 0.5809039, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.154368
+    <Any1>k__BackingField: {r: 0.24405277, g: 0.6907191, b: 0.7054752, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.19806369
+    <Any1>k__BackingField: {r: 0.29077005, g: 0.79405093, b: 0.009172006, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.23039025
+    <Any1>k__BackingField: {r: 0.7606263, g: 0.66938096, b: 0.34143716, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.24913608
+    <Any1>k__BackingField: {r: 0.83241963, g: 0.22129068, b: 0.59438455, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.25492653
+    <Any1>k__BackingField: {r: 0.82871157, g: 0.3944186, b: 0.8558558, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.16627266
+    <Any1>k__BackingField: {r: 0.5989037, g: 0.28607827, b: 0.5953485, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.18973252
+    <Any1>k__BackingField: {r: 0.386776, g: 0.97939646, b: 0.80112785, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.15557688
+    <Any1>k__BackingField: {r: 0.90642893, g: 0.34983453, b: 0.011080421, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.17838715
+    <Any1>k__BackingField: {r: 0.6886724, g: 0.34768912, b: 0.013023569, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.18556751
+    <Any1>k__BackingField: {r: 0.7863021, g: 0.20925555, b: 0.03717717, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.20846942
+    <Any1>k__BackingField: {r: 0.62250745, g: 0.28515828, b: 0.5453082, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.1706224
+    <Any1>k__BackingField: {r: 0.35571873, g: 0.6494977, b: 0.298463, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.18691628
+    <Any1>k__BackingField: {r: 0.72380483, g: 0.22686246, b: 0.7179879, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.16831547
+    <Any1>k__BackingField: {r: 0.9085945, g: 0.8543278, b: 0.3422549, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.18961328
+    <Any1>k__BackingField: {r: 0.88276726, g: 0.14868109, b: 0.2867878, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.20447618
+    <Any1>k__BackingField: {r: 0.39231497, g: 0.7976836, b: 0.66537505, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.1757149
+    <Any1>k__BackingField: {r: 0.86873275, g: 0.029702123, b: 0.9618887, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.23185298
+    <Any1>k__BackingField: {r: 0.6738235, g: 0.33790803, b: 0.1949265, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.16952491
+    <Any1>k__BackingField: {r: 0.7354077, g: 0.11858798, b: 0.03624531, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.18268074
+    <Any1>k__BackingField: {r: 0.1729042, g: 0.16627094, b: 0.93525654, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.20572479
+    <Any1>k__BackingField: {r: 0.51665056, g: 0.9247009, b: 0.3773042, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.1605803
+    <Any1>k__BackingField: {r: 0.78779566, g: 0.8333031, b: 0.13554756, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.2187834
+    <Any1>k__BackingField: {r: 0.55231506, g: 0.048061, b: 0.2560987, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.19538215
+    <Any1>k__BackingField: {r: 0.9135203, g: 0.18663354, b: 0.80205226, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.17950206
+    <Any1>k__BackingField: {r: 0.3642667, g: 0.2883372, b: 0.5816003, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.19904
+    <Any1>k__BackingField: {r: 0.0385163, g: 0.06791323, b: 0.7632967, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.18274435
+    <Any1>k__BackingField: {r: 0.12230674, g: 0.76500225, b: 0.8471017, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.24640726
+    <Any1>k__BackingField: {r: 0.056872535, g: 0.46724603, b: 0.74367, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.17908165
+    <Any1>k__BackingField: {r: 0.24172728, g: 0.7130945, b: 0.71885073, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.18537027
+    <Any1>k__BackingField: {r: 0.8098885, g: 0.25505015, b: 0.07886543, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.17972301
+    <Any1>k__BackingField: {r: 0.32071212, g: 0.7561927, b: 0.5998931, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.17381592
+    <Any1>k__BackingField: {r: 0.6940402, g: 0.4762698, b: 0.33472207, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.21196134
+    <Any1>k__BackingField: {r: 0.43447503, g: 0.7946198, b: 0.23783743, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.19391906
+    <Any1>k__BackingField: {r: 0.93952817, g: 0.62474084, b: 0.4663072, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.189853
+    <Any1>k__BackingField: {r: 0.12000752, g: 0.31188035, b: 0.7844919, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.17182396
+    <Any1>k__BackingField: {r: 0.6917422, g: 0.11745455, b: 0.5309933, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.17725104
+    <Any1>k__BackingField: {r: 0.08094768, g: 0.25877514, b: 0.898392, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.27880266
+    <Any1>k__BackingField: {r: 0.538258, g: 0.8563132, b: 0.3280852, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.1821655
+    <Any1>k__BackingField: {r: 0.19919488, g: 0.20805864, b: 0.50198144, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.17821343
+    <Any1>k__BackingField: {r: 0.3225343, g: 0.09843771, b: 0.53647304, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.23429643
+    <Any1>k__BackingField: {r: 0.31976375, g: 0.9119058, b: 0.88131374, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.16230044
+    <Any1>k__BackingField: {r: 0.22013846, g: 0.38202202, b: 0.62144774, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.20326827
+    <Any1>k__BackingField: {r: 0.063042454, g: 0.72829163, b: 0.08313631, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.1661415
+    <Any1>k__BackingField: {r: 0.9391056, g: 0.3771096, b: 0.55812025, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.2058743
+    <Any1>k__BackingField: {r: 0.73549235, g: 0.7497541, b: 0.18167849, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.18596323
+    <Any1>k__BackingField: {r: 0.3287563, g: 0.07206884, b: 0.8175974, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.17032017
+    <Any1>k__BackingField: {r: 0.020383917, g: 0.08757473, b: 0.85779417, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.2374705
+    <Any1>k__BackingField: {r: 0.6617409, g: 0.7012898, b: 0.27326232, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.18244642
+    <Any1>k__BackingField: {r: 0.004291265, g: 0.60895455, b: 0.39031902, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.20190182
+    <Any1>k__BackingField: {r: 0.6642311, g: 0.22746165, b: 0.9382613, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.18803503
+    <Any1>k__BackingField: {r: 0.7482761, g: 0.43330362, b: 0.26070413, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.18344931
+    <Any1>k__BackingField: {r: 0.06301509, g: 0.5197104, b: 0.48192134, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.17837378
+    <Any1>k__BackingField: {r: 0.14996792, g: 0.6863381, b: 0.47167337, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.19586733
+    <Any1>k__BackingField: {r: 0.23063035, g: 0.76707995, b: 0.7527171, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.2242054
+    <Any1>k__BackingField: {r: 0.78212786, g: 0.51326185, b: 0.38339123, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.1825867
+    <Any1>k__BackingField: {r: 0.7966169, g: 0.04981372, b: 0.21971676, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.183687
+    <Any1>k__BackingField: {r: 0.46026245, g: 0.6463855, b: 0.9942047, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.17983973
+    <Any1>k__BackingField: {r: 0.16372912, g: 0.08732719, b: 0.58608973, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.17443275
+    <Any1>k__BackingField: {r: 0.84381235, g: 0.05926799, b: 0.6511494, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.21312912
+    <Any1>k__BackingField: {r: 0.36119393, g: 0.07417464, b: 0.55243754, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.1481454
+    <Any1>k__BackingField: {r: 0.81207013, g: 0.42223364, b: 0.9907108, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.2242901
+    <Any1>k__BackingField: {r: 0.10701171, g: 0.94225705, b: 0.43056676, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.18500982
+    <Any1>k__BackingField: {r: 0.6298856, g: 0.007035503, b: 0.5466335, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.17928188
+    <Any1>k__BackingField: {r: 0.32585135, g: 0.565594, b: 0.17506348, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.2644511
+    <Any1>k__BackingField: {r: 0.98675513, g: 0.9420422, b: 0.29430404, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.081900984
+    <Any1>k__BackingField: {r: 0.2074362, g: 0.3497317, b: 0.5289258, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.24718198
+    <Any1>k__BackingField: {r: 0.7342347, g: 0.43584102, b: 0.034981146, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.3120788
+    <Any1>k__BackingField: {r: 0.043257754, g: 0.26196286, b: 0.5508001, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.17365478
+    <Any1>k__BackingField: {r: 0.019437194, g: 0.2962112, b: 0.5508675, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.180527
+    <Any1>k__BackingField: {r: 0.25978836, g: 0.30038697, b: 0.59469664, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.30363995
+    <Any1>k__BackingField: {r: 0.8104242, g: 0.49430126, b: 0.36755025, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.19984864
+    <Any1>k__BackingField: {r: 0.28995138, g: 0.9823831, b: 0.012239608, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.18871911
+    <Any1>k__BackingField: {r: 0.2856591, g: 0.22302021, b: 0.5162373, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.28843784
+    <Any1>k__BackingField: {r: 0.5947527, g: 0.8457532, b: 0.28776452, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.28753322
+    <Any1>k__BackingField: {r: 0.72114027, g: 0.920902, b: 0.20586091, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.31466687
+    <Any1>k__BackingField: {r: 0.68825036, g: 0.3380826, b: 0.8992955, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.35094354
+    <Any1>k__BackingField: {r: 0.78842324, g: 0.17335196, b: 0.8380909, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.30585462
+    <Any1>k__BackingField: {r: 0.11853605, g: 0.7588264, b: 0.3796035, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.35187915
+    <Any1>k__BackingField: {r: 0.28991202, g: 0.6596467, b: 0.66655767, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.34863132
+    <Any1>k__BackingField: {r: 0.5895255, g: 0.7441596, b: 0.34531572, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.31222323
+    <Any1>k__BackingField: {r: 0.26338273, g: 0.5352619, b: 0.12906452, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.29975712
+    <Any1>k__BackingField: {r: 0.35204005, g: 0.14436828, b: 0.6649526, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.3272019
+    <Any1>k__BackingField: {r: 0.030737361, g: 0.5360815, b: 0.08302645, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.5754375
+    <Any1>k__BackingField: {r: 0.6324465, g: 0.2230288, b: 0.5813591, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.33395413
+    <Any1>k__BackingField: {r: 0.6708863, g: 0.08103072, b: 0.5952597, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.6176288
+    <Any1>k__BackingField: {r: 0.3315789, g: 0.42832434, b: 0.7456255, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.38184988
+    <Any1>k__BackingField: {r: 0.12933879, g: 0.6703844, b: 0.85373485, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.59615415
+    <Any1>k__BackingField: {r: 0.43151313, g: 0.04435779, b: 0.5238191, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.5055997
+    <Any1>k__BackingField: {r: 0.2900764, g: 0.011849234, b: 0.6576176, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.4300699
+    <Any1>k__BackingField: {r: 0.6235348, g: 0.12958235, b: 0.014236271, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.75790995
+    <Any1>k__BackingField: {r: 0.55739355, g: 0.12666427, b: 0.019464435, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.2581966
+    <Any1>k__BackingField: {r: 0.50978535, g: 0.9753635, b: 0.37395334, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.39212018
+    <Any1>k__BackingField: {r: 0.05573311, g: 0.7857529, b: 0.0224195, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.31190735
+    <Any1>k__BackingField: {r: 0.866122, g: 0.54787314, b: 0.15507396, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.4210886
+    <Any1>k__BackingField: {r: 0.06538185, g: 0.52653617, b: 0.49038687, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.40726092
+    <Any1>k__BackingField: {r: 0.60540575, g: 0.33217642, b: 0.2828897, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.27021715
+    <Any1>k__BackingField: {r: 0.24745981, g: 0.29025406, b: 0.7551248, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.38095063
+    <Any1>k__BackingField: {r: 0.5046802, g: 0.3764026, b: 0.24044943, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.29620066
+    <Any1>k__BackingField: {r: 0.6701054, g: 0.26830682, b: 0.40838298, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.4579847
+    <Any1>k__BackingField: {r: 0.3726244, g: 0.557591, b: 0.82343817, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.34760046
+    <Any1>k__BackingField: {r: 0.8920865, g: 0.27114058, b: 0.042088054, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.496416
+    <Any1>k__BackingField: {r: 0.52297723, g: 0.46115044, b: 0.118234724, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.53005016
+    <Any1>k__BackingField: {r: 0.104577854, g: 0.27201852, b: 0.71897876, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.33198255
+    <Any1>k__BackingField: {r: 0.5037287, g: 0.0752522, b: 0.2587047, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.26779315
+    <Any1>k__BackingField: {r: 0.6372009, g: 0.36478144, b: 0.024540978, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.29423562
+    <Any1>k__BackingField: {r: 0.37999114, g: 0.3029314, b: 0.69484127, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.33210683
+    <Any1>k__BackingField: {r: 0.5312256, g: 0.175173, b: 0.5723433, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.25509578
+    <Any1>k__BackingField: {r: 0.558501, g: 0.4455781, b: 0.9998966, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.35986853
+    <Any1>k__BackingField: {r: 0.40628618, g: 0.5610423, b: 0.24855396, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.3432182
+    <Any1>k__BackingField: {r: 0.20882575, g: 0.13949463, b: 0.68307275, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.34406057
+    <Any1>k__BackingField: {r: 0.5121129, g: 0.3473564, b: 0.22141086, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.3094274
+    <Any1>k__BackingField: {r: 0.25458086, g: 0.44320378, b: 0.8719119, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.34813213
+    <Any1>k__BackingField: {r: 0.87428045, g: 0.23227431, b: 0.85190094, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.2945108
+    <Any1>k__BackingField: {r: 0.7822664, g: 0.26448134, b: 0.43357712, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.33572784
+    <Any1>k__BackingField: {r: 0.8285477, g: 0.17889696, b: 0.0016653708, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.34372142
+    <Any1>k__BackingField: {r: 0.2108462, g: 0.5618495, b: 0.41640237, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.35537645
+    <Any1>k__BackingField: {r: 0.2212706, g: 0.98266625, b: 0.8147045, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.3626195
+    <Any1>k__BackingField: {r: 0.14865792, g: 0.91953164, b: 0.606641, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.29452318
+    <Any1>k__BackingField: {r: 0.24001628, g: 0.4598735, b: 0.51732033, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.32637906
+    <Any1>k__BackingField: {r: 0.06851524, g: 0.6683899, b: 0.18138805, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.3188611
+    <Any1>k__BackingField: {r: 0.7128012, g: 0.19417913, b: 0.57801574, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.29488233
+    <Any1>k__BackingField: {r: 0.28023237, g: 0.95386916, b: 0.0016161612, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.33740926
+    <Any1>k__BackingField: {r: 0.23470895, g: 0.39029384, b: 0.9193807, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.3537802
+    <Any1>k__BackingField: {r: 0.5925574, g: 0.25237957, b: 0.15346703, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.3020741
+    <Any1>k__BackingField: {r: 0.24140185, g: 0.33456376, b: 0.5359043, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.31585395
+    <Any1>k__BackingField: {r: 0.65579695, g: 0.29742157, b: 0.6167729, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.3086018
+    <Any1>k__BackingField: {r: 0.8555151, g: 0.3601496, b: 0.201654, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.31176546
+    <Any1>k__BackingField: {r: 0.3384877, g: 0.10512361, b: 0.9386187, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.3598636
+    <Any1>k__BackingField: {r: 0.8527782, g: 0.12409839, b: 0.8395757, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.32449272
+    <Any1>k__BackingField: {r: 0.8030503, g: 0.3163132, b: 0.54657215, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.34970346
+    <Any1>k__BackingField: {r: 0.5729898, g: 0.23420405, b: 0.40295365, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.29357344
+    <Any1>k__BackingField: {r: 0.6600266, g: 0.9036935, b: 0.07074891, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.32027197
+    <Any1>k__BackingField: {r: 0.25306654, g: 0.5736452, b: 0.3049405, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.32052836
+    <Any1>k__BackingField: {r: 0.96644676, g: 0.31097314, b: 0.89095366, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 0.34735334
+    <Any1>k__BackingField: {r: 0.09576557, g: 0.5938096, b: 0.6064439, a: 1}
+    <Any2>k__BackingField: 0
+  - <Delay>k__BackingField: 3.2798088
+    <Any1>k__BackingField: {r: 0.19369724, g: 0.7068614, b: 0.6644478, a: 1}
+    <Any2>k__BackingField: 0
+  _dummyForHeader: 0

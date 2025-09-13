@@ -1,11 +1,13 @@
 ﻿using System;
 using Audio;
 using Definitions.Scenes.CameraBassShake;
+using Definitions.Scenes.Delays.BackgroundChanger;
 using Definitions.Waves;
 using NaughtyAttributes;
 using Player;
 using UnityEngine;
 using Zenject;
+using Random = UnityEngine.Random;
 
 namespace Internal.Gameplay.LevelCreator
 {
@@ -19,7 +21,8 @@ namespace Internal.Gameplay.LevelCreator
         [SerializeField] private bool _canPlayerShoot = true;
         
         [SerializeField] private EnemyWave _waveToWrite;
-        [SerializeField] private CameraBassShakeWaves _cameraBassShakeWavesToWrite;
+        [SerializeField] private DelaysWave _delaysWaveToWrite;
+        [SerializeField] private BackgroundChangeDelays _bgDelays;
         
         private InputReader _inputReader;
 
@@ -32,7 +35,8 @@ namespace Internal.Gameplay.LevelCreator
 
         // Runtime values
         private float _delayToNextEnemy = 0;
-        private float _delayToNextBassCamera = 0;
+        private float _delayWaveToWrite = 0;
+        private float _delayBg = 0;
         
         private bool _startedWriting;
 
@@ -95,12 +99,28 @@ namespace Internal.Gameplay.LevelCreator
             if (!_startedWriting) return;
             
             _delayToNextEnemy += Time.deltaTime;
-            _delayToNextBassCamera += Time.deltaTime;
+            _delayWaveToWrite += Time.deltaTime;
+            _delayBg += Time.deltaTime;
 
             if (Input.GetKeyDown(KeyCode.Space))
             {
-                _cameraBassShakeWavesToWrite.Delays.Add(_delayToNextBassCamera);
-                _delayToNextBassCamera = 0;
+                _delaysWaveToWrite.Delays.Add(_delayWaveToWrite);
+                _delayWaveToWrite = 0;
+            }
+
+            if (Input.GetKeyDown(KeyCode.C))
+            {
+                var randomColor = Random.ColorHSV(
+                    0f, 1f,
+                    0.5f, 1f,
+                    0.5f, 1f
+                );
+                randomColor.a = 1;
+                
+                _bgDelays.DelaysWith2T.Add(new(
+                    _delayBg, randomColor));
+
+                _delayBg = 0;
             }
         }
 

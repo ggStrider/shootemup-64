@@ -87,10 +87,10 @@ namespace Internal.Gameplay.Managers
         {
             try
             {
-                for (var i = 0; i < _sceneCard.CameraBassShakeWaves.Count; i++)
+                for (var i = 0; i < _sceneCard.DelaysWave.Count; i++)
                 {
                     BassShakeCamera();
-                    await UniTask.WaitForSeconds(_sceneCard.CameraBassShakeWaves[i], cancellationToken: token);
+                    await UniTask.WaitForSeconds(_sceneCard.DelaysWave[i], cancellationToken: token);
                 }
             }
             catch (OperationCanceledException)
