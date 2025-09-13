@@ -16,7 +16,8 @@ namespace Definitions.Scenes.CameraBassShake
 
         public int Count => DelaysWith2T.Count;
         public DelayWith2T this[int index] => DelaysWith2T[index];
-        
+
+#if UNITY_EDITOR
         [SerializeField] private DelaysWave _copySource;
 
         [Button]
@@ -41,6 +42,7 @@ namespace Definitions.Scenes.CameraBassShake
                 DelaysWith2T[i].SetDelay(delay);
             }
         }
+#endif
 
         [Serializable]
         public class DelayWith2T

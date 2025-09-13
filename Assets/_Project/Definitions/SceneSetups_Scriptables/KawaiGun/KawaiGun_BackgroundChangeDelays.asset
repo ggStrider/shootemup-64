@@ -146,28 +146,28 @@ MonoBehaviour:
     <Any1>k__BackingField: {r: 0.50657916, g: 0.0869399, b: 0.68083096, a: 1}
     <Any2>k__BackingField: 0
   - <Delay>k__BackingField: 0.38370636
-    <Any1>k__BackingField: {r: 0.5875505, g: 0.20823596, b: 0.7537371, a: 1}
+    <Any1>k__BackingField: {r: 1, g: 0, b: 0, a: 1}
     <Any2>k__BackingField: 0
   - <Delay>k__BackingField: 0.92253035
-    <Any1>k__BackingField: {r: 0.32897693, g: 0.29048476, b: 0.7809069, a: 1}
+    <Any1>k__BackingField: {r: 0, g: 0, b: 1, a: 1}
     <Any2>k__BackingField: 0
   - <Delay>k__BackingField: 0.54551435
-    <Any1>k__BackingField: {r: 0.005228013, g: 0.5828449, b: 0.80098903, a: 1}
+    <Any1>k__BackingField: {r: 1, g: 0, b: 0, a: 1}
     <Any2>k__BackingField: 0
   - <Delay>k__BackingField: 0.6228943
-    <Any1>k__BackingField: {r: 0.20730159, g: 0.23104317, b: 0.5618586, a: 1}
+    <Any1>k__BackingField: {r: 0, g: 0, b: 1, a: 1}
     <Any2>k__BackingField: 0
   - <Delay>k__BackingField: 0.62908185
-    <Any1>k__BackingField: {r: 0.29039872, g: 0.673564, b: 0.3891983, a: 1}
+    <Any1>k__BackingField: {r: 1, g: 0, b: 0, a: 1}
     <Any2>k__BackingField: 0
   - <Delay>k__BackingField: 0.8417019
-    <Any1>k__BackingField: {r: 0.22720273, g: 0.5813954, b: 0.18764077, a: 1}
+    <Any1>k__BackingField: {r: 0, g: 0, b: 1, a: 1}
     <Any2>k__BackingField: 0
   - <Delay>k__BackingField: 0.52873015
-    <Any1>k__BackingField: {r: 0.86548483, g: 0.0428077, b: 0.14893125, a: 1}
+    <Any1>k__BackingField: {r: 1, g: 0, b: 0, a: 1}
     <Any2>k__BackingField: 0
   - <Delay>k__BackingField: 0.69323474
-    <Any1>k__BackingField: {r: 0.11173425, g: 0.8159294, b: 0.5305046, a: 1}
+    <Any1>k__BackingField: {r: 0, g: 0, b: 1, a: 1}
     <Any2>k__BackingField: 0
   - <Delay>k__BackingField: 0.3744687
     <Any1>k__BackingField: {r: 0.64243376, g: 0.6203378, b: 0.081102915, a: 1}
