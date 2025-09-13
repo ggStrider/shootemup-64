@@ -10,7 +10,9 @@ namespace Definitions.Scenes.Delays.BackgroundChanger
         StaticKeys.PROJECT_NAME + "/Definitions/Delays/Background Change Delays")]
     public class BackgroundChangeDelays : DelaysWaveWithClassTwoGeneric<Color, bool>
     {
-        [Header("Color (Any1) - color of bg")] [Header("Bool (Any2) - smooth changing of bg")] 
-        [SerializeField] private bool _dummyForHeader;
+#if UNITY_EDITOR
+        [Header("Color (Any1) - color of bg")] [Header("Bool (Any2) - smooth changing of bg")] [SerializeField]
+        private bool _dummyForHeader;
+#endif
     }
 }
