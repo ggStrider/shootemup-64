@@ -926,3 +926,4 @@ MonoBehaviour:
     <Any1>k__BackingField: {r: 0.86873275, g: 0.029702123, b: 0.9618887, a: 1}
     <Any2>k__BackingField: 0
   _copySource: {fileID: 11400000, guid: 310c4de5bafdbf84dade304df61ed511, type: 2}
+  _dummyForHeader: 0

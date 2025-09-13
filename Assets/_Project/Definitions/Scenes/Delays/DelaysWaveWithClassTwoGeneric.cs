@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using NaughtyAttributes;
 using UnityEngine;
 
 namespace Definitions.Scenes.CameraBassShake
@@ -15,6 +16,31 @@ namespace Definitions.Scenes.CameraBassShake
 
         public int Count => DelaysWith2T.Count;
         public DelayWith2T this[int index] => DelaysWith2T[index];
+        
+        [SerializeField] private DelaysWave _copySource;
+
+        [Button]
+        private void CopyTimings()
+        {
+            var targetCount = _copySource.Count;
+            if (DelaysWith2T.Count > targetCount)
+            {
+                DelaysWith2T.RemoveRange(targetCount, DelaysWith2T.Count - targetCount);
+            }
+            else if (DelaysWith2T.Count < targetCount)
+            {
+                for (int i = DelaysWith2T.Count; i < targetCount; i++)
+                {
+                    DelaysWith2T.Add(new DelayWith2T(0f));
+                }
+            }
+
+            for (var i = 0; i < _copySource.Delays.Count; i++)
+            {
+                var delay = _copySource.Delays[i];
+                DelaysWith2T[i].SetDelay(delay);
+            }
+        }
 
         [Serializable]
         public class DelayWith2T
