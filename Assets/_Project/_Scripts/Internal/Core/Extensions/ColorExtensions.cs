@@ -17,5 +17,13 @@ namespace Internal.Core.Extensions
             h = (h + 0.5f) % 1f;
             return Color.HSVToRGB(h, s, v);
         }
+
+        public static Color GenerateRandomColor(this Color color)
+        {
+            color = Random.ColorHSV(0f, 1f, 0.5f, 1f, 0.5f, 1f);
+            color.a = 1f;
+
+            return color;
+        }
     }
 }

@@ -87,9 +87,10 @@ namespace Internal.Gameplay.Managers
         {
             if (_sceneCard.UseRandomBackgroundColor)
             {
-                var color = Random.ColorHSV(0f, 1f, 0.5f, 1f, 0.5f, 1f);
-                color.a = 1f;
-                float delay = _sceneCard.UseLevelWaveAsDelay
+                Color color = new();
+                color = color.GenerateRandomColor();
+                
+                var delay = _sceneCard.UseLevelWaveAsDelay
                     ? _sceneCard.LevelWaves[waveIndex % _sceneCard.LevelWaves.Length].DelayToChangeBackground
                     : 1f;
                 

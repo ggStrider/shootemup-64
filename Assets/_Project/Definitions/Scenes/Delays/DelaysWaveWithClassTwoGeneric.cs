@@ -29,6 +29,11 @@ namespace Definitions.Scenes.CameraBassShake
                 Any1 = any1;
                 Any2 = any2;
             }
+
+            public void SetDelay(float delay)
+            {
+                Delay = delay;
+            }
         }
     }
 }
