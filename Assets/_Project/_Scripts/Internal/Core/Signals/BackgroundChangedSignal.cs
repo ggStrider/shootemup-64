@@ -6,11 +6,13 @@ namespace Internal.Core.Signals
     {
         public SpriteRenderer Background;
         public Color NewColor;
+        public Color OppositeColor;
 
-        public BackgroundChangedSignal(SpriteRenderer background, Color newColor)
+        public BackgroundChangedSignal(SpriteRenderer background, Color newColor, Color oppositeColor)
         {
             Background = background;
             NewColor = newColor;
+            OppositeColor = oppositeColor;
         }
     }
 }

@@ -35,7 +35,7 @@ namespace Enemy
         
         private void SetAnalogueColor(BackgroundChangedSignal bg)
         {
-            ChangeSkinColor(bg.NewColor.GetComplementary());
+            ChangeSkinColor(bg.OppositeColor);
         }
 
         protected override void FireThisTypeOfEnemyDied()
