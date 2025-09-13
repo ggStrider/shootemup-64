@@ -2108,4 +2108,4 @@ MonoBehaviour:
     <SideToSpawn>k__BackingField: 1
     <DelayToNextEnemy>k__BackingField: 0.22667406
   <DelayToNextWave>k__BackingField: 3
-  <DelayToChangeBackground>k__BackingField: 0.2
+  <DelayToChangeBackground>k__BackingField: 1.3

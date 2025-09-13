@@ -657,7 +657,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _backgroundRenderer: {fileID: 1115784705}
-  _testChangeSmoothlyAlways: 1
+  _testChangeSmoothlyAlways: 0
 --- !u!1 &412819583
 GameObject:
   m_ObjectHideFlags: 0
