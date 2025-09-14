@@ -523,7 +523,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9195246362649495888}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.9404, y: 1.9404, z: 1.9404}
   m_ConstrainProportionsScale: 0
@@ -600,7 +600,7 @@ MonoBehaviour:
   _itemImagePlaceholder: {fileID: 2235503957888717355}
   _namePlaceholder: {fileID: 8842561208846090172}
   _pricePlaceholder: {fileID: 887499306022889818}
-  _toBuy: {fileID: 11400000, guid: 29cb992c9ec25474a80f014a329dd5fa, type: 2}
+  _toBuy: {fileID: 0}
 --- !u!114 &7591818706210810665
 MonoBehaviour:
   m_ObjectHideFlags: 0

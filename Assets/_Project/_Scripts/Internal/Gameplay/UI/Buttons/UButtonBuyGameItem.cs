@@ -1,24 +1,23 @@
-﻿using Definitions.BulletModificators.Scripts;
+﻿using Definitions;
 using Internal.Core.DataModel;
 using TMPro;
 using UnityEngine;
-using UnityEngine.Serialization;
 using UnityEngine.UI;
 using Zenject;
 
 namespace Internal.Gameplay.UI.Buttons
 {
-    public class UButtonBuyBulletModificator : MonoBehaviour
+    public class UButtonBuyGameItem : MonoBehaviour
     {
         [SerializeField] private Button _buttonToBind;
-
-        [Space] 
+        
+        [Space]
         [SerializeField] private Image _itemImagePlaceholder;
         [SerializeField] private TextMeshProUGUI _namePlaceholder;
         [SerializeField] private TextMeshProUGUI _pricePlaceholder;
         
         [Space]
-        [SerializeField] private BulletModificatorSO _toBuy;
+        [SerializeField] private BuyableGameItem _toBuy;
 
         private PlayerData _playerData;
 
@@ -28,27 +27,29 @@ namespace Internal.Gameplay.UI.Buttons
             _playerData = playerData;
         }
 
-        private void Awake()
+        public void SetToBuyAndInitialize(BuyableGameItem buyableGameItem)
+        {
+            _toBuy = buyableGameItem;
+            Initialize();
+        }
+
+        private void Initialize()
         {
             _itemImagePlaceholder.sprite = _toBuy.ItemIcon;
             _itemImagePlaceholder.color = _toBuy.IconColor;
             _namePlaceholder.text = _toBuy.ItemName;
             _pricePlaceholder.text = _toBuy.Price.ToString();
             
-            _buttonToBind.onClick.AddListener(TryBuyModificator);
+            _buttonToBind.onClick.AddListener(TryBuy);
         }
 
-        private void TryBuyModificator()
+        private void TryBuy()
         {
-            // seems strange to check it in this class. Maybe TODO: ?
-            if (_playerData.Coins < _toBuy.Price)
+            var added = _toBuy.TryBuyItem(_playerData);
+            if (!added)
             {
-                Debug.Log($"[{nameof(UButtonBuyBulletModificator)}] Not enough coins!");
-                return;
+                Debug.Log($"[{nameof(UButtonBuyGameItem)}] Not enough coins!");
             }
-
-            _playerData.AddBulletModificatorInInventory(_toBuy);
-            _playerData.Coins.Value -= _toBuy.Price;
         }
 
 #if UNITY_EDITOR

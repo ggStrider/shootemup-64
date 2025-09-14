@@ -1,13 +1,20 @@
-﻿using System;
+﻿using Internal.Core.DataModel;
 using Shoot;
-using UnityEngine;
 
 namespace Definitions.BulletModificators.Scripts
 {
-    public abstract class BulletModificatorSO : GameItem
+    public abstract class BulletModificatorSO : BuyableGameItem
     {
-        [field: SerializeField, Min(0)] public int Price { get; private set; } = 10;
-        
         public abstract void ApplyModificator(BulletBehaviour bullet);
+
+        public override bool TryBuyItem(PlayerData playerData, bool autoDecreaseAmountOfPrice = true)
+        {
+            if (playerData.Coins < Price) return false;
+            
+            playerData.AddBulletModificatorInInventory(this);
+            if (autoDecreaseAmountOfPrice) playerData.SubtractCoins(Price);
+            
+            return true;
+        }
     }
 }

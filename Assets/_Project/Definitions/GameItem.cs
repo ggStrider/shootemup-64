@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Internal.Core.DataModel;
+using UnityEngine;
 
 namespace Definitions
 {
