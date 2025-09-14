@@ -12,7 +12,7 @@ namespace Player
     {
         [SerializeField] private BulletBehaviour _bulletPrefab;
         [SerializeField] private Transform _bulletOutPosition;
-
+        
         private readonly Dictionary<Vector2Int, Quaternion> _directionRotations = new()
         {
             { Vector2Int.right, Quaternion.Euler(0f, 0f, -90f) },   // right
@@ -20,13 +20,13 @@ namespace Player
             { Vector2Int.up, Quaternion.Euler(0f, 0f, 0f) },        // up
             { Vector2Int.down, Quaternion.Euler(0f, 0f, 180f) }     // down
         };
-
+        
         [SerializeField] private List<BulletModificatorSO> _currentModificators = new();
 
         private InputReader _inputReader;
         private SignalBus _signalBus;
         private BulletPool _bulletsPool;
-        
+
         [Inject]
         private void Construct(InputReader inputReader, BulletPool bulletsPool, SignalBus signalBus)
         {
@@ -97,19 +97,20 @@ namespace Player
 
             bullet.InitializeBeforeShoot(roundedFireDirection);
             TryApplyBulletModificators(bullet);
-            
-            _signalBus.Fire(new PlayerShootSignal(bullet));
+
+            _signalBus.Fire(new PlayerShootSignal(bullet, 
+                new((int)roundedFireDirection.x, (int)roundedFireDirection.y)));
         }
 
         private void TryApplyBulletModificators(BulletBehaviour bullet)
         {
             if (_currentModificators.Count == 0) return;
-            
+
             foreach (var modificator in _currentModificators)
             {
                 modificator.ApplyModificator(bullet);
             }
-            
+
             _currentModificators.Clear();
         }
 

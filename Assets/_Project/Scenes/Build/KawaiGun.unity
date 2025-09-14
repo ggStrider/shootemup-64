@@ -1394,6 +1394,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &889377614 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1909442740541986991, guid: fdc4ebb270bfa4c4e85b3cca49d8333d, type: 3}
+  m_PrefabInstance: {fileID: 512962907611382747}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &889377616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 889377614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a58e873b469e4201854fbbcc8ce221e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _tweenDuration: 0.1
+  _offsetDelta: 0.19
 --- !u!1 &913615423
 GameObject:
   m_ObjectHideFlags: 0
@@ -2070,11 +2089,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!4 &1525415413 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 9116903655372819378, guid: fdc4ebb270bfa4c4e85b3cca49d8333d, type: 3}
-  m_PrefabInstance: {fileID: 512962907611382747}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1526948336
 GameObject:
   m_ObjectHideFlags: 0
@@ -2289,7 +2303,7 @@ MonoBehaviour:
   _right: {fileID: 223170443}
   _left: {fileID: 544004983}
   _levelWaves: {fileID: 11400000, guid: c8ac2d440666c174082cbbec3e490d21, type: 2}
-  _player: {fileID: 1525415413}
+  _player: {fileID: 512962907611382748}
   _backgroundRenderer: {fileID: 1115784705}
 --- !u!1 &2009463865
 GameObject:
@@ -2694,8 +2708,16 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1909442740541986991, guid: fdc4ebb270bfa4c4e85b3cca49d8333d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 889377616}
   m_SourcePrefab: {fileID: 100100000, guid: fdc4ebb270bfa4c4e85b3cca49d8333d, type: 3}
+--- !u!4 &512962907611382748 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9028032897791655688, guid: fdc4ebb270bfa4c4e85b3cca49d8333d, type: 3}
+  m_PrefabInstance: {fileID: 512962907611382747}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

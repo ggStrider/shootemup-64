@@ -240,7 +240,7 @@ MonoBehaviour:
   _stopMusicOnStart: 1
   _canPlayerShoot: 0
   _waveToWrite: {fileID: 11400000, guid: 45a962055d8c4ab45972fa6d583e97d3, type: 2}
-  _delaysWaveToWrite: {fileID: 0}
+  _delaysWaveToWrite: {fileID: 11400000, guid: 310c4de5bafdbf84dade304df61ed511, type: 2}
   _bgDelays: {fileID: 11400000, guid: 1073a4d03ad5df943965b51400139998, type: 2}
 --- !u!4 &69854496
 Transform:
