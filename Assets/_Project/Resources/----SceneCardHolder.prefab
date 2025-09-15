@@ -45,4 +45,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _startSceneCard: {fileID: 11400000, guid: 30729928d8e9a5541b259b05ee6eadd2, type: 2}
-  <CurrentSceneCard>k__BackingField: {fileID: 11400000, guid: 7348d57261b386f45a1075471b2878b9, type: 2}
+  <CurrentSceneCard>k__BackingField: {fileID: 11400000, guid: 30729928d8e9a5541b259b05ee6eadd2, type: 2}
